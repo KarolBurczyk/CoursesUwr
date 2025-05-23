@@ -1,0 +1,8 @@
+# ninja log v5
+1	544	7064718687890024	CMakeFiles/Zad_10_2.dir/FileOutput.cpp.obj	fb9427a7fe7b92a9
+6	549	7064718687949825	CMakeFiles/Zad_10_2.dir/FileInput.cpp.obj	218e7a738ff813b
+4	467	7064760216027388	CMakeFiles/Zad_10_2.dir/Wejscie.cpp.obj	96cbcd9998b2e61c
+621	793	7064770589594359	Zad_10_2.exe	3b28c1affeccb682
+7	620	7064770587935930	CMakeFiles/Zad_10_2.dir/main.cpp.obj	1ec562fad05a9708
+2	271	7065571246010881	build.ninja	7e35d751dac19a99
+4	490	7064759855557122	CMakeFiles/Zad_10_2.dir/Wyjscie.cpp.obj	e63ca5ab8b1d276e

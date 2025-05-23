@@ -1,0 +1,3 @@
+C:/Users/burcz/Desktop/STUDIA/C++/Lista X/cmake-build-debug/CMakeFiles/Lista_X.dir
+C:/Users/burcz/Desktop/STUDIA/C++/Lista X/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/burcz/Desktop/STUDIA/C++/Lista X/cmake-build-debug/CMakeFiles/rebuild_cache.dir

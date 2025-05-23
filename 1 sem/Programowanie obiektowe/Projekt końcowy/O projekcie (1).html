@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        O projekcie - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{background-color:#f7f7f7;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p:last-child{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body .alert>p:last-child,.markdown-body .alert>ul:last-child{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true"><h1 id="O-projekcie" data-id="O-projekcie"><a class="anchor hidden-xs" href="#O-projekcie" title="O-projekcie"><span class="octicon octicon-link"></span></a><span>O projekcie</span></h1><p><span>Zapraszam do lektury dokumentacji parodii gry “Flappy Bird” w moim wydaniu. Program w całości został napisany w Pythonie, głównie przy użyciu biblioteki PyGame. Klasa główna Game wykorzystuje wszystkie pozostałe, nie ma tutaj dziedziczenia.</span><br>
+<span>Przy uruchomieniu gry pojawiamy się w menu głównym, gdzie znajduje się lista naszych najwyższych wyników. Za pomocą myszki możemy wcisnąć przycisk gry i przejść do rozgrywki. W każdym momencie gry wciśnięcie przycisku ECS powoduje powrót do menu chyba, że już w nim jesteśmy, wtedy zamykamy cały prgram.</span><br>
+<span>Mechanika gry polega na wyświetlaniu kolejnych kolumn (górnych i dolnych), które przesuwają się w lewą stronę coraz szybciej. Jest również nasza postać główna, która trzyma się na stałej szerokości względem ekranu, a jej wysokość zależy od naszych interakcji.</span><br>
+<span>Od momentu rozpoczęcia rozgrywki na ptaszka działa stała grawitacja ciągnąca go w dół. Każde wciśnięcie spacji powoduje jego wzlot w górę. Cały sens gry polega na tym, żeby postacią mieścić się między górnymi i dolnymi kolumnami. Z biegiem czasu kolumny przybliżają się coraz szybciej, a szczeliny między kolumnami stają się coraz węższe.</span><br>
+<span>Gra posiada również tablicę z najwyższymi wynikami, które poprzez odpowiednią funkcję zapisują się do osobnego pliku, a w momencie ich użycia ponownie z niego pobierane.</span><br>
+<span>Dodatkową funkcjonalnością jest automatyczne skalowanie ekranu i obiektów w grze zależnie od rozdzielczości monitora.</span><br>
+<span>Od technicznej strony: klasa Game tworzy obiekty wszystkich pobocznych klas i wykorzystuje je wewnątrz wyświetlając te obiekty na odpowiednim miejscu na ekranie.</span><br>
+<span>Całość projektu wykonałem samemu, w tym poboczne grafiki menu, poza podanymi poniżej źródłami, którymi się posiłkowałem.</span></p><p><span>Karol Burczyk</span></p><h1 id="Źródła" data-id="Źródła"><a class="anchor hidden-xs" href="#Źródła" title="Źródła"><span class="octicon octicon-link"></span></a><span>Źródła</span></h1><p><span>Przy pisaniu gry skorzystałem z grafik ze strony </span><a href="https://flappycreator.com" target="_blank" rel="noopener"><span>https://flappycreator.com</span></a><span>. W napisaniu mechaniki przesuwania tła pomógł mi artykuł ze strony geeks-for-geeks oraz film z platformy YouTube: </span><a href="https://www.youtube.com/watch?v=OmlQ0XCvIn0" target="_blank" rel="noopener"><span>https://www.youtube.com/watch?v=OmlQ0XCvIn0</span></a><span>. W mechanizmie zapisywania wyników do pliku pomógł mi ChatGPT.</span></p><h1 id="Diagram" data-id="Diagram"><a class="anchor hidden-xs" href="#Diagram" title="Diagram"><span class="octicon octicon-link"></span></a><span>Diagram</span></h1><p><img src="https://hackmd.io/_uploads/SJ3Tt-Rw3.jpg" alt="" loading="lazy"></p><h1 id="Plik-Mainpy" data-id="Plik-Mainpy"><a class="anchor hidden-xs" href="#Plik-Mainpy" title="Plik-Mainpy"><span class="octicon octicon-link"></span></a><span>Plik </span><a href="http://Main.py" target="_blank" rel="noopener"><span>Main.py</span></a></h1><h2 id="Import-klas-z-innych-plików-oraz-potrzebnych-bibliotek" data-id="Import-klas-z-innych-plików-oraz-potrzebnych-bibliotek"><a class="anchor hidden-xs" href="#Import-klas-z-innych-plików-oraz-potrzebnych-bibliotek" title="Import-klas-z-innych-plików-oraz-potrzebnych-bibliotek"><span class="octicon octicon-link"></span></a><span>Import klas z innych plików oraz potrzebnych bibliotek</span></h2><ul>
+<li><span>import pygame</span></li>
+<li><span>import math</span></li>
+<li><span>from CONST import *</span></li>
+<li><span>import random</span></li>
+<li><span>from character import *</span></li>
+<li><span>from scene import *</span></li>
+<li><span>from pygame.locals import *</span></li>
+<li><span>from tubes import *</span></li>
+</ul><h2 id="Główna-klasa-gry" data-id="Główna-klasa-gry"><a class="anchor hidden-xs" href="#Główna-klasa-gry" title="Główna-klasa-gry"><span class="octicon octicon-link"></span></a><span>Główna klasa gry</span></h2><h3 id="W-tej-klasie-zachodzą-wszystkie-obliczenia-wywołania-i-drukowanie-oiektów-innych-klas-na-ekranie-Zawiera-główną-pętlę-gry-i-odpowiada-za-odświeżanie-ekranu-i-wszystkich-funkcji" data-id="W-tej-klasie-zachodzą-wszystkie-obliczenia-wywołania-i-drukowanie-oiektów-innych-klas-na-ekranie-Zawiera-główną-pętlę-gry-i-odpowiada-za-odświeżanie-ekranu-i-wszystkich-funkcji"><a class="anchor hidden-xs" href="#W-tej-klasie-zachodzą-wszystkie-obliczenia-wywołania-i-drukowanie-oiektów-innych-klas-na-ekranie-Zawiera-główną-pętlę-gry-i-odpowiada-za-odświeżanie-ekranu-i-wszystkich-funkcji" title="W-tej-klasie-zachodzą-wszystkie-obliczenia-wywołania-i-drukowanie-oiektów-innych-klas-na-ekranie-Zawiera-główną-pętlę-gry-i-odpowiada-za-odświeżanie-ekranu-i-wszystkich-funkcji"><span class="octicon octicon-link"></span></a><span>W tej klasie zachodzą wszystkie obliczenia, wywołania i drukowanie oiektów innych klas na ekranie. Zawiera główną pętlę gry i odpowiada za odświeżanie ekranu i wszystkich funkcji.</span></h3><pre><code>class Game:
+</code></pre><h3 id="Konstruktor-klasy-Game" data-id="Konstruktor-klasy-Game"><a class="anchor hidden-xs" href="#Konstruktor-klasy-Game" title="Konstruktor-klasy-Game"><span class="octicon octicon-link"></span></a><span>Konstruktor klasy Game</span></h3><pre><code>def __init__(self):
+</code></pre><h4 id="Inicjacja-pygame" data-id="Inicjacja-pygame"><a class="anchor hidden-xs" href="#Inicjacja-pygame" title="Inicjacja-pygame"><span class="octicon octicon-link"></span></a><span>Inicjacja pygame</span></h4><pre><code>    pygame.init()
+</code></pre><h4 id="Poniższe-wartości-typu-bool-służą-do-rozpoznawania-w-którym-momencie-gry-jesteśmy" data-id="Poniższe-wartości-typu-bool-służą-do-rozpoznawania-w-którym-momencie-gry-jesteśmy"><a class="anchor hidden-xs" href="#Poniższe-wartości-typu-bool-służą-do-rozpoznawania-w-którym-momencie-gry-jesteśmy" title="Poniższe-wartości-typu-bool-służą-do-rozpoznawania-w-którym-momencie-gry-jesteśmy"><span class="octicon octicon-link"></span></a><span>Poniższe wartości typu bool służą do rozpoznawania, w którym momencie gry jesteśmy</span></h4><ul>
+<li>
+<p><span>is_running informuje pętlę główną gry, że ma dalej być uruchomiona</span></p>
+</li>
+<li>
+<p><span>is_playing zmieni się na True, gdy zaczniemy grać</span></p>
+</li>
+<li>
+<p><span>game_over zmieni się na True, gdy zahaczymy, o którąś z przeszkód</span></p>
+</li>
+<li>
+<p><span>wartość menu informująca o ty czy jesteśmy w menu, na początku ustawiona na prawdę</span></p>
+<pre><code>  self.is_running = True
+
+  self.is_playing = False
+
+  self.game_over = False
+  
+  self.menu = True
+</code></pre>
+</li>
+</ul><h4 id="Pozycja-myszki" data-id="Pozycja-myszki"><a class="anchor hidden-xs" href="#Pozycja-myszki" title="Pozycja-myszki"><span class="octicon octicon-link"></span></a><span>Pozycja myszki</span></h4><pre><code>    self.mouse = pygame.mouse.get_pos()
+</code></pre><h4 id="Definicja-okna-gry-o-określonej-rozdzielczości" data-id="Definicja-okna-gry-o-określonej-rozdzielczości"><a class="anchor hidden-xs" href="#Definicja-okna-gry-o-określonej-rozdzielczości" title="Definicja-okna-gry-o-określonej-rozdzielczości"><span class="octicon octicon-link"></span></a><span>Definicja okna gry o określonej rozdzielczości</span></h4><pre><code>    self.window = pygame.display.set_mode((1560, 780))
+</code></pre><h4 id="Ustawienie-tytułu-okna-gry-na-Flappy-Bird" data-id="Ustawienie-tytułu-okna-gry-na-Flappy-Bird"><a class="anchor hidden-xs" href="#Ustawienie-tytułu-okna-gry-na-Flappy-Bird" title="Ustawienie-tytułu-okna-gry-na-Flappy-Bird"><span class="octicon octicon-link"></span></a><span>Ustawienie tytułu okna gry na Flappy Bird</span></h4><pre><code>    pygame.display.set_caption("Flappy Bird")
+</code></pre><h4 id="Wyłuskanie-szerokości-okna-gry" data-id="Wyłuskanie-szerokości-okna-gry"><a class="anchor hidden-xs" href="#Wyłuskanie-szerokości-okna-gry" title="Wyłuskanie-szerokości-okna-gry"><span class="octicon octicon-link"></span></a><span>Wyłuskanie szerokości okna gry</span></h4><pre><code>    self.screen_width = self.window.get_width()
+</code></pre><h4 id="Wyłuskanie-wysokości-okna-gry" data-id="Wyłuskanie-wysokości-okna-gry"><a class="anchor hidden-xs" href="#Wyłuskanie-wysokości-okna-gry" title="Wyłuskanie-wysokości-okna-gry"><span class="octicon octicon-link"></span></a><span>Wyłuskanie wysokości okna gry</span></h4><pre><code>    self.screen_height = self.window.get_height()
+</code></pre><h4 id="Wyliczam-skalę-dla-grafik-w-grze-stosunek-ustawionej-wysokości-ekranu-do-wysokości-grafiki-tła" data-id="Wyliczam-skalę-dla-grafik-w-grze-stosunek-ustawionej-wysokości-ekranu-do-wysokości-grafiki-tła"><a class="anchor hidden-xs" href="#Wyliczam-skalę-dla-grafik-w-grze-stosunek-ustawionej-wysokości-ekranu-do-wysokości-grafiki-tła" title="Wyliczam-skalę-dla-grafik-w-grze-stosunek-ustawionej-wysokości-ekranu-do-wysokości-grafiki-tła"><span class="octicon octicon-link"></span></a><span>Wyliczam skalę dla grafik w grze (stosunek ustawionej wysokości ekranu do wysokości grafiki tła)</span></h4><pre><code>    self.scale = self.screen_height / BG_HEIGHT
+</code></pre><h4 id="Ustawienie-odpowiedniej-czcionki-do-gry" data-id="Ustawienie-odpowiedniej-czcionki-do-gry"><a class="anchor hidden-xs" href="#Ustawienie-odpowiedniej-czcionki-do-gry" title="Ustawienie-odpowiedniej-czcionki-do-gry"><span class="octicon octicon-link"></span></a><span>Ustawienie odpowiedniej czcionki do gry</span></h4><pre><code>    self.font = pygame.font.Font('Font.ttf', 72)
+</code></pre><h4 id="Ustawienie-czcionki-do-listy-wyników" data-id="Ustawienie-czcionki-do-listy-wyników"><a class="anchor hidden-xs" href="#Ustawienie-czcionki-do-listy-wyników" title="Ustawienie-czcionki-do-listy-wyników"><span class="octicon octicon-link"></span></a><span>Ustawienie czcionki do listy wyników</span></h4><pre><code>    self.scores_font = pygame.font.Font('Font.ttf', 25)
+</code></pre><h4 id="Wywołanie-obiektu-tła-gry-dla-odpowiedniej-skali" data-id="Wywołanie-obiektu-tła-gry-dla-odpowiedniej-skali"><a class="anchor hidden-xs" href="#Wywołanie-obiektu-tła-gry-dla-odpowiedniej-skali" title="Wywołanie-obiektu-tła-gry-dla-odpowiedniej-skali"><span class="octicon octicon-link"></span></a><span>Wywołanie obiektu tła gry dla odpowiedniej skali</span></h4><pre><code>    self.bg = Background(self.scale)
+</code></pre><h4 id="Wywołanie-obiektu-podłoża-dla-skali-i-wysokości-ekranu" data-id="Wywołanie-obiektu-podłoża-dla-skali-i-wysokości-ekranu"><a class="anchor hidden-xs" href="#Wywołanie-obiektu-podłoża-dla-skali-i-wysokości-ekranu" title="Wywołanie-obiektu-podłoża-dla-skali-i-wysokości-ekranu"><span class="octicon octicon-link"></span></a><span>Wywołanie obiektu podłoża dla skali i wysokości ekranu</span></h4><pre><code>    self.ground = Ground(self.scale, self.screen_height)
+</code></pre><h4 id="Wywołanie-obiektu-ptaka-dla-skali-oraz-pozycji-początkowej-na-ekranie" data-id="Wywołanie-obiektu-ptaka-dla-skali-oraz-pozycji-początkowej-na-ekranie"><a class="anchor hidden-xs" href="#Wywołanie-obiektu-ptaka-dla-skali-oraz-pozycji-początkowej-na-ekranie" title="Wywołanie-obiektu-ptaka-dla-skali-oraz-pozycji-początkowej-na-ekranie"><span class="octicon octicon-link"></span></a><span>Wywołanie obiektu ptaka dla skali oraz pozycji początkowej na ekranie</span></h4><pre><code>    self.bird = Bird(self.scale, (self.screen_width // 4, self.screen_height / 2))
+</code></pre><h4 id="Listy-kolumn-górnych-i-dolnych" data-id="Listy-kolumn-górnych-i-dolnych"><a class="anchor hidden-xs" href="#Listy-kolumn-górnych-i-dolnych" title="Listy-kolumn-górnych-i-dolnych"><span class="octicon octicon-link"></span></a><span>Listy kolumn górnych i dolnych</span></h4><pre><code>    self.tubes = []
+    self.tubes2 = []
+</code></pre><h4 id="Definicja-licznik-kolumn" data-id="Definicja-licznik-kolumn"><a class="anchor hidden-xs" href="#Definicja-licznik-kolumn" title="Definicja-licznik-kolumn"><span class="octicon octicon-link"></span></a><span>Definicja licznik kolumn</span></h4><pre><code>    self.tubes_counter = 1
+</code></pre><h4 id="Określenie-częstotliwości-wyświetlania-kolumn" data-id="Określenie-częstotliwości-wyświetlania-kolumn"><a class="anchor hidden-xs" href="#Określenie-częstotliwości-wyświetlania-kolumn" title="Określenie-częstotliwości-wyświetlania-kolumn"><span class="octicon octicon-link"></span></a><span>Określenie częstotliwości wyświetlania kolumn</span></h4><pre><code>    self.tubes_freq = 0.1
+</code></pre><h4 id="Określenie-prędkości-przesuwania-się-kolumn-i-podłoża" data-id="Określenie-prędkości-przesuwania-się-kolumn-i-podłoża"><a class="anchor hidden-xs" href="#Określenie-prędkości-przesuwania-się-kolumn-i-podłoża" title="Określenie-prędkości-przesuwania-się-kolumn-i-podłoża"><span class="octicon octicon-link"></span></a><span>Określenie prędkości przesuwania się kolumn i podłoża</span></h4><pre><code>    self.speed = 8
+</code></pre><h4 id="Określenie-prędkości-paralaksy-jak-szybko-będzie-się-przesuwać-tło" data-id="Określenie-prędkości-paralaksy-jak-szybko-będzie-się-przesuwać-tło"><a class="anchor hidden-xs" href="#Określenie-prędkości-paralaksy-jak-szybko-będzie-się-przesuwać-tło" title="Określenie-prędkości-paralaksy-jak-szybko-będzie-się-przesuwać-tło"><span class="octicon octicon-link"></span></a><span>Określenie prędkości paralaksy (jak szybko będzie się przesuwać tło)</span></h4><pre><code>    self.parallax_speed = 4
+</code></pre><h4 id="Ustawienie-poziomu-trudności-jak-wąska-szpara-zostanie-między-kolumnami" data-id="Ustawienie-poziomu-trudności-jak-wąska-szpara-zostanie-między-kolumnami"><a class="anchor hidden-xs" href="#Ustawienie-poziomu-trudności-jak-wąska-szpara-zostanie-między-kolumnami" title="Ustawienie-poziomu-trudności-jak-wąska-szpara-zostanie-między-kolumnami"><span class="octicon octicon-link"></span></a><span>Ustawienie poziomu trudności (jak wąska szpara zostanie między kolumnami)</span></h4><pre><code>    self.difficulty_lvl = 0.3
+</code></pre><h4 id="Definicja-przesuwania-tła-podłoża-i-kolumn" data-id="Definicja-przesuwania-tła-podłoża-i-kolumn"><a class="anchor hidden-xs" href="#Definicja-przesuwania-tła-podłoża-i-kolumn" title="Definicja-przesuwania-tła-podłoża-i-kolumn"><span class="octicon octicon-link"></span></a><span>Definicja przesuwania tła, podłoża i kolumn</span></h4><pre><code>    self.scroll_bg = 0
+    self.scroll_ground = 0
+    self.scroll_tubes = 0
+</code></pre><h4 id="Określenie-ile-grafik-podłożatła-musimy-wyświetlić-żeby-zapełniły-szerokość-ekranu" data-id="Określenie-ile-grafik-podłożatła-musimy-wyświetlić-żeby-zapełniły-szerokość-ekranu"><a class="anchor hidden-xs" href="#Określenie-ile-grafik-podłożatła-musimy-wyświetlić-żeby-zapełniły-szerokość-ekranu" title="Określenie-ile-grafik-podłożatła-musimy-wyświetlić-żeby-zapełniły-szerokość-ekranu"><span class="octicon octicon-link"></span></a><span>Określenie ile grafik podłoża/tła musimy wyświetlić, żeby zapełniły szerokość ekranu</span></h4><pre><code>    self.tiles = math.ceil(self.screen_width / self.bg.getWidth()) + 1
+</code></pre><h4 id="Wyzerowany-na-starcie-licznik-punktów" data-id="Wyzerowany-na-starcie-licznik-punktów"><a class="anchor hidden-xs" href="#Wyzerowany-na-starcie-licznik-punktów" title="Wyzerowany-na-starcie-licznik-punktów"><span class="octicon octicon-link"></span></a><span>Wyzerowany na starcie licznik punktów</span></h4><pre><code>    self.points_counter = 0
+</code></pre><h4 id="Do-obydwu-list-dodajemy-po-jednej-kolumnie-pierwszej-która-się-wyświetli-wywołujemy-obiekt-kolumny-dla-odpowiedniej-skali-szerokości-ekranu-losowej-wysokości-wyliczanej-na-podanym-przedziale-odpowiedniej-tekstury-górnej-albo-dolnej-oraz-określenia-jej-pozycji-jako-top-lub-bottom" data-id="Do-obydwu-list-dodajemy-po-jednej-kolumnie-pierwszej-która-się-wyświetli-wywołujemy-obiekt-kolumny-dla-odpowiedniej-skali-szerokości-ekranu-losowej-wysokości-wyliczanej-na-podanym-przedziale-odpowiedniej-tekstury-górnej-albo-dolnej-oraz-określenia-jej-pozycji-jako-top-lub-bottom"><a class="anchor hidden-xs" href="#Do-obydwu-list-dodajemy-po-jednej-kolumnie-pierwszej-która-się-wyświetli-wywołujemy-obiekt-kolumny-dla-odpowiedniej-skali-szerokości-ekranu-losowej-wysokości-wyliczanej-na-podanym-przedziale-odpowiedniej-tekstury-górnej-albo-dolnej-oraz-określenia-jej-pozycji-jako-top-lub-bottom" title="Do-obydwu-list-dodajemy-po-jednej-kolumnie-pierwszej-która-się-wyświetli-wywołujemy-obiekt-kolumny-dla-odpowiedniej-skali-szerokości-ekranu-losowej-wysokości-wyliczanej-na-podanym-przedziale-odpowiedniej-tekstury-górnej-albo-dolnej-oraz-określenia-jej-pozycji-jako-top-lub-bottom"><span class="octicon octicon-link"></span></a><span>Do obydwu list dodajemy po jednej kolumnie (pierwszej, która się wyświetli), wywołujemy obiekt kolumny dla odpowiedniej skali, szerokości ekranu, losowej wysokości wyliczanej na podanym przedziale, odpowiedniej tekstury (górnej albo dolnej) oraz określenia jej pozycji jako top lub bottom</span></h4><pre><code>    self.tubes.append(Tube(self.scale, self.screen_width,
+                           random.randint(round(self.screen_height * 0.3),
+                                          round(self.screen_height * 0.7)), 'textures/tube2.png',
+                                         'top'))
+</code></pre><h4 id="Analogicznie-dodajemy-do-drugiej-listy-obiekt-kolumny-tylko-wywołany-dla-argumentów-dla-kolumny-dolnej" data-id="Analogicznie-dodajemy-do-drugiej-listy-obiekt-kolumny-tylko-wywołany-dla-argumentów-dla-kolumny-dolnej"><a class="anchor hidden-xs" href="#Analogicznie-dodajemy-do-drugiej-listy-obiekt-kolumny-tylko-wywołany-dla-argumentów-dla-kolumny-dolnej" title="Analogicznie-dodajemy-do-drugiej-listy-obiekt-kolumny-tylko-wywołany-dla-argumentów-dla-kolumny-dolnej"><span class="octicon octicon-link"></span></a><span>Analogicznie dodajemy do drugiej listy obiekt kolumny, tylko wywołany dla argumentów dla kolumny dolnej</span></h4><pre><code>    self.tubes2.append(Tube(self.scale, self.screen_width,
+                            self.tubes[0].rect.midtop[1] - round(self.screen_height * self.difficulty_lvl),
+                            'textures/tube1.png', 'bottom'))
+</code></pre><h4 id="Zdefiniowanie-zegara-funkcja-pygame" data-id="Zdefiniowanie-zegara-funkcja-pygame"><a class="anchor hidden-xs" href="#Zdefiniowanie-zegara-funkcja-pygame" title="Zdefiniowanie-zegara-funkcja-pygame"><span class="octicon octicon-link"></span></a><span>Zdefiniowanie zegara (funkcja pygame)</span></h4><pre><code>    self.clock = pygame.time.Clock()
+</code></pre><h4 id="Główna-pętla-gry-składa-się-tylko-z-funkcji-update-i-działa-dopóki-is_running-jest-prawdą-w-innym-wypadku-kończymy-grę" data-id="Główna-pętla-gry-składa-się-tylko-z-funkcji-update-i-działa-dopóki-is_running-jest-prawdą-w-innym-wypadku-kończymy-grę"><a class="anchor hidden-xs" href="#Główna-pętla-gry-składa-się-tylko-z-funkcji-update-i-działa-dopóki-is_running-jest-prawdą-w-innym-wypadku-kończymy-grę" title="Główna-pętla-gry-składa-się-tylko-z-funkcji-update-i-działa-dopóki-is_running-jest-prawdą-w-innym-wypadku-kończymy-grę"><span class="octicon octicon-link"></span></a><span>Główna pętla gry składa się tylko z funkcji update i działa, dopóki is_running jest prawdą, w innym wypadku kończymy grę</span></h4><pre><code>    while self.is_running:
+
+        self.update()
+
+    pygame.quit()
+</code></pre><h3 id="Funkcja-do-wyświetlania-naszego-bohatera-na-ekranie" data-id="Funkcja-do-wyświetlania-naszego-bohatera-na-ekranie"><a class="anchor hidden-xs" href="#Funkcja-do-wyświetlania-naszego-bohatera-na-ekranie" title="Funkcja-do-wyświetlania-naszego-bohatera-na-ekranie"><span class="octicon octicon-link"></span></a><span>Funkcja do wyświetlania naszego bohatera na ekranie</span></h3><pre><code>def draw_bird(self):
+</code></pre><h4 id="Wykonujemy-tick-zegara" data-id="Wykonujemy-tick-zegara"><a class="anchor hidden-xs" href="#Wykonujemy-tick-zegara" title="Wykonujemy-tick-zegara"><span class="octicon octicon-link"></span></a><span>Wykonujemy tick zegara</span></h4><pre><code>    self.clock.tick(CLOCK_TICK)
+</code></pre><h4 id="Wyświetlamy-na-ekranie-grafikę-ptaka-szerokość-na-której-jest-wyświetlany-będzie-stała-wysokość-jest-aktualizowana-na-bieżąco" data-id="Wyświetlamy-na-ekranie-grafikę-ptaka-szerokość-na-której-jest-wyświetlany-będzie-stała-wysokość-jest-aktualizowana-na-bieżąco"><a class="anchor hidden-xs" href="#Wyświetlamy-na-ekranie-grafikę-ptaka-szerokość-na-której-jest-wyświetlany-będzie-stała-wysokość-jest-aktualizowana-na-bieżąco" title="Wyświetlamy-na-ekranie-grafikę-ptaka-szerokość-na-której-jest-wyświetlany-będzie-stała-wysokość-jest-aktualizowana-na-bieżąco"><span class="octicon octicon-link"></span></a><span>Wyświetlamy na ekranie grafikę ptaka (szerokość, na której jest wyświetlany, będzie stała, wysokość jest aktualizowana na bieżąco)</span></h4><pre><code>    self.window.blit(self.bird.get_character(), 
+    (self.screen_width // 4, self.bird.rect.y))
+</code></pre><h3 id="Funkcja-do-wyświetlania-tła-zanim-gra-się-rozpocznie" data-id="Funkcja-do-wyświetlania-tła-zanim-gra-się-rozpocznie"><a class="anchor hidden-xs" href="#Funkcja-do-wyświetlania-tła-zanim-gra-się-rozpocznie" title="Funkcja-do-wyświetlania-tła-zanim-gra-się-rozpocznie"><span class="octicon octicon-link"></span></a><span>Funkcja do wyświetlania tła, zanim gra się rozpocznie</span></h3><pre><code>def draw_start_background(self):
+</code></pre><h4 id="Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-a-jako-parametry-do-wyświetlenia-jest-oczywiście-grafika-szerokość-wyświetlamy-i-ty-element-oraz-wysokość-równa-0" data-id="Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-a-jako-parametry-do-wyświetlenia-jest-oczywiście-grafika-szerokość-wyświetlamy-i-ty-element-oraz-wysokość-równa-0"><a class="anchor hidden-xs" href="#Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-a-jako-parametry-do-wyświetlenia-jest-oczywiście-grafika-szerokość-wyświetlamy-i-ty-element-oraz-wysokość-równa-0" title="Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-a-jako-parametry-do-wyświetlenia-jest-oczywiście-grafika-szerokość-wyświetlamy-i-ty-element-oraz-wysokość-równa-0"><span class="octicon octicon-link"></span></a><span>Wyświetlamy odpowiednią liczbę obrazków (tę liczbę wyliczaliśmy w konstruktorze, a jako parametry do wyświetlenia jest oczywiście grafika, szerokość (wyświetlamy i-ty element) oraz wysokość równa 0</span></h4><pre><code>    for i in range(self.tiles):
+
+        self.window.blit(self.bg.getBg(), 
+        (i *self.bg.getWidth(), 0))
+</code></pre><h3 id="Funkcja-do-wyświetlania-podłoża-zanim-gra-się-rozpocznie" data-id="Funkcja-do-wyświetlania-podłoża-zanim-gra-się-rozpocznie"><a class="anchor hidden-xs" href="#Funkcja-do-wyświetlania-podłoża-zanim-gra-się-rozpocznie" title="Funkcja-do-wyświetlania-podłoża-zanim-gra-się-rozpocznie"><span class="octicon octicon-link"></span></a><span>Funkcja do wyświetlania podłoża, zanim gra się rozpocznie</span></h3><pre><code>def draw_start_ground(self):
+</code></pre><h4 id="Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-podajemy-obiekt-graficzny-podłoża-odpowiednia-szerokość-oraz-wyliczoną-wysokość" data-id="Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-podajemy-obiekt-graficzny-podłoża-odpowiednia-szerokość-oraz-wyliczoną-wysokość"><a class="anchor hidden-xs" href="#Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-podajemy-obiekt-graficzny-podłoża-odpowiednia-szerokość-oraz-wyliczoną-wysokość" title="Wyświetlamy-odpowiednią-liczbę-obrazków-tę-liczbę-wyliczaliśmy-w-konstruktorze-podajemy-obiekt-graficzny-podłoża-odpowiednia-szerokość-oraz-wyliczoną-wysokość"><span class="octicon octicon-link"></span></a><span>Wyświetlamy odpowiednią liczbę obrazków (tę liczbę wyliczaliśmy w konstruktorze), podajemy obiekt graficzny podłoża, odpowiednia szerokość oraz wyliczoną wysokość</span></h4><pre><code>    for i in range(self.tiles):
+
+        self.window.blit(self.ground.getGround(),
+                         (i * self.ground.getWidth(), self.screen_height - self.ground.getHeight() / 3))
+</code></pre><h3 id="W-tej-funkcji-będziemy-wyświetlać-tło-w-czasie-działania-gry" data-id="W-tej-funkcji-będziemy-wyświetlać-tło-w-czasie-działania-gry"><a class="anchor hidden-xs" href="#W-tej-funkcji-będziemy-wyświetlać-tło-w-czasie-działania-gry" title="W-tej-funkcji-będziemy-wyświetlać-tło-w-czasie-działania-gry"><span class="octicon octicon-link"></span></a><span>W tej funkcji będziemy wyświetlać tło w czasie działania gry</span></h3><pre><code>def draw_game_bg(self):
+</code></pre><h4 id="Wykonujemy-tick-zegara1" data-id="Wykonujemy-tick-zegara"><a class="anchor hidden-xs" href="#Wykonujemy-tick-zegara1" title="Wykonujemy-tick-zegara1"><span class="octicon octicon-link"></span></a><span>Wykonujemy tick zegara</span></h4><pre><code>    self.clock.tick(CLOCK_TICK)
+</code></pre><h4 id="Wyświetlamy-odpowiednią-liczbę-“kafelków”-tła-szerokość-jest-zawsze-odpowiednio-powiększana-o-wartość-scroll_bg-którą-po-każdym-wyświetleniu-pomniejszamy-o-wartość-parallax_speed" data-id="Wyświetlamy-odpowiednią-liczbę-“kafelków”-tła-szerokość-jest-zawsze-odpowiednio-powiększana-o-wartość-scroll_bg-którą-po-każdym-wyświetleniu-pomniejszamy-o-wartość-parallax_speed"><a class="anchor hidden-xs" href="#Wyświetlamy-odpowiednią-liczbę-“kafelków”-tła-szerokość-jest-zawsze-odpowiednio-powiększana-o-wartość-scroll_bg-którą-po-każdym-wyświetleniu-pomniejszamy-o-wartość-parallax_speed" title="Wyświetlamy-odpowiednią-liczbę-“kafelków”-tła-szerokość-jest-zawsze-odpowiednio-powiększana-o-wartość-scroll_bg-którą-po-każdym-wyświetleniu-pomniejszamy-o-wartość-parallax_speed"><span class="octicon octicon-link"></span></a><span>Wyświetlamy odpowiednią liczbę “kafelków” tła, szerokość jest zawsze odpowiednio powiększana o wartość scroll_bg, którą po każdym wyświetleniu pomniejszamy o wartość parallax_speed</span></h4><pre><code>    i = 0
+    while i &lt; self.tiles:
+        self.window.blit(self.bg.getBg(), (self.bg.getWidth() * i
+                                           + self.scroll_bg, 0))
+        i += 1
+
+    self.scroll_bg -= self.parallax_speed
+</code></pre><h4 id="Kiedy-wartość-scroll_bg-przekroczy-szerokość-jednego-kafelka-ustawiamy-ją-z-powrotem-na-0" data-id="Kiedy-wartość-scroll_bg-przekroczy-szerokość-jednego-kafelka-ustawiamy-ją-z-powrotem-na-0"><a class="anchor hidden-xs" href="#Kiedy-wartość-scroll_bg-przekroczy-szerokość-jednego-kafelka-ustawiamy-ją-z-powrotem-na-0" title="Kiedy-wartość-scroll_bg-przekroczy-szerokość-jednego-kafelka-ustawiamy-ją-z-powrotem-na-0"><span class="octicon octicon-link"></span></a><span>Kiedy wartość scroll_bg przekroczy szerokość jednego kafelka, ustawiamy ją z powrotem na 0</span></h4><pre><code>    if abs(self.scroll_bg) &gt; self.bg.getWidth():
+        self.scroll_bg = 0
+</code></pre><h3 id="Analogiczna-funkcja-jak-powyższa-która-wyświetla-podłoże" data-id="Analogiczna-funkcja-jak-powyższa-która-wyświetla-podłoże"><a class="anchor hidden-xs" href="#Analogiczna-funkcja-jak-powyższa-która-wyświetla-podłoże" title="Analogiczna-funkcja-jak-powyższa-która-wyświetla-podłoże"><span class="octicon octicon-link"></span></a><span>Analogiczna funkcja jak powyższa, która wyświetla podłoże</span></h3><pre><code>def draw_game_ground(self):
+
+    self.clock.tick(CLOCK_TICK)
+
+    i = 0
+    while i &lt; self.tiles:
+        self.window.blit(self.ground.getGround(), (self.ground.getWidth() * i
+                                                   + self.scroll_ground,
+                                                   self.screen_height - self.ground.getHeight() / 3))
+        i += 1
+
+    self.scroll_ground -= self.speed
+
+    if abs(self.scroll_ground) &gt; self.ground.getWidth():
+        self.scroll_ground = 0
+</code></pre><h3 id="Funkcja-do-wyświetlania-kolumn-na-ekranie" data-id="Funkcja-do-wyświetlania-kolumn-na-ekranie"><a class="anchor hidden-xs" href="#Funkcja-do-wyświetlania-kolumn-na-ekranie" title="Funkcja-do-wyświetlania-kolumn-na-ekranie"><span class="octicon octicon-link"></span></a><span>Funkcja do wyświetlania kolumn na ekranie</span></h3><pre><code>def draw_tubes(self):
+</code></pre><h4 id="Wykonujemy-tick-zegara2" data-id="Wykonujemy-tick-zegara"><a class="anchor hidden-xs" href="#Wykonujemy-tick-zegara2" title="Wykonujemy-tick-zegara2"><span class="octicon octicon-link"></span></a><span>Wykonujemy tick zegara</span></h4><pre><code>    self.clock.tick(CLOCK_TICK)
+</code></pre><h4 id="Dla-każdego-elementu-z-listy-kolumn-górnych-wyświetlamy-ją-na-ekranie-a-następnie-pomniejszamy-jej-współrzędną-x-o-wartość-speed" data-id="Dla-każdego-elementu-z-listy-kolumn-górnych-wyświetlamy-ją-na-ekranie-a-następnie-pomniejszamy-jej-współrzędną-x-o-wartość-speed"><a class="anchor hidden-xs" href="#Dla-każdego-elementu-z-listy-kolumn-górnych-wyświetlamy-ją-na-ekranie-a-następnie-pomniejszamy-jej-współrzędną-x-o-wartość-speed" title="Dla-każdego-elementu-z-listy-kolumn-górnych-wyświetlamy-ją-na-ekranie-a-następnie-pomniejszamy-jej-współrzędną-x-o-wartość-speed"><span class="octicon octicon-link"></span></a><span>Dla każdego elementu z listy kolumn górnych wyświetlamy ją na ekranie, a następnie pomniejszamy jej współrzędną x o wartość speed</span></h4><pre><code>    for element in self.tubes:
+
+        self.window.blit(element.getTube(), (element.rect.x, element.rect.y))
+
+        element.rect.x -= self.speed
+</code></pre><h4 id="Analogiczna-funkcja-dla-kolumn-dolnych" data-id="Analogiczna-funkcja-dla-kolumn-dolnych"><a class="anchor hidden-xs" href="#Analogiczna-funkcja-dla-kolumn-dolnych" title="Analogiczna-funkcja-dla-kolumn-dolnych"><span class="octicon octicon-link"></span></a><span>Analogiczna funkcja dla kolumn dolnych</span></h4><pre><code>    for element in self.tubes2:
+        self.window.blit(element.getTube(), (element.rect.x, element.rect.y))
+        element.rect.x -= self.speed
+</code></pre><h4 id="Jeżeli-wartość-przesunięcia-dla-kolumn-będzie-większa-od-połowy-szerokości-kafelka-podłoża-pomnożonego-razy-ilość-kolumn" data-id="Jeżeli-wartość-przesunięcia-dla-kolumn-będzie-większa-od-połowy-szerokości-kafelka-podłoża-pomnożonego-razy-ilość-kolumn"><a class="anchor hidden-xs" href="#Jeżeli-wartość-przesunięcia-dla-kolumn-będzie-większa-od-połowy-szerokości-kafelka-podłoża-pomnożonego-razy-ilość-kolumn" title="Jeżeli-wartość-przesunięcia-dla-kolumn-będzie-większa-od-połowy-szerokości-kafelka-podłoża-pomnożonego-razy-ilość-kolumn"><span class="octicon octicon-link"></span></a><span>Jeżeli wartość przesunięcia dla kolumn będzie większa od połowy szerokości kafelka podłoża (pomnożonego razy ilość kolumn)</span></h4><pre><code>    if abs(self.scroll_tubes) &gt;= self.ground.getWidth() * self.tubes_counter / 2:
+</code></pre><h5 id="W-takim-wypadku-dodajemy-do-listy-nowy-obiekt-kolumny-dla-odpowiednich-parametrów" data-id="W-takim-wypadku-dodajemy-do-listy-nowy-obiekt-kolumny-dla-odpowiednich-parametrów"><a class="anchor hidden-xs" href="#W-takim-wypadku-dodajemy-do-listy-nowy-obiekt-kolumny-dla-odpowiednich-parametrów" title="W-takim-wypadku-dodajemy-do-listy-nowy-obiekt-kolumny-dla-odpowiednich-parametrów"><span class="octicon octicon-link"></span></a><span>W takim wypadku dodajemy do listy nowy obiekt kolumny dla odpowiednich parametrów</span></h5><pre><code>        self.tubes.append(Tube(self.scale, self.screen_width + self.tubes_counter * self.ground.getWidth() *
+                               self.tubes_freq, random.randint(round(self.screen_height * 0.35),
+                                                               round(self.screen_height * 0.8)),
+                               'textures/tube2.png', 'top'))
+</code></pre><h5 id="Dodajemy-analogicznie-element-do-listy-kolumn-dolnych-jego-wysokość-jest-wyliczana" data-id="Dodajemy-analogicznie-element-do-listy-kolumn-dolnych-jego-wysokość-jest-wyliczana"><a class="anchor hidden-xs" href="#Dodajemy-analogicznie-element-do-listy-kolumn-dolnych-jego-wysokość-jest-wyliczana" title="Dodajemy-analogicznie-element-do-listy-kolumn-dolnych-jego-wysokość-jest-wyliczana"><span class="octicon octicon-link"></span></a><span>Dodajemy analogicznie element do listy kolumn dolnych (jego wysokość jest wyliczana</span></h5><pre><code>         na podstawie wysokości górnej, która będzie nad nią)
+        self.tubes2.append(Tube(self.scale, self.screen_width + self.tubes_counter * self.ground.getWidth() *
+                                self.tubes_freq, self.tubes[len(self.tubes) - 1].rect.midtop[1] - round(
+            self.screen_height * self.difficulty_lvl), 'textures/tube1.png', 'bottom'))
+</code></pre><h5 id="Na-koniec-zwiększamy-licznik-kolumn" data-id="Na-koniec-zwiększamy-licznik-kolumn"><a class="anchor hidden-xs" href="#Na-koniec-zwiększamy-licznik-kolumn" title="Na-koniec-zwiększamy-licznik-kolumn"><span class="octicon octicon-link"></span></a><span>Na koniec zwiększamy licznik kolumn</span></h5><pre><code>        self.tubes_counter += 1
+</code></pre><h4 id="Pomniejszamy-przesunięcie-kolumn-o-wartość-speed" data-id="Pomniejszamy-przesunięcie-kolumn-o-wartość-speed"><a class="anchor hidden-xs" href="#Pomniejszamy-przesunięcie-kolumn-o-wartość-speed" title="Pomniejszamy-przesunięcie-kolumn-o-wartość-speed"><span class="octicon octicon-link"></span></a><span>Pomniejszamy przesunięcie kolumn o wartość speed</span></h4><pre><code>    self.scroll_tubes -= self.speed
+</code></pre><h3 id="Funkcja-wyświetlająca-aktualną-liczbę-punków-na-ekranie" data-id="Funkcja-wyświetlająca-aktualną-liczbę-punków-na-ekranie"><a class="anchor hidden-xs" href="#Funkcja-wyświetlająca-aktualną-liczbę-punków-na-ekranie" title="Funkcja-wyświetlająca-aktualną-liczbę-punków-na-ekranie"><span class="octicon octicon-link"></span></a><span>Funkcja wyświetlająca aktualną liczbę punków na ekranie</span></h3><pre><code>def draw_points(self, points):
+</code></pre><h4 id="Tworzymy-tekst-dla-wcześniej-ustawionej-czcionki" data-id="Tworzymy-tekst-dla-wcześniej-ustawionej-czcionki"><a class="anchor hidden-xs" href="#Tworzymy-tekst-dla-wcześniej-ustawionej-czcionki" title="Tworzymy-tekst-dla-wcześniej-ustawionej-czcionki"><span class="octicon octicon-link"></span></a><span>Tworzymy tekst dla wcześniej ustawionej czcionki</span></h4><pre><code>    text = self.font.render(str(points), True, 'black')
+</code></pre><h4 id="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu" data-id="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu"><a class="anchor hidden-xs" href="#Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu" title="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu"><span class="octicon octicon-link"></span></a><span>Tworzymy zestaw współrzędnych i wymiarów tekstu</span></h4><pre><code>    text_rect = text.get_rect()
+</code></pre><h4 id="Ustawiamy-współrzędne-środka-naszego-tekstu" data-id="Ustawiamy-współrzędne-środka-naszego-tekstu"><a class="anchor hidden-xs" href="#Ustawiamy-współrzędne-środka-naszego-tekstu" title="Ustawiamy-współrzędne-środka-naszego-tekstu"><span class="octicon octicon-link"></span></a><span>Ustawiamy współrzędne środka naszego tekstu</span></h4><pre><code>    text_rect.center = (self.screen_width // 12, self.screen_height // 8)
+</code></pre><h4 id="Wyświetlamy-tekst-na-ekranie" data-id="Wyświetlamy-tekst-na-ekranie"><a class="anchor hidden-xs" href="#Wyświetlamy-tekst-na-ekranie" title="Wyświetlamy-tekst-na-ekranie"><span class="octicon octicon-link"></span></a><span>Wyświetlamy tekst na ekranie</span></h4><pre><code>    self.window.blit(text, text_rect)
+</code></pre><h3 id="Funkcja-zapisująca-wynik-do-pliku" data-id="Funkcja-zapisująca-wynik-do-pliku"><a class="anchor hidden-xs" href="#Funkcja-zapisująca-wynik-do-pliku" title="Funkcja-zapisująca-wynik-do-pliku"><span class="octicon octicon-link"></span></a><span>Funkcja zapisująca wynik do pliku</span></h3><pre><code>def save_score(self, points):
+</code></pre><h4 id="Otwieramy-plik-w-trybie-‘a’-append-i-zapisujemy-nasze-punkty" data-id="Otwieramy-plik-w-trybie-‘a’-append-i-zapisujemy-nasze-punkty"><a class="anchor hidden-xs" href="#Otwieramy-plik-w-trybie-‘a’-append-i-zapisujemy-nasze-punkty" title="Otwieramy-plik-w-trybie-‘a’-append-i-zapisujemy-nasze-punkty"><span class="octicon octicon-link"></span></a><span>Otwieramy plik w trybie ‘a’ (append) i zapisujemy nasze punkty</span></h4><pre><code>    with open('high_scores.txt', 'a') as file:
+        file.write(str(points) + '\n')
+</code></pre><h3 id="Funkcja-zapisująca-wynik-do-pliku1" data-id="Funkcja-zapisująca-wynik-do-pliku"><a class="anchor hidden-xs" href="#Funkcja-zapisująca-wynik-do-pliku1" title="Funkcja-zapisująca-wynik-do-pliku1"><span class="octicon octicon-link"></span></a><span>Funkcja zapisująca wynik do pliku</span></h3><pre><code>def get_scores(self):
+</code></pre><h4 id="Otwieramy-plik-w-trybie-‘r’-read-i-odczytujemy-nasze-punkty" data-id="Otwieramy-plik-w-trybie-‘r’-read-i-odczytujemy-nasze-punkty"><a class="anchor hidden-xs" href="#Otwieramy-plik-w-trybie-‘r’-read-i-odczytujemy-nasze-punkty" title="Otwieramy-plik-w-trybie-‘r’-read-i-odczytujemy-nasze-punkty"><span class="octicon octicon-link"></span></a><span>Otwieramy plik w trybie ‘r’ (read) i odczytujemy nasze punkty</span></h4><pre><code>    with open('high_scores.txt', 'r') as file:
+        lines = file.readlines()
+</code></pre><h4 id="Konwertowanie-wartości-na-liczby-całkowite" data-id="Konwertowanie-wartości-na-liczby-całkowite"><a class="anchor hidden-xs" href="#Konwertowanie-wartości-na-liczby-całkowite" title="Konwertowanie-wartości-na-liczby-całkowite"><span class="octicon octicon-link"></span></a><span>Konwertowanie wartości na liczby całkowite</span></h4><pre><code>    values = [int(line.strip()) for line in lines]
+</code></pre><h4 id="Sortowanie-wartości-w-kolejności-malejącej" data-id="Sortowanie-wartości-w-kolejności-malejącej"><a class="anchor hidden-xs" href="#Sortowanie-wartości-w-kolejności-malejącej" title="Sortowanie-wartości-w-kolejności-malejącej"><span class="octicon octicon-link"></span></a><span>Sortowanie wartości w kolejności malejącej</span></h4><pre><code>    sorted_values = sorted(values, reverse=True)
+</code></pre><h4 id="Zwracanie-10-największych-wartości-lub-mniej-jeśli-jest-ich-mniej-niż-10" data-id="Zwracanie-10-największych-wartości-lub-mniej-jeśli-jest-ich-mniej-niż-10"><a class="anchor hidden-xs" href="#Zwracanie-10-największych-wartości-lub-mniej-jeśli-jest-ich-mniej-niż-10" title="Zwracanie-10-największych-wartości-lub-mniej-jeśli-jest-ich-mniej-niż-10"><span class="octicon octicon-link"></span></a><span>Zwracanie 10 największych wartości (lub mniej, jeśli jest ich mniej niż 10)</span></h4><pre><code>    return sorted_values[:15]
+</code></pre><h3 id="Funkcja-sprawdzająca-czy-zachodzi-kolizja-między-obiektami" data-id="Funkcja-sprawdzająca-czy-zachodzi-kolizja-między-obiektami"><a class="anchor hidden-xs" href="#Funkcja-sprawdzająca-czy-zachodzi-kolizja-między-obiektami" title="Funkcja-sprawdzająca-czy-zachodzi-kolizja-między-obiektami"><span class="octicon octicon-link"></span></a><span>Funkcja sprawdzająca, czy zachodzi kolizja między obiektami</span></h3><pre><code>def check_collisions(self):
+</code></pre><h4 id="Jeżeli-zachodzi-kolizja-ptaka-z-podłożem-gra-się-kończy" data-id="Jeżeli-zachodzi-kolizja-ptaka-z-podłożem-gra-się-kończy"><a class="anchor hidden-xs" href="#Jeżeli-zachodzi-kolizja-ptaka-z-podłożem-gra-się-kończy" title="Jeżeli-zachodzi-kolizja-ptaka-z-podłożem-gra-się-kończy"><span class="octicon octicon-link"></span></a><span>Jeżeli zachodzi kolizja ptaka z podłożem gra się kończy</span></h4><pre><code>    if self.bird.rect.colliderect(self.ground.rect):
+        self.game_over = True
+</code></pre><h4 id="Jeżeli-ptak-wejdzie-w-kolizję-z-najbliższą-kolumną-to-gra-się-również-kończy" data-id="Jeżeli-ptak-wejdzie-w-kolizję-z-najbliższą-kolumną-to-gra-się-również-kończy"><a class="anchor hidden-xs" href="#Jeżeli-ptak-wejdzie-w-kolizję-z-najbliższą-kolumną-to-gra-się-również-kończy" title="Jeżeli-ptak-wejdzie-w-kolizję-z-najbliższą-kolumną-to-gra-się-również-kończy"><span class="octicon octicon-link"></span></a><span>Jeżeli ptak wejdzie w kolizję z najbliższą kolumną to gra się również kończy</span></h4><pre><code>    if self.bird.rect.x + self.bird.rect.width &gt;= self.tubes[self.points_counter].rect.x and \
+            self.bird.rect.x &lt;= self.tubes[self.points_counter].rect.x + self.tubes[self.points_counter].rect.width:
+        if self.bird.rect.y + self.bird.rect.height &gt;= self.tubes[self.points_counter].rect.midtop[1] or \
+                self.bird.rect.y &lt;= self.tubes2[self.points_counter].rect.midbottom[1]:
+            self.game_over = True
+</code></pre><h5 id="Zapisanie-wyniku-do-pliku" data-id="Zapisanie-wyniku-do-pliku"><a class="anchor hidden-xs" href="#Zapisanie-wyniku-do-pliku" title="Zapisanie-wyniku-do-pliku"><span class="octicon octicon-link"></span></a><span>Zapisanie wyniku do pliku</span></h5><pre><code>            self.save_score(self.points_counter)
+</code></pre><h3 id="Funkcja-restartu-gry-w-przypadku-przegrania-poprzedniej-sesji" data-id="Funkcja-restartu-gry-w-przypadku-przegrania-poprzedniej-sesji"><a class="anchor hidden-xs" href="#Funkcja-restartu-gry-w-przypadku-przegrania-poprzedniej-sesji" title="Funkcja-restartu-gry-w-przypadku-przegrania-poprzedniej-sesji"><span class="octicon octicon-link"></span></a><span>Funkcja restartu gry w przypadku przegrania poprzedniej sesji</span></h3><pre><code>def restart(self):
+</code></pre><h4 id="Wartość-is_running-dalej-jest-prawdziwa-ponieważ-nie-zamykamy-gry" data-id="Wartość-is_running-dalej-jest-prawdziwa-ponieważ-nie-zamykamy-gry"><a class="anchor hidden-xs" href="#Wartość-is_running-dalej-jest-prawdziwa-ponieważ-nie-zamykamy-gry" title="Wartość-is_running-dalej-jest-prawdziwa-ponieważ-nie-zamykamy-gry"><span class="octicon octicon-link"></span></a><span>Wartość is_running dalej jest prawdziwa, ponieważ nie zamykamy gry</span></h4><pre><code>    self.is_running = True
+</code></pre><h4 id="Wartość-is_playing-ustawiamy-na-false" data-id="Wartość-is_playing-ustawiamy-na-false"><a class="anchor hidden-xs" href="#Wartość-is_playing-ustawiamy-na-false" title="Wartość-is_playing-ustawiamy-na-false"><span class="octicon octicon-link"></span></a><span>Wartość is_playing ustawiamy na false</span></h4><pre><code>    self.is_playing = False
+</code></pre><h4 id="Wartość-game_over-przyjmuje-wartość-pozytywną" data-id="Wartość-game_over-przyjmuje-wartość-pozytywną"><a class="anchor hidden-xs" href="#Wartość-game_over-przyjmuje-wartość-pozytywną" title="Wartość-game_over-przyjmuje-wartość-pozytywną"><span class="octicon octicon-link"></span></a><span>Wartość game_over przyjmuje wartość pozytywną</span></h4><pre><code>    self.game_over = False
+</code></pre><h4 id="Ustawiamy-pozycję-ptaka-na-wyjściową" data-id="Ustawiamy-pozycję-ptaka-na-wyjściową"><a class="anchor hidden-xs" href="#Ustawiamy-pozycję-ptaka-na-wyjściową" title="Ustawiamy-pozycję-ptaka-na-wyjściową"><span class="octicon octicon-link"></span></a><span>Ustawiamy pozycję ptaka na wyjściową</span></h4><pre><code>    self.bird.set_character(self.screen_width / 4, self.screen_height / 2)
+</code></pre><h4 id="Czyścimy-listę-kolumn" data-id="Czyścimy-listę-kolumn"><a class="anchor hidden-xs" href="#Czyścimy-listę-kolumn" title="Czyścimy-listę-kolumn"><span class="octicon octicon-link"></span></a><span>Czyścimy listę kolumn</span></h4><pre><code>    self.tubes = []
+    self.tubes2 = []
+</code></pre><h4 id="Ustawiamy-licznik-kolumn-na-1" data-id="Ustawiamy-licznik-kolumn-na-1"><a class="anchor hidden-xs" href="#Ustawiamy-licznik-kolumn-na-1" title="Ustawiamy-licznik-kolumn-na-1"><span class="octicon octicon-link"></span></a><span>Ustawiamy licznik kolumn na 1</span></h4><pre><code>    self.tubes_counter = 1
+</code></pre><h4 id="Zmieniamy-wartości-prędkości-na-początkowe" data-id="Zmieniamy-wartości-prędkości-na-początkowe"><a class="anchor hidden-xs" href="#Zmieniamy-wartości-prędkości-na-początkowe" title="Zmieniamy-wartości-prędkości-na-początkowe"><span class="octicon octicon-link"></span></a><span>Zmieniamy wartości prędkości na początkowe</span></h4><pre><code>    self.speed = 8
+    self.parallax_speed = 4
+    self.difficulty_lvl = 0.3
+</code></pre><h4 id="To-samo-robimy-z-wartościami-przesunięcia-i-licznikiem-punktów" data-id="To-samo-robimy-z-wartościami-przesunięcia-i-licznikiem-punktów"><a class="anchor hidden-xs" href="#To-samo-robimy-z-wartościami-przesunięcia-i-licznikiem-punktów" title="To-samo-robimy-z-wartościami-przesunięcia-i-licznikiem-punktów"><span class="octicon octicon-link"></span></a><span>To samo robimy z wartościami przesunięcia i licznikiem punktów</span></h4><pre><code>    self.scroll_bg = 0
+    self.scroll_ground = 0
+    self.scroll_tubes = 0
+    self.points_counter = 0
+</code></pre><h4 id="Dodajemy-z-powrotem-po-jednej-kolumnie-do-obydwu-list" data-id="Dodajemy-z-powrotem-po-jednej-kolumnie-do-obydwu-list"><a class="anchor hidden-xs" href="#Dodajemy-z-powrotem-po-jednej-kolumnie-do-obydwu-list" title="Dodajemy-z-powrotem-po-jednej-kolumnie-do-obydwu-list"><span class="octicon octicon-link"></span></a><span>Dodajemy z powrotem po jednej kolumnie do obydwu list</span></h4><pre><code>    self.tubes.append(Tube(self.scale, self.screen_width,
+                           random.randint(round(self.screen_height * 0.3), round(self.screen_height
+                                                                                 * 0.7)), 'textures/tube2.png',
+                           'top'))
+
+    self.tubes2.append(Tube(self.scale, self.screen_width,
+                            self.tubes[0].rect.midtop[1] - round(self.screen_height * self.difficulty_lvl),
+                            'textures/tube1.png', 'bottom'))
+</code></pre><h3 id="Funkcja-sprawdzająca-zachodzące-wydarzenia-w-czasie-gry" data-id="Funkcja-sprawdzająca-zachodzące-wydarzenia-w-czasie-gry"><a class="anchor hidden-xs" href="#Funkcja-sprawdzająca-zachodzące-wydarzenia-w-czasie-gry" title="Funkcja-sprawdzająca-zachodzące-wydarzenia-w-czasie-gry"><span class="octicon octicon-link"></span></a><span>Funkcja sprawdzająca zachodzące wydarzenia w czasie gry</span></h3><pre><code>def check_events(self):
+</code></pre><h4 id="Dla-każdego-wydarzenia-zachodzącego-w-grze" data-id="Dla-każdego-wydarzenia-zachodzącego-w-grze"><a class="anchor hidden-xs" href="#Dla-każdego-wydarzenia-zachodzącego-w-grze" title="Dla-każdego-wydarzenia-zachodzącego-w-grze"><span class="octicon octicon-link"></span></a><span>Dla każdego wydarzenia zachodzącego w grze:</span></h4><pre><code>    for ev in pygame.event.get():
+</code></pre><h5 id="Jeżeli-nastąpi-wciśnięcie-przycisku" data-id="Jeżeli-nastąpi-wciśnięcie-przycisku"><a class="anchor hidden-xs" href="#Jeżeli-nastąpi-wciśnięcie-przycisku" title="Jeżeli-nastąpi-wciśnięcie-przycisku"><span class="octicon octicon-link"></span></a><span>Jeżeli nastąpi wciśnięcie przycisku:</span></h5><pre><code>        if ev.type == pygame.KEYDOWN:
+</code></pre><h6 id="Jeżeli-wciskamy-przycisk-ESC-następuje-wyjście-z-gry" data-id="Jeżeli-wciskamy-przycisk-ESC-następuje-wyjście-z-gry"><a class="anchor hidden-xs" href="#Jeżeli-wciskamy-przycisk-ESC-następuje-wyjście-z-gry" title="Jeżeli-wciskamy-przycisk-ESC-następuje-wyjście-z-gry"><span class="octicon octicon-link"></span></a><span>Jeżeli wciskamy przycisk ESC następuje wyjście z gry</span></h6><pre><code>            if ev.key == pygame.K_ESCAPE:
+                self.is_running = False
+</code></pre><h6 id="Jeżeli-wciskamy-spację" data-id="Jeżeli-wciskamy-spację"><a class="anchor hidden-xs" href="#Jeżeli-wciskamy-spację" title="Jeżeli-wciskamy-spację"><span class="octicon octicon-link"></span></a><span>Jeżeli wciskamy spację</span></h6><pre><code>            if ev.key == pygame.K_SPACE:
+</code></pre><ul>
+<li><span>Jeżeli nie rozpoczęliśmy jeszcze gry, to uruchamiamy ją w tym momencie</span></li>
+</ul><pre><code>if not self.game_over and not self.is_playing:
+                        self.is_playing = True
+</code></pre><ul>
+<li><span>W przypadku wcześniejszej kolizji postaci następuje restart gry</span></li>
+</ul><pre><code>if self.game_over:
+    self.restart()
+</code></pre><h4 id="Jeżeli-zostanie-wciśnięty-przycisk-na-myszce-i-jesteśmy-w-menu" data-id="Jeżeli-zostanie-wciśnięty-przycisk-na-myszce-i-jesteśmy-w-menu"><a class="anchor hidden-xs" href="#Jeżeli-zostanie-wciśnięty-przycisk-na-myszce-i-jesteśmy-w-menu" title="Jeżeli-zostanie-wciśnięty-przycisk-na-myszce-i-jesteśmy-w-menu"><span class="octicon octicon-link"></span></a><span>Jeżeli zostanie wciśnięty przycisk na myszce i jesteśmy w menu</span></h4><pre><code>        if ev.type == pygame.MOUSEBUTTONDOWN:
+            if self.menu:
+</code></pre><h5 id="Sprawdzamy-czy-pozycja-myszki-pokrywa-się-z-przyciskiem-uruchomienia-gry-wtedy-zamykamy-sekcję-menu-i-przechodzimy-do-rozgrywki" data-id="Sprawdzamy-czy-pozycja-myszki-pokrywa-się-z-przyciskiem-uruchomienia-gry-wtedy-zamykamy-sekcję-menu-i-przechodzimy-do-rozgrywki"><a class="anchor hidden-xs" href="#Sprawdzamy-czy-pozycja-myszki-pokrywa-się-z-przyciskiem-uruchomienia-gry-wtedy-zamykamy-sekcję-menu-i-przechodzimy-do-rozgrywki" title="Sprawdzamy-czy-pozycja-myszki-pokrywa-się-z-przyciskiem-uruchomienia-gry-wtedy-zamykamy-sekcję-menu-i-przechodzimy-do-rozgrywki"><span class="octicon octicon-link"></span></a><span>Sprawdzamy, czy pozycja myszki pokrywa się z przyciskiem uruchomienia gry, wtedy zamykamy sekcję menu i przechodzimy do rozgrywki</span></h5><pre><code>                if self.screen_width / 2 - 64 * self.scale &lt;= self.mouse[
+                    0] &lt;= self.screen_width / 2 + 64 * self.scale \
+                        and self.screen_height / 2 - 64 * self.scale &lt;= self.mouse[1] &lt;= self.screen_height / 2 \
+                        + 64 * self.scale:
+                    self.menu = False
+</code></pre><h5 id="Jeżeli-zachodzi-wydarzenie-QUIT-to-gra-się-zamyka" data-id="Jeżeli-zachodzi-wydarzenie-QUIT-to-gra-się-zamyka"><a class="anchor hidden-xs" href="#Jeżeli-zachodzi-wydarzenie-QUIT-to-gra-się-zamyka" title="Jeżeli-zachodzi-wydarzenie-QUIT-to-gra-się-zamyka"><span class="octicon octicon-link"></span></a><span>Jeżeli zachodzi wydarzenie QUIT, to gra się zamyka</span></h5><pre><code>        if ev.type == QUIT:
+            self.is_running = False
+</code></pre><h4 id="W-czasie-gry-wciśnięcie-spacji-powoduje-lot-w-górę-postaci" data-id="W-czasie-gry-wciśnięcie-spacji-powoduje-lot-w-górę-postaci"><a class="anchor hidden-xs" href="#W-czasie-gry-wciśnięcie-spacji-powoduje-lot-w-górę-postaci" title="W-czasie-gry-wciśnięcie-spacji-powoduje-lot-w-górę-postaci"><span class="octicon octicon-link"></span></a><span>W czasie gry wciśnięcie spacji powoduje lot w górę postaci</span></h4><pre><code>    if pygame.key.get_pressed()[pygame.K_SPACE] and not self.game_over and self.is_playing:
+        self.bird.up()
+</code></pre><h4 id="Jeżeli-postać-przekroczy-kolejną-kolumnę-to-zwiększamy-punkty" data-id="Jeżeli-postać-przekroczy-kolejną-kolumnę-to-zwiększamy-punkty"><a class="anchor hidden-xs" href="#Jeżeli-postać-przekroczy-kolejną-kolumnę-to-zwiększamy-punkty" title="Jeżeli-postać-przekroczy-kolejną-kolumnę-to-zwiększamy-punkty"><span class="octicon octicon-link"></span></a><span>Jeżeli postać przekroczy kolejną kolumnę, to zwiększamy punkty</span></h4><pre><code>    if self.bird.rect.bottomleft[0] &gt; self.tubes[self.points_counter].rect.topright[0]:
+        self.points_counter += 1
+</code></pre><h5 id="A-jeżeli-przekroczymy-kolejne-5-punktów-wzrasta-poziom-trudności-oraz-prędkość-przesuwania-ekranu" data-id="A-jeżeli-przekroczymy-kolejne-5-punktów-wzrasta-poziom-trudności-oraz-prędkość-przesuwania-ekranu"><a class="anchor hidden-xs" href="#A-jeżeli-przekroczymy-kolejne-5-punktów-wzrasta-poziom-trudności-oraz-prędkość-przesuwania-ekranu" title="A-jeżeli-przekroczymy-kolejne-5-punktów-wzrasta-poziom-trudności-oraz-prędkość-przesuwania-ekranu"><span class="octicon octicon-link"></span></a><span>A jeżeli przekroczymy kolejne 5 punktów, wzrasta poziom trudności oraz prędkość przesuwania ekranu</span></h5><pre><code>        if self.points_counter % 5 == 0:
+            self.difficulty_lvl *= 0.9
+            self.speed += 0.5
+            self.parallax_speed += 0.5
+</code></pre><h3 id="Jeżeli-przegramy-sesję-wyświetlany-jest-napis-“game_over”-za-pomocą-poniższej-funkcji" data-id="Jeżeli-przegramy-sesję-wyświetlany-jest-napis-“game_over”-za-pomocą-poniższej-funkcji"><a class="anchor hidden-xs" href="#Jeżeli-przegramy-sesję-wyświetlany-jest-napis-“game_over”-za-pomocą-poniższej-funkcji" title="Jeżeli-przegramy-sesję-wyświetlany-jest-napis-“game_over”-za-pomocą-poniższej-funkcji"><span class="octicon octicon-link"></span></a><span>Jeżeli przegramy sesję, wyświetlany jest napis “game_over” za pomocą poniższej funkcji</span></h3><pre><code>def draw_game_over(self):
+    over = pygame.image.load('textures/game_over.png')
+    over_img = pygame.transform.scale(over,
+                                      (over.get_width() * self.scale, over.get_height() * self.scale))
+    rect = over_img.get_rect()
+    rect.center = (self.screen_width / 2, self.screen_height / 2)
+    self.window.blit(over_img, rect)
+</code></pre><h3 id="Funkcja-wyświetlająca-grafikę-ze-strzałką-której-kliknięcie-uruchamia-rozgrywkę" data-id="Funkcja-wyświetlająca-grafikę-ze-strzałką-której-kliknięcie-uruchamia-rozgrywkę"><a class="anchor hidden-xs" href="#Funkcja-wyświetlająca-grafikę-ze-strzałką-której-kliknięcie-uruchamia-rozgrywkę" title="Funkcja-wyświetlająca-grafikę-ze-strzałką-której-kliknięcie-uruchamia-rozgrywkę"><span class="octicon octicon-link"></span></a><span>Funkcja wyświetlająca grafikę ze strzałką, której kliknięcie uruchamia rozgrywkę</span></h3><pre><code>def draw_play_button(self):
+    play = pygame.image.load('textures/play.png')
+    play_img = pygame.transform.scale(play,
+                                      (play.get_width() * self.scale, play.get_height() * self.scale))
+    rect = play_img.get_rect()
+    rect.center = (self.screen_width / 2, self.screen_height / 2)
+    self.window.blit(play_img, rect)
+</code></pre><h3 id="Funkcja-do-rysowania-na-ekranie-tablicy-z-najwyższymi-wynikami" data-id="Funkcja-do-rysowania-na-ekranie-tablicy-z-najwyższymi-wynikami"><a class="anchor hidden-xs" href="#Funkcja-do-rysowania-na-ekranie-tablicy-z-najwyższymi-wynikami" title="Funkcja-do-rysowania-na-ekranie-tablicy-z-najwyższymi-wynikami"><span class="octicon octicon-link"></span></a><span>Funkcja do rysowania na ekranie tablicy z najwyższymi wynikami</span></h3><pre><code>def draw_highscore(self):
+</code></pre><h4 id="Ładowanie-grafiki-kartki" data-id="Ładowanie-grafiki-kartki"><a class="anchor hidden-xs" href="#Ładowanie-grafiki-kartki" title="Ładowanie-grafiki-kartki"><span class="octicon octicon-link"></span></a><span>Ładowanie grafiki kartki</span></h4><pre><code>    scores = pygame.image.load('textures/highscores.png')
+</code></pre><h4 id="Skalowanie-obrazu" data-id="Skalowanie-obrazu"><a class="anchor hidden-xs" href="#Skalowanie-obrazu" title="Skalowanie-obrazu"><span class="octicon octicon-link"></span></a><span>Skalowanie obrazu</span></h4><pre><code>    scores_img = pygame.transform.scale(scores,
+                                        (scores.get_width() * self.scale * 0.7, scores.get_height() * self.scale))
+</code></pre><h4 id="Pobieramy-wymiary-grafiki" data-id="Pobieramy-wymiary-grafiki"><a class="anchor hidden-xs" href="#Pobieramy-wymiary-grafiki" title="Pobieramy-wymiary-grafiki"><span class="octicon octicon-link"></span></a><span>Pobieramy wymiary grafiki</span></h4><pre><code>    rect = scores_img.get_rect()
+</code></pre><h4 id="Ustawiamy-jej-współrzędne" data-id="Ustawiamy-jej-współrzędne"><a class="anchor hidden-xs" href="#Ustawiamy-jej-współrzędne" title="Ustawiamy-jej-współrzędne"><span class="octicon octicon-link"></span></a><span>Ustawiamy jej współrzędne</span></h4><pre><code>    rect.center = (self.screen_width * 0.85, self.screen_height * 0.35)
+</code></pre><h4 id="Na-koniec-wyświetlamy-na-ekranie" data-id="Na-koniec-wyświetlamy-na-ekranie"><a class="anchor hidden-xs" href="#Na-koniec-wyświetlamy-na-ekranie" title="Na-koniec-wyświetlamy-na-ekranie"><span class="octicon octicon-link"></span></a><span>Na koniec wyświetlamy na ekranie</span></h4><pre><code>    self.window.blit(scores_img, rect)
+</code></pre><h4 id="Render-tekstu-“hisghscores”" data-id="Render-tekstu-“hisghscores”"><a class="anchor hidden-xs" href="#Render-tekstu-“hisghscores”" title="Render-tekstu-“hisghscores”"><span class="octicon octicon-link"></span></a><span>Render tekstu “hisghscores”</span></h4><pre><code>    text = self.scores_font.render("Highscores", True, 'black')
+</code></pre><h4 id="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu1" data-id="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu"><a class="anchor hidden-xs" href="#Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu1" title="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu1"><span class="octicon octicon-link"></span></a><span>Tworzymy zestaw współrzędnych i wymiarów tekstu</span></h4><pre><code>    text_rect = text.get_rect()
+</code></pre><h4 id="Ustawiamy-współrzędne-środka-naszego-tekstu1" data-id="Ustawiamy-współrzędne-środka-naszego-tekstu"><a class="anchor hidden-xs" href="#Ustawiamy-współrzędne-środka-naszego-tekstu1" title="Ustawiamy-współrzędne-środka-naszego-tekstu1"><span class="octicon octicon-link"></span></a><span>Ustawiamy współrzędne środka naszego tekstu</span></h4><pre><code>    text_rect.center = (self.screen_width * 0.84, self.screen_height * 0.1)
+</code></pre><h4 id="Wyświetlamy-tekst-na-ekranie1" data-id="Wyświetlamy-tekst-na-ekranie"><a class="anchor hidden-xs" href="#Wyświetlamy-tekst-na-ekranie1" title="Wyświetlamy-tekst-na-ekranie1"><span class="octicon octicon-link"></span></a><span>Wyświetlamy tekst na ekranie</span></h4><pre><code>    self.window.blit(text, text_rect)
+</code></pre><h4 id="Pobieramy-wyniki-z-pliku-za-pomocą-funkcji" data-id="Pobieramy-wyniki-z-pliku-za-pomocą-funkcji"><a class="anchor hidden-xs" href="#Pobieramy-wyniki-z-pliku-za-pomocą-funkcji" title="Pobieramy-wyniki-z-pliku-za-pomocą-funkcji"><span class="octicon octicon-link"></span></a><span>Pobieramy wyniki z pliku za pomocą funkcji</span></h4><pre><code>    scores = self.get_scores()
+</code></pre><h4 id="Ustawiamy-wysokość-pierwszego-wyniku-i-pierwszy-numer" data-id="Ustawiamy-wysokość-pierwszego-wyniku-i-pierwszy-numer"><a class="anchor hidden-xs" href="#Ustawiamy-wysokość-pierwszego-wyniku-i-pierwszy-numer" title="Ustawiamy-wysokość-pierwszego-wyniku-i-pierwszy-numer"><span class="octicon octicon-link"></span></a><span>Ustawiamy wysokość pierwszego wyniku i pierwszy numer</span></h4><pre><code>    height = self.screen_height * 0.2
+    i = 1
+</code></pre><h4 id="Dla-każdego-wyniku" data-id="Dla-każdego-wyniku"><a class="anchor hidden-xs" href="#Dla-każdego-wyniku" title="Dla-każdego-wyniku"><span class="octicon octicon-link"></span></a><span>Dla każdego wyniku:</span></h4><pre><code>    for score in scores:
+</code></pre><h5 id="Tworzymy-nowy-tekst-z-naszym-pojedynczym-wynikiem" data-id="Tworzymy-nowy-tekst-z-naszym-pojedynczym-wynikiem"><a class="anchor hidden-xs" href="#Tworzymy-nowy-tekst-z-naszym-pojedynczym-wynikiem" title="Tworzymy-nowy-tekst-z-naszym-pojedynczym-wynikiem"><span class="octicon octicon-link"></span></a><span>Tworzymy nowy tekst z naszym pojedynczym wynikiem</span></h5><pre><code>        text = self.scores_font.render(str(i) + "." + "     " + str(score), True, 'black')
+</code></pre><h5 id="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu2" data-id="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu"><a class="anchor hidden-xs" href="#Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu2" title="Tworzymy-zestaw-współrzędnych-i-wymiarów-tekstu2"><span class="octicon octicon-link"></span></a><span>Tworzymy zestaw współrzędnych i wymiarów tekstu</span></h5><pre><code>        text_rect = text.get_rect()
+</code></pre><h5 id="Tstawiamy-współrzędne-środka-naszego-tekstu" data-id="Tstawiamy-współrzędne-środka-naszego-tekstu"><a class="anchor hidden-xs" href="#Tstawiamy-współrzędne-środka-naszego-tekstu" title="Tstawiamy-współrzędne-środka-naszego-tekstu"><span class="octicon octicon-link"></span></a><span>Tstawiamy współrzędne środka naszego tekstu</span></h5><pre><code>        text_rect.center = (self.screen_width * 0.84, height)
+</code></pre><h5 id="Wyświetlamy-tekst-na-ekranie2" data-id="Wyświetlamy-tekst-na-ekranie"><a class="anchor hidden-xs" href="#Wyświetlamy-tekst-na-ekranie2" title="Wyświetlamy-tekst-na-ekranie2"><span class="octicon octicon-link"></span></a><span>Wyświetlamy tekst na ekranie</span></h5><pre><code>        self.window.blit(text, text_rect)
+</code></pre><h5 id="Zwiększamy-wartość-wysokości-dla-następnego-wyniku-i-jego-numer" data-id="Zwiększamy-wartość-wysokości-dla-następnego-wyniku-i-jego-numer"><a class="anchor hidden-xs" href="#Zwiększamy-wartość-wysokości-dla-następnego-wyniku-i-jego-numer" title="Zwiększamy-wartość-wysokości-dla-następnego-wyniku-i-jego-numer"><span class="octicon octicon-link"></span></a><span>Zwiększamy wartość wysokości dla następnego wyniku i jego numer</span></h5><pre><code>        height += self.screen_height * 0.03
+        i += 1
+</code></pre><h3 id="Funkcja-update-odpowiadająca-za-wszystkie-aktualizacje-obrazu-gry" data-id="Funkcja-update-odpowiadająca-za-wszystkie-aktualizacje-obrazu-gry"><a class="anchor hidden-xs" href="#Funkcja-update-odpowiadająca-za-wszystkie-aktualizacje-obrazu-gry" title="Funkcja-update-odpowiadająca-za-wszystkie-aktualizacje-obrazu-gry"><span class="octicon octicon-link"></span></a><span>Funkcja update odpowiadająca za wszystkie aktualizacje obrazu gry</span></h3><pre><code>def update(self):
+</code></pre><h4 id="Na-początek-aktualizujemy-pygame" data-id="Na-początek-aktualizujemy-pygame"><a class="anchor hidden-xs" href="#Na-początek-aktualizujemy-pygame" title="Na-początek-aktualizujemy-pygame"><span class="octicon octicon-link"></span></a><span>Na początek aktualizujemy pygame</span></h4><pre><code>    pygame.display.update()
+</code></pre><h4 id="Na-początku-gry-uruchamiać-się-będzie-menu-które-uruchamia-poniższe-funkcje-w-tym-aktualizujemy-pozycję-myszki" data-id="Na-początku-gry-uruchamiać-się-będzie-menu-które-uruchamia-poniższe-funkcje-w-tym-aktualizujemy-pozycję-myszki"><a class="anchor hidden-xs" href="#Na-początku-gry-uruchamiać-się-będzie-menu-które-uruchamia-poniższe-funkcje-w-tym-aktualizujemy-pozycję-myszki" title="Na-początku-gry-uruchamiać-się-będzie-menu-które-uruchamia-poniższe-funkcje-w-tym-aktualizujemy-pozycję-myszki"><span class="octicon octicon-link"></span></a><span>Na początku gry uruchamiać się będzie menu, które uruchamia poniższe funkcje, w tym aktualizujemy pozycję myszki</span></h4><pre><code>    if self.menu:
+        self.draw_start_background()
+        self.draw_start_ground()
+        self.draw_play_button()
+        self.draw_highscore()
+        self.mouse = pygame.mouse.get_pos()
+        self.check_events()
+</code></pre><h4 id="Jeżeli-przegraliśmy-rysujemy-tło-podłoże-i-postać-w-wyjściowej-pozycji" data-id="Jeżeli-przegraliśmy-rysujemy-tło-podłoże-i-postać-w-wyjściowej-pozycji"><a class="anchor hidden-xs" href="#Jeżeli-przegraliśmy-rysujemy-tło-podłoże-i-postać-w-wyjściowej-pozycji" title="Jeżeli-przegraliśmy-rysujemy-tło-podłoże-i-postać-w-wyjściowej-pozycji"><span class="octicon octicon-link"></span></a><span>Jeżeli przegraliśmy, rysujemy tło, podłoże i postać w wyjściowej pozycji</span></h4><pre><code>    if self.game_over:
+        self.draw_bird()
+        self.draw_game_over()
+        self.check_events()
+</code></pre><h4 id="Jeżeli-jeszcze-nie-gramy-to-wyświetlamy-wszystkie-obiekty-w-wyjściowej-pozycji" data-id="Jeżeli-jeszcze-nie-gramy-to-wyświetlamy-wszystkie-obiekty-w-wyjściowej-pozycji"><a class="anchor hidden-xs" href="#Jeżeli-jeszcze-nie-gramy-to-wyświetlamy-wszystkie-obiekty-w-wyjściowej-pozycji" title="Jeżeli-jeszcze-nie-gramy-to-wyświetlamy-wszystkie-obiekty-w-wyjściowej-pozycji"><span class="octicon octicon-link"></span></a><span>Jeżeli jeszcze nie gramy, to wyświetlamy wszystkie obiekty w wyjściowej pozycji</span></h4><pre><code>    elif not self.is_playing:
+        self.draw_start_background()
+        self.draw_start_ground()
+        self.draw_bird()
+        self.check_events()
+</code></pre><h4 id="W-czasie-gry-wywołujemy-wszystkie-funkcje-dotyczące-wyświetlania-i-aktualizowania-informacji-w-czasie-rozgrywki" data-id="W-czasie-gry-wywołujemy-wszystkie-funkcje-dotyczące-wyświetlania-i-aktualizowania-informacji-w-czasie-rozgrywki"><a class="anchor hidden-xs" href="#W-czasie-gry-wywołujemy-wszystkie-funkcje-dotyczące-wyświetlania-i-aktualizowania-informacji-w-czasie-rozgrywki" title="W-czasie-gry-wywołujemy-wszystkie-funkcje-dotyczące-wyświetlania-i-aktualizowania-informacji-w-czasie-rozgrywki"><span class="octicon octicon-link"></span></a><span>W czasie gry wywołujemy wszystkie funkcje dotyczące wyświetlania i aktualizowania informacji w czasie rozgrywki</span></h4><pre><code>    else:
+        self.check_collisions()
+        self.check_events()
+        self.draw_game_bg()
+        self.draw_tubes()
+        self.draw_game_ground()
+        self.draw_bird()
+        self.bird.down()
+</code></pre><h5 id="Jeżeli-przegramy-to-zmniejszamy-wysokość-postaci-o-10-żeby-zapobiec-duplikowaniu-grafiki" data-id="Jeżeli-przegramy-to-zmniejszamy-wysokość-postaci-o-10-żeby-zapobiec-duplikowaniu-grafiki"><a class="anchor hidden-xs" href="#Jeżeli-przegramy-to-zmniejszamy-wysokość-postaci-o-10-żeby-zapobiec-duplikowaniu-grafiki" title="Jeżeli-przegramy-to-zmniejszamy-wysokość-postaci-o-10-żeby-zapobiec-duplikowaniu-grafiki"><span class="octicon octicon-link"></span></a><span>Jeżeli przegramy, to zmniejszamy wysokość postaci o 10, żeby zapobiec duplikowaniu grafiki</span></h5><pre><code>        if self.game_over:
+            self.bird.rect.y -= 10
+</code></pre><h4 id="Na-koniec-wyświetlamy-aktualną-liczbę-punktów" data-id="Na-koniec-wyświetlamy-aktualną-liczbę-punktów"><a class="anchor hidden-xs" href="#Na-koniec-wyświetlamy-aktualną-liczbę-punktów" title="Na-koniec-wyświetlamy-aktualną-liczbę-punktów"><span class="octicon octicon-link"></span></a><span>Na koniec wyświetlamy aktualną liczbę punktów</span></h4><pre><code>    self.draw_points(self.points_counter)
+</code></pre><h2 id="Gdy-uruchamiamy-program-wywołujemy-obiekt-klasy-głównej-Game" data-id="Gdy-uruchamiamy-program-wywołujemy-obiekt-klasy-głównej-Game"><a class="anchor hidden-xs" href="#Gdy-uruchamiamy-program-wywołujemy-obiekt-klasy-głównej-Game" title="Gdy-uruchamiamy-program-wywołujemy-obiekt-klasy-głównej-Game"><span class="octicon octicon-link"></span></a><span>Gdy uruchamiamy program, wywołujemy obiekt klasy głównej Game</span></h2><p><span>``</span><br>
+<span>if </span><strong><span>name</span></strong><span> == ‘</span><strong><span>main</span></strong><span>’:</span><br>
+<span>Game()</span></p><h1 id="Plik-tubespy" data-id="Plik-tubespy"><a class="anchor hidden-xs" href="#Plik-tubespy" title="Plik-tubespy"><span class="octicon octicon-link"></span></a><span>Plik </span><a href="http://tubes.py" target="_blank" rel="noopener"><span>tubes.py</span></a></h1><h2 id="Klasa-kolumny" data-id="Klasa-kolumny"><a class="anchor hidden-xs" href="#Klasa-kolumny" title="Klasa-kolumny"><span class="octicon octicon-link"></span></a><span>Klasa kolumny</span></h2><h3 id="Ta-klasa-odpowiada-za-obiekty-kolumn-wyświetlanych-na-ekranie-Przechowuje-ich-współrzędne-i-rozmiary-Może-je-również-zwracać-tak-samo-jak-grafikę-kolumny" data-id="Ta-klasa-odpowiada-za-obiekty-kolumn-wyświetlanych-na-ekranie-Przechowuje-ich-współrzędne-i-rozmiary-Może-je-również-zwracać-tak-samo-jak-grafikę-kolumny"><a class="anchor hidden-xs" href="#Ta-klasa-odpowiada-za-obiekty-kolumn-wyświetlanych-na-ekranie-Przechowuje-ich-współrzędne-i-rozmiary-Może-je-również-zwracać-tak-samo-jak-grafikę-kolumny" title="Ta-klasa-odpowiada-za-obiekty-kolumn-wyświetlanych-na-ekranie-Przechowuje-ich-współrzędne-i-rozmiary-Może-je-również-zwracać-tak-samo-jak-grafikę-kolumny"><span class="octicon octicon-link"></span></a><span>Ta klasa odpowiada za obiekty kolumn wyświetlanych na ekranie. Przechowuje ich współrzędne i rozmiary. Może je również zwracać tak samo jak grafikę kolumny.</span></h3><p><span>class Tube:</span></p><h3 id="Konstruktor-klasy-jako-argumenty-podajemy-skalę-współrzędne-x-i-y-odpowiednią-grafikę-oraz-określenie-czy-kolumna-jest-dolna-czy-górna" data-id="Konstruktor-klasy-jako-argumenty-podajemy-skalę-współrzędne-x-i-y-odpowiednią-grafikę-oraz-określenie-czy-kolumna-jest-dolna-czy-górna"><a class="anchor hidden-xs" href="#Konstruktor-klasy-jako-argumenty-podajemy-skalę-współrzędne-x-i-y-odpowiednią-grafikę-oraz-określenie-czy-kolumna-jest-dolna-czy-górna" title="Konstruktor-klasy-jako-argumenty-podajemy-skalę-współrzędne-x-i-y-odpowiednią-grafikę-oraz-określenie-czy-kolumna-jest-dolna-czy-górna"><span class="octicon octicon-link"></span></a><span>Konstruktor klasy, jako argumenty podajemy skalę, współrzędne x i y, odpowiednią grafikę oraz określenie czy kolumna jest dolna, czy górna</span></h3><pre><code>def __init__(self, scale, x, y, graphic, pos):
+</code></pre><h4 id="Ładujemy-obraz-kolumny" data-id="Ładujemy-obraz-kolumny"><a class="anchor hidden-xs" href="#Ładujemy-obraz-kolumny" title="Ładujemy-obraz-kolumny"><span class="octicon octicon-link"></span></a><span>Ładujemy obraz kolumny</span></h4><pre><code>    tube = pygame.image.load(graphic)
+</code></pre><h4 id="Wczytujemy-skalę" data-id="Wczytujemy-skalę"><a class="anchor hidden-xs" href="#Wczytujemy-skalę" title="Wczytujemy-skalę"><span class="octicon octicon-link"></span></a><span>Wczytujemy skalę</span></h4><pre><code>    self.scale = scale
+</code></pre><h4 id="Skalujemy-obraz" data-id="Skalujemy-obraz"><a class="anchor hidden-xs" href="#Skalujemy-obraz" title="Skalujemy-obraz"><span class="octicon octicon-link"></span></a><span>Skalujemy obraz</span></h4><pre><code>    self.tube_img = pygame.transform.scale(tube,
+                                           (tube.get_width() * self.scale, tube.get_height() * self.scale))
+</code></pre><h4 id="Wymiary-zapisujemy-pod-zmienną-rect" data-id="Wymiary-zapisujemy-pod-zmienną-rect"><a class="anchor hidden-xs" href="#Wymiary-zapisujemy-pod-zmienną-rect" title="Wymiary-zapisujemy-pod-zmienną-rect"><span class="octicon octicon-link"></span></a><span>Wymiary zapisujemy pod zmienną rect</span></h4><pre><code>    self.rect = self.tube_img.get_rect()
+</code></pre><h4 id="Ustawiamy-współrzędne-zależnie-od-tego-czy-jest-to-górna-czy-dolna-kolumna" data-id="Ustawiamy-współrzędne-zależnie-od-tego-czy-jest-to-górna-czy-dolna-kolumna"><a class="anchor hidden-xs" href="#Ustawiamy-współrzędne-zależnie-od-tego-czy-jest-to-górna-czy-dolna-kolumna" title="Ustawiamy-współrzędne-zależnie-od-tego-czy-jest-to-górna-czy-dolna-kolumna"><span class="octicon octicon-link"></span></a><span>Ustawiamy współrzędne, zależnie od tego, czy jest to górna, czy dolna kolumna</span></h4><pre><code>    if pos == 'top':
+        self.rect.midtop = (x, y)
+    else:
+        self.rect.midbottom = (x, y)
+</code></pre><h3 id="Funkcja-zwracająca-grafikę-kolumny" data-id="Funkcja-zwracająca-grafikę-kolumny"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-grafikę-kolumny" title="Funkcja-zwracająca-grafikę-kolumny"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca grafikę kolumny</span></h3><pre><code>def getTube(self):
+    return self.tube_img
+</code></pre><h3 id="Funkcja-zwracająca-szerokość-kolumny" data-id="Funkcja-zwracająca-szerokość-kolumny"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-szerokość-kolumny" title="Funkcja-zwracająca-szerokość-kolumny"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca szerokość kolumny</span></h3><pre><code>def getWidth(self):
+    return self.tube_img.get_width()
+</code></pre><h3 id="Funkcja-zwracająca-wysokość-kolumny" data-id="Funkcja-zwracająca-wysokość-kolumny"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-wysokość-kolumny" title="Funkcja-zwracająca-wysokość-kolumny"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca wysokość kolumny</span></h3><pre><code>def getHeight(self):
+    return self.tube_img.get_height()
+</code></pre><h3 id="Funkcja-zwracająca-wszystkie-wymiary-i-współrzędne-kolumny" data-id="Funkcja-zwracająca-wszystkie-wymiary-i-współrzędne-kolumny"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-wszystkie-wymiary-i-współrzędne-kolumny" title="Funkcja-zwracająca-wszystkie-wymiary-i-współrzędne-kolumny"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca wszystkie wymiary i współrzędne kolumny</span></h3><pre><code>def get_rect(self):
+    return self.tube_img.get_rect()
+</code></pre><h1 id="Plik-characterpy" data-id="Plik-characterpy"><a class="anchor hidden-xs" href="#Plik-characterpy" title="Plik-characterpy"><span class="octicon octicon-link"></span></a><span>Plik </span><a href="http://character.py" target="_blank" rel="noopener"><span>character.py</span></a></h1><h2 id="Klasa-postaci" data-id="Klasa-postaci"><a class="anchor hidden-xs" href="#Klasa-postaci" title="Klasa-postaci"><span class="octicon octicon-link"></span></a><span>Klasa postaci</span></h2><h3 id="Klasa-postaci-głównej-ładuje-grafikę-ptaka-i-nadaje-jej-odpowiednie-wymiary-i-współrzędne-Za-pomocą-odpowiednich-funkcji-ptak-może-wzlatywać-w-górę-oraz-opadać-w-dół" data-id="Klasa-postaci-głównej-ładuje-grafikę-ptaka-i-nadaje-jej-odpowiednie-wymiary-i-współrzędne-Za-pomocą-odpowiednich-funkcji-ptak-może-wzlatywać-w-górę-oraz-opadać-w-dół"><a class="anchor hidden-xs" href="#Klasa-postaci-głównej-ładuje-grafikę-ptaka-i-nadaje-jej-odpowiednie-wymiary-i-współrzędne-Za-pomocą-odpowiednich-funkcji-ptak-może-wzlatywać-w-górę-oraz-opadać-w-dół" title="Klasa-postaci-głównej-ładuje-grafikę-ptaka-i-nadaje-jej-odpowiednie-wymiary-i-współrzędne-Za-pomocą-odpowiednich-funkcji-ptak-może-wzlatywać-w-górę-oraz-opadać-w-dół"><span class="octicon octicon-link"></span></a><span>Klasa postaci głównej ładuje grafikę ptaka i nadaje jej odpowiednie wymiary i współrzędne. Za pomocą odpowiednich funkcji ptak może wzlatywać w górę oraz opadać w dół.</span></h3><pre><code>class Bird:
+</code></pre><h3 id="Do-konstruktora-podajemy-skalę-i-pozycję-w-której-będzie-wyświetlany-ptak" data-id="Do-konstruktora-podajemy-skalę-i-pozycję-w-której-będzie-wyświetlany-ptak"><a class="anchor hidden-xs" href="#Do-konstruktora-podajemy-skalę-i-pozycję-w-której-będzie-wyświetlany-ptak" title="Do-konstruktora-podajemy-skalę-i-pozycję-w-której-będzie-wyświetlany-ptak"><span class="octicon octicon-link"></span></a><span>Do konstruktora podajemy skalę i pozycję, w której będzie wyświetlany ptak</span></h3><pre><code>def __init__(self, scale, pos):
+</code></pre><h4 id="Ładujemy-grafikę-ptaka" data-id="Ładujemy-grafikę-ptaka"><a class="anchor hidden-xs" href="#Ładujemy-grafikę-ptaka" title="Ładujemy-grafikę-ptaka"><span class="octicon octicon-link"></span></a><span>Ładujemy grafikę ptaka</span></h4><pre><code>    bird = pygame.image.load('textures/bird_sing.png')
+</code></pre><h4 id="Wrzucamy-skalę" data-id="Wrzucamy-skalę"><a class="anchor hidden-xs" href="#Wrzucamy-skalę" title="Wrzucamy-skalę"><span class="octicon octicon-link"></span></a><span>Wrzucamy skalę</span></h4><pre><code>    self.scale = scale
+</code></pre><h4 id="Skalujemy-obraz1" data-id="Skalujemy-obraz"><a class="anchor hidden-xs" href="#Skalujemy-obraz1" title="Skalujemy-obraz1"><span class="octicon octicon-link"></span></a><span>Skalujemy obraz</span></h4><pre><code>    self.bird_img = pygame.transform.scale(bird,
+                                           (bird.get_width() * self.scale, bird.get_height() * self.scale))
+</code></pre><h4 id="Zbieramy-wymiary-grafiki" data-id="Zbieramy-wymiary-grafiki"><a class="anchor hidden-xs" href="#Zbieramy-wymiary-grafiki" title="Zbieramy-wymiary-grafiki"><span class="octicon octicon-link"></span></a><span>Zbieramy wymiary grafiki</span></h4><pre><code>    self.rect = self.bird_img.get_rect()
+</code></pre><h4 id="Zmniejszamy-szerokość-obiektu-żeby-lepiej-działały-kolizje-grafika-ptaka-bardziej-przypomina-koło-niż-prostokąt-dlatego-chcemy-żeby-jego-krawędzie-do-wyliczania-kolizji-były-trochę-mniejsze-niż-faktyczne-dla-grafiki" data-id="Zmniejszamy-szerokość-obiektu-żeby-lepiej-działały-kolizje-grafika-ptaka-bardziej-przypomina-koło-niż-prostokąt-dlatego-chcemy-żeby-jego-krawędzie-do-wyliczania-kolizji-były-trochę-mniejsze-niż-faktyczne-dla-grafiki"><a class="anchor hidden-xs" href="#Zmniejszamy-szerokość-obiektu-żeby-lepiej-działały-kolizje-grafika-ptaka-bardziej-przypomina-koło-niż-prostokąt-dlatego-chcemy-żeby-jego-krawędzie-do-wyliczania-kolizji-były-trochę-mniejsze-niż-faktyczne-dla-grafiki" title="Zmniejszamy-szerokość-obiektu-żeby-lepiej-działały-kolizje-grafika-ptaka-bardziej-przypomina-koło-niż-prostokąt-dlatego-chcemy-żeby-jego-krawędzie-do-wyliczania-kolizji-były-trochę-mniejsze-niż-faktyczne-dla-grafiki"><span class="octicon octicon-link"></span></a><span>Zmniejszamy szerokość obiektu, żeby lepiej działały kolizje (grafika ptaka bardziej przypomina koło niż prostokąt, dlatego chcemy, żeby jego krawędzie do wyliczania kolizji były trochę mniejsze niż faktyczne dla grafiki)</span></h4><pre><code>    self.rect.width *= 0.8
+</code></pre><h4 id="Ustawiamy-współrzędne-ptaka" data-id="Ustawiamy-współrzędne-ptaka"><a class="anchor hidden-xs" href="#Ustawiamy-współrzędne-ptaka" title="Ustawiamy-współrzędne-ptaka"><span class="octicon octicon-link"></span></a><span>Ustawiamy współrzędne ptaka</span></h4><pre><code>    self.rect.center = pos
+</code></pre><h4 id="Przesuwamy-współrzędną-x-o-12-szerokości-ptaka-również-po-to-żeby-kolizje-działały-prawdiłowo" data-id="Przesuwamy-współrzędną-x-o-12-szerokości-ptaka-również-po-to-żeby-kolizje-działały-prawdiłowo"><a class="anchor hidden-xs" href="#Przesuwamy-współrzędną-x-o-12-szerokości-ptaka-również-po-to-żeby-kolizje-działały-prawdiłowo" title="Przesuwamy-współrzędną-x-o-12-szerokości-ptaka-również-po-to-żeby-kolizje-działały-prawdiłowo"><span class="octicon octicon-link"></span></a><span>Przesuwamy współrzędną x o 1/2 szerokości ptaka (również po to, żeby kolizje działały prawdiłowo)</span></h4><pre><code>    self.rect.x += self.bird_img.get_width() / 2
+</code></pre><h3 id="Funkcja-zwiększająca-wysokość-ptaka" data-id="Funkcja-zwiększająca-wysokość-ptaka"><a class="anchor hidden-xs" href="#Funkcja-zwiększająca-wysokość-ptaka" title="Funkcja-zwiększająca-wysokość-ptaka"><span class="octicon octicon-link"></span></a><span>Funkcja zwiększająca wysokość ptaka</span></h3><pre><code>def up(self):
+    self.rect.y -= BIRD_JUMP
+</code></pre><h3 id="Analogiczna-funkcja-zmniejszająca-jego-wysokość" data-id="Analogiczna-funkcja-zmniejszająca-jego-wysokość"><a class="anchor hidden-xs" href="#Analogiczna-funkcja-zmniejszająca-jego-wysokość" title="Analogiczna-funkcja-zmniejszająca-jego-wysokość"><span class="octicon octicon-link"></span></a><span>Analogiczna funkcja zmniejszająca jego wysokość</span></h3><pre><code>def down(self):
+    self.rect.y += BIRD_FALL
+</code></pre><h3 id="Funkcja-zwracająca-grafikę-postaci" data-id="Funkcja-zwracająca-grafikę-postaci"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-grafikę-postaci" title="Funkcja-zwracająca-grafikę-postaci"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca grafikę postaci</span></h3><pre><code>def get_character(self):
+    return self.bird_img
+</code></pre><h3 id="Funkcja-do-zmiany-pozycji-ptaka" data-id="Funkcja-do-zmiany-pozycji-ptaka"><a class="anchor hidden-xs" href="#Funkcja-do-zmiany-pozycji-ptaka" title="Funkcja-do-zmiany-pozycji-ptaka"><span class="octicon octicon-link"></span></a><span>Funkcja do zmiany pozycji ptaka</span></h3><pre><code>def set_character(self, x, y):
+    self.rect.center = (x, y)
+    self.rect.x += self.bird_img.get_width() / 2
+</code></pre><h1 id="Plik-scenepy" data-id="Plik-scenepy"><a class="anchor hidden-xs" href="#Plik-scenepy" title="Plik-scenepy"><span class="octicon octicon-link"></span></a><span>Plik </span><a href="http://scene.py" target="_blank" rel="noopener"><span>scene.py</span></a></h1><h2 id="Klasa-tła" data-id="Klasa-tła"><a class="anchor hidden-xs" href="#Klasa-tła" title="Klasa-tła"><span class="octicon octicon-link"></span></a><span>Klasa tła</span></h2><h3 id="Klasa-odpowiada-za-grafikę-tła-jej-współrzędne-oraz-zwracanie-podstawowych-parametrów-jak-szerokość-czy-wysokość" data-id="Klasa-odpowiada-za-grafikę-tła-jej-współrzędne-oraz-zwracanie-podstawowych-parametrów-jak-szerokość-czy-wysokość"><a class="anchor hidden-xs" href="#Klasa-odpowiada-za-grafikę-tła-jej-współrzędne-oraz-zwracanie-podstawowych-parametrów-jak-szerokość-czy-wysokość" title="Klasa-odpowiada-za-grafikę-tła-jej-współrzędne-oraz-zwracanie-podstawowych-parametrów-jak-szerokość-czy-wysokość"><span class="octicon octicon-link"></span></a><span>Klasa odpowiada za grafikę tła, jej współrzędne oraz zwracanie podstawowych parametrów jak szerokość czy wysokość.</span></h3><pre><code>class Background:
+</code></pre><h3 id="Konstruktor-klasy" data-id="Konstruktor-klasy"><a class="anchor hidden-xs" href="#Konstruktor-klasy" title="Konstruktor-klasy"><span class="octicon octicon-link"></span></a><span>Konstruktor klasy</span></h3><pre><code>def __init__(self, scale):
+</code></pre><h4 id="Wrzucenie-skali" data-id="Wrzucenie-skali"><a class="anchor hidden-xs" href="#Wrzucenie-skali" title="Wrzucenie-skali"><span class="octicon octicon-link"></span></a><span>Wrzucenie skali</span></h4><pre><code>    self.scale = scale
+</code></pre><h4 id="Załadowanie-grafiki" data-id="Załadowanie-grafiki"><a class="anchor hidden-xs" href="#Załadowanie-grafiki" title="Załadowanie-grafiki"><span class="octicon octicon-link"></span></a><span>Załadowanie grafiki</span></h4><pre><code>    bg = pygame.image.load('textures/bg.png')
+</code></pre><h4 id="Skalowanie-obrazu1" data-id="Skalowanie-obrazu"><a class="anchor hidden-xs" href="#Skalowanie-obrazu1" title="Skalowanie-obrazu1"><span class="octicon octicon-link"></span></a><span>Skalowanie obrazu</span></h4><pre><code>    self.bg_img = pygame.transform.scale(bg,
+                                         (bg.get_width() * self.scale, bg.get_height() * self.scale))
+</code></pre><h3 id="Zwraca-grafikę-tła" data-id="Zwraca-grafikę-tła"><a class="anchor hidden-xs" href="#Zwraca-grafikę-tła" title="Zwraca-grafikę-tła"><span class="octicon octicon-link"></span></a><span>Zwraca grafikę tła</span></h3><pre><code>def getBg(self):
+    return self.bg_img
+</code></pre><h3 id="Zwracam-szerokość-grafiki-tła" data-id="Zwracam-szerokość-grafiki-tła"><a class="anchor hidden-xs" href="#Zwracam-szerokość-grafiki-tła" title="Zwracam-szerokość-grafiki-tła"><span class="octicon octicon-link"></span></a><span>Zwracam szerokość grafiki tła</span></h3><pre><code>def getWidth(self):
+    return self.bg_img.get_width()
+</code></pre><h3 id="Zwraca-wysokość-tła" data-id="Zwraca-wysokość-tła"><a class="anchor hidden-xs" href="#Zwraca-wysokość-tła" title="Zwraca-wysokość-tła"><span class="octicon octicon-link"></span></a><span>Zwraca wysokość tła</span></h3><pre><code>def getHeight(self):
+    return self.bg_img.get_height()
+</code></pre><h2 id="Klasa-podłoża" data-id="Klasa-podłoża"><a class="anchor hidden-xs" href="#Klasa-podłoża" title="Klasa-podłoża"><span class="octicon octicon-link"></span></a><span>Klasa podłoża</span></h2><h3 id="Klasa-z-analogicznymi-funkcjami-jak-klasa-tła" data-id="Klasa-z-analogicznymi-funkcjami-jak-klasa-tła"><a class="anchor hidden-xs" href="#Klasa-z-analogicznymi-funkcjami-jak-klasa-tła" title="Klasa-z-analogicznymi-funkcjami-jak-klasa-tła"><span class="octicon octicon-link"></span></a><span>Klasa z analogicznymi funkcjami jak klasa tła.</span></h3><pre><code>class Ground:
+</code></pre><h3 id="Konstruktor-klasy1" data-id="Konstruktor-klasy"><a class="anchor hidden-xs" href="#Konstruktor-klasy1" title="Konstruktor-klasy1"><span class="octicon octicon-link"></span></a><span>Konstruktor klasy</span></h3><pre><code>def __init__(self, scale, screen_height):
+</code></pre><h4 id="Wrzucenie-skali1" data-id="Wrzucenie-skali"><a class="anchor hidden-xs" href="#Wrzucenie-skali1" title="Wrzucenie-skali1"><span class="octicon octicon-link"></span></a><span>Wrzucenie skali</span></h4><pre><code>    self.scale = scale
+</code></pre><h4 id="Załadowanie-grafiki-podłoża" data-id="Załadowanie-grafiki-podłoża"><a class="anchor hidden-xs" href="#Załadowanie-grafiki-podłoża" title="Załadowanie-grafiki-podłoża"><span class="octicon octicon-link"></span></a><span>Załadowanie grafiki podłoża</span></h4><pre><code>    ground = pygame.image.load('textures/ground.png')
+</code></pre><h4 id="Skalowanie-obrazu2" data-id="Skalowanie-obrazu"><a class="anchor hidden-xs" href="#Skalowanie-obrazu2" title="Skalowanie-obrazu2"><span class="octicon octicon-link"></span></a><span>Skalowanie obrazu</span></h4><pre><code>    self.ground_img = pygame.transform.scale(ground,
+                                             (ground.get_width() * self.scale, ground.get_height() * self.scale))
+</code></pre><h4 id="Wyciągnięcie-wymiarów-grafiki" data-id="Wyciągnięcie-wymiarów-grafiki"><a class="anchor hidden-xs" href="#Wyciągnięcie-wymiarów-grafiki" title="Wyciągnięcie-wymiarów-grafiki"><span class="octicon octicon-link"></span></a><span>Wyciągnięcie wymiarów grafiki</span></h4><pre><code>    self.rect = self.ground_img.get_rect()
+</code></pre><h4 id="Ustawienie-współrzędnych-grafiki-w-odpowiednim-miejscu" data-id="Ustawienie-współrzędnych-grafiki-w-odpowiednim-miejscu"><a class="anchor hidden-xs" href="#Ustawienie-współrzędnych-grafiki-w-odpowiednim-miejscu" title="Ustawienie-współrzędnych-grafiki-w-odpowiednim-miejscu"><span class="octicon octicon-link"></span></a><span>Ustawienie współrzędnych grafiki w odpowiednim miejscu</span></h4><pre><code>    self.rect.top = screen_height - self.rect.height / 3
+</code></pre><h3 id="Funkcja-do-zwracania-grafiki-podłoża" data-id="Funkcja-do-zwracania-grafiki-podłoża"><a class="anchor hidden-xs" href="#Funkcja-do-zwracania-grafiki-podłoża" title="Funkcja-do-zwracania-grafiki-podłoża"><span class="octicon octicon-link"></span></a><span>Funkcja do zwracania grafiki podłoża</span></h3><pre><code>def getGround(self):
+    return self.ground_img
+</code></pre><h3 id="Funkcja-zwracająca-szerokość-grafiki" data-id="Funkcja-zwracająca-szerokość-grafiki"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-szerokość-grafiki" title="Funkcja-zwracająca-szerokość-grafiki"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca szerokość grafiki</span></h3><pre><code>def getWidth(self):
+    return self.ground_img.get_width()
+</code></pre><h3 id="Funkcja-zwracająca-wysokość-grafiki" data-id="Funkcja-zwracająca-wysokość-grafiki"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-wysokość-grafiki" title="Funkcja-zwracająca-wysokość-grafiki"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca wysokość grafiki</span></h3><pre><code>def getHeight(self):
+    return self.ground_img.get_height()
+</code></pre><h3 id="Funkcja-zwracająca-wymiary-i-współrzędne-podłoża" data-id="Funkcja-zwracająca-wymiary-i-współrzędne-podłoża"><a class="anchor hidden-xs" href="#Funkcja-zwracająca-wymiary-i-współrzędne-podłoża" title="Funkcja-zwracająca-wymiary-i-współrzędne-podłoża"><span class="octicon octicon-link"></span></a><span>Funkcja zwracająca wymiary i współrzędne podłoża</span></h3><pre><code>def get_rect(self):
+    return self.ground_img.get_rect()
+</code></pre><h1 id="Plik-CONSTpy" data-id="Plik-CONSTpy"><a class="anchor hidden-xs" href="#Plik-CONSTpy" title="Plik-CONSTpy"><span class="octicon octicon-link"></span></a><span>Plik </span><a href="http://CONST.py" target="_blank" rel="noopener"><span>CONST.py</span></a></h1><h3 id="Wysokość-grafiki-tła" data-id="Wysokość-grafiki-tła"><a class="anchor hidden-xs" href="#Wysokość-grafiki-tła" title="Wysokość-grafiki-tła"><span class="octicon octicon-link"></span></a><span>Wysokość grafiki tła</span></h3><pre><code>BG_HEIGHT = 384
+</code></pre><h3 id="Wartość-skoku-ptaka-przy-wciśnięciu-spacji" data-id="Wartość-skoku-ptaka-przy-wciśnięciu-spacji"><a class="anchor hidden-xs" href="#Wartość-skoku-ptaka-przy-wciśnięciu-spacji" title="Wartość-skoku-ptaka-przy-wciśnięciu-spacji"><span class="octicon octicon-link"></span></a><span>Wartość skoku ptaka przy wciśnięciu spacji</span></h3><pre><code>BIRD_JUMP = 35
+</code></pre><h3 id="Wartość-spadku-ptaka" data-id="Wartość-spadku-ptaka"><a class="anchor hidden-xs" href="#Wartość-spadku-ptaka" title="Wartość-spadku-ptaka"><span class="octicon octicon-link"></span></a><span>Wartość spadku ptaka</span></h3><pre><code>BIRD_FALL = 8
+</code></pre><h3 id="Wartość-“ticku”-zegara" data-id="Wartość-“ticku”-zegara"><a class="anchor hidden-xs" href="#Wartość-“ticku”-zegara" title="Wartość-“ticku”-zegara"><span class="octicon octicon-link"></span></a><span>Wartość “ticku” zegara</span></h3><pre><code>CLOCK_TICK = 120</code></pre></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#O-projekcie" title="O projekcie">O projekcie</a></li>
+<li><a href="#Źródła" title="Źródła">Źródła</a></li>
+<li><a href="#Diagram" title="Diagram">Diagram</a></li>
+<li><a href="#Plik-Mainpy" title="Plik Main.py">Plik Main.py</a><ul class="nav">
+<li><a href="#Import-klas-z-innych-plików-oraz-potrzebnych-bibliotek" title="Import klas z innych plików oraz potrzebnych bibliotek">Import klas z innych plików oraz potrzebnych bibliotek</a></li>
+<li><a href="#Główna-klasa-gry" title="Główna klasa gry">Główna klasa gry</a><ul class="nav">
+<li><a href="#W-tej-klasie-zachodzą-wszystkie-obliczenia-wywołania-i-drukowanie-oiektów-innych-klas-na-ekranie-Zawiera-główną-pętlę-gry-i-odpowiada-za-odświeżanie-ekranu-i-wszystkich-funkcji" title="W tej klasie zachodzą wszystkie obliczenia, wywołania i drukowanie oiektów innych klas na ekranie. Zawiera główną pętlę gry i odpowiada za odświeżanie ekranu i wszystkich funkcji.">W tej klasie zachodzą wszystkie obliczenia, wywołania i drukowanie oiektów innych klas na ekranie. Zawiera główną pętlę gry i odpowiada za odświeżanie ekranu i wszystkich funkcji.</a></li>
+<li><a href="#Konstruktor-klasy-Game" title="Konstruktor klasy Game">Konstruktor klasy Game</a></li>
+<li><a href="#Funkcja-do-wyświetlania-naszego-bohatera-na-ekranie" title="Funkcja do wyświetlania naszego bohatera na ekranie">Funkcja do wyświetlania naszego bohatera na ekranie</a></li>
+<li><a href="#Funkcja-do-wyświetlania-tła-zanim-gra-się-rozpocznie" title="Funkcja do wyświetlania tła, zanim gra się rozpocznie">Funkcja do wyświetlania tła, zanim gra się rozpocznie</a></li>
+<li><a href="#Funkcja-do-wyświetlania-podłoża-zanim-gra-się-rozpocznie" title="Funkcja do wyświetlania podłoża, zanim gra się rozpocznie">Funkcja do wyświetlania podłoża, zanim gra się rozpocznie</a></li>
+<li><a href="#W-tej-funkcji-będziemy-wyświetlać-tło-w-czasie-działania-gry" title="W tej funkcji będziemy wyświetlać tło w czasie działania gry">W tej funkcji będziemy wyświetlać tło w czasie działania gry</a></li>
+<li><a href="#Analogiczna-funkcja-jak-powyższa-która-wyświetla-podłoże" title="Analogiczna funkcja jak powyższa, która wyświetla podłoże">Analogiczna funkcja jak powyższa, która wyświetla podłoże</a></li>
+<li><a href="#Funkcja-do-wyświetlania-kolumn-na-ekranie" title="Funkcja do wyświetlania kolumn na ekranie">Funkcja do wyświetlania kolumn na ekranie</a></li>
+<li><a href="#Funkcja-wyświetlająca-aktualną-liczbę-punków-na-ekranie" title="Funkcja wyświetlająca aktualną liczbę punków na ekranie">Funkcja wyświetlająca aktualną liczbę punków na ekranie</a></li>
+<li><a href="#Funkcja-zapisująca-wynik-do-pliku" title="Funkcja zapisująca wynik do pliku">Funkcja zapisująca wynik do pliku</a></li>
+<li><a href="#Funkcja-zapisująca-wynik-do-pliku1" title="Funkcja zapisująca wynik do pliku">Funkcja zapisująca wynik do pliku</a></li>
+<li><a href="#Funkcja-sprawdzająca-czy-zachodzi-kolizja-między-obiektami" title="Funkcja sprawdzająca, czy zachodzi kolizja między obiektami">Funkcja sprawdzająca, czy zachodzi kolizja między obiektami</a></li>
+<li><a href="#Funkcja-restartu-gry-w-przypadku-przegrania-poprzedniej-sesji" title="Funkcja restartu gry w przypadku przegrania poprzedniej sesji">Funkcja restartu gry w przypadku przegrania poprzedniej sesji</a></li>
+<li><a href="#Funkcja-sprawdzająca-zachodzące-wydarzenia-w-czasie-gry" title="Funkcja sprawdzająca zachodzące wydarzenia w czasie gry">Funkcja sprawdzająca zachodzące wydarzenia w czasie gry</a></li>
+<li><a href="#Jeżeli-przegramy-sesję-wyświetlany-jest-napis-“game_over”-za-pomocą-poniższej-funkcji" title="Jeżeli przegramy sesję, wyświetlany jest napis “game_over” za pomocą poniższej funkcji">Jeżeli przegramy sesję, wyświetlany jest napis “game_over” za pomocą poniższej funkcji</a></li>
+<li><a href="#Funkcja-wyświetlająca-grafikę-ze-strzałką-której-kliknięcie-uruchamia-rozgrywkę" title="Funkcja wyświetlająca grafikę ze strzałką, której kliknięcie uruchamia rozgrywkę">Funkcja wyświetlająca grafikę ze strzałką, której kliknięcie uruchamia rozgrywkę</a></li>
+<li><a href="#Funkcja-do-rysowania-na-ekranie-tablicy-z-najwyższymi-wynikami" title="Funkcja do rysowania na ekranie tablicy z najwyższymi wynikami">Funkcja do rysowania na ekranie tablicy z najwyższymi wynikami</a></li>
+<li><a href="#Funkcja-update-odpowiadająca-za-wszystkie-aktualizacje-obrazu-gry" title="Funkcja update odpowiadająca za wszystkie aktualizacje obrazu gry">Funkcja update odpowiadająca za wszystkie aktualizacje obrazu gry</a></li>
+</ul>
+</li>
+<li><a href="#Gdy-uruchamiamy-program-wywołujemy-obiekt-klasy-głównej-Game" title="Gdy uruchamiamy program, wywołujemy obiekt klasy głównej Game">Gdy uruchamiamy program, wywołujemy obiekt klasy głównej Game</a></li>
+</ul>
+</li>
+<li><a href="#Plik-tubespy" title="Plik tubes.py">Plik tubes.py</a><ul class="nav">
+<li><a href="#Klasa-kolumny" title="Klasa kolumny">Klasa kolumny</a><ul class="nav">
+<li><a href="#Ta-klasa-odpowiada-za-obiekty-kolumn-wyświetlanych-na-ekranie-Przechowuje-ich-współrzędne-i-rozmiary-Może-je-również-zwracać-tak-samo-jak-grafikę-kolumny" title="Ta klasa odpowiada za obiekty kolumn wyświetlanych na ekranie. Przechowuje ich współrzędne i rozmiary. Może je również zwracać tak samo jak grafikę kolumny.">Ta klasa odpowiada za obiekty kolumn wyświetlanych na ekranie. Przechowuje ich współrzędne i rozmiary. Może je również zwracać tak samo jak grafikę kolumny.</a></li>
+<li><a href="#Konstruktor-klasy-jako-argumenty-podajemy-skalę-współrzędne-x-i-y-odpowiednią-grafikę-oraz-określenie-czy-kolumna-jest-dolna-czy-górna" title="Konstruktor klasy, jako argumenty podajemy skalę, współrzędne x i y, odpowiednią grafikę oraz określenie czy kolumna jest dolna, czy górna">Konstruktor klasy, jako argumenty podajemy skalę, współrzędne x i y, odpowiednią grafikę oraz określenie czy kolumna jest dolna, czy górna</a></li>
+<li><a href="#Funkcja-zwracająca-grafikę-kolumny" title="Funkcja zwracająca grafikę kolumny">Funkcja zwracająca grafikę kolumny</a></li>
+<li><a href="#Funkcja-zwracająca-szerokość-kolumny" title="Funkcja zwracająca szerokość kolumny">Funkcja zwracająca szerokość kolumny</a></li>
+<li><a href="#Funkcja-zwracająca-wysokość-kolumny" title="Funkcja zwracająca wysokość kolumny">Funkcja zwracająca wysokość kolumny</a></li>
+<li><a href="#Funkcja-zwracająca-wszystkie-wymiary-i-współrzędne-kolumny" title="Funkcja zwracająca wszystkie wymiary i współrzędne kolumny">Funkcja zwracająca wszystkie wymiary i współrzędne kolumny</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Plik-characterpy" title="Plik character.py">Plik character.py</a><ul class="nav">
+<li><a href="#Klasa-postaci" title="Klasa postaci">Klasa postaci</a><ul class="nav">
+<li><a href="#Klasa-postaci-głównej-ładuje-grafikę-ptaka-i-nadaje-jej-odpowiednie-wymiary-i-współrzędne-Za-pomocą-odpowiednich-funkcji-ptak-może-wzlatywać-w-górę-oraz-opadać-w-dół" title="Klasa postaci głównej ładuje grafikę ptaka i nadaje jej odpowiednie wymiary i współrzędne. Za pomocą odpowiednich funkcji ptak może wzlatywać w górę oraz opadać w dół.">Klasa postaci głównej ładuje grafikę ptaka i nadaje jej odpowiednie wymiary i współrzędne. Za pomocą odpowiednich funkcji ptak może wzlatywać w górę oraz opadać w dół.</a></li>
+<li><a href="#Do-konstruktora-podajemy-skalę-i-pozycję-w-której-będzie-wyświetlany-ptak" title="Do konstruktora podajemy skalę i pozycję, w której będzie wyświetlany ptak">Do konstruktora podajemy skalę i pozycję, w której będzie wyświetlany ptak</a></li>
+<li><a href="#Funkcja-zwiększająca-wysokość-ptaka" title="Funkcja zwiększająca wysokość ptaka">Funkcja zwiększająca wysokość ptaka</a></li>
+<li><a href="#Analogiczna-funkcja-zmniejszająca-jego-wysokość" title="Analogiczna funkcja zmniejszająca jego wysokość">Analogiczna funkcja zmniejszająca jego wysokość</a></li>
+<li><a href="#Funkcja-zwracająca-grafikę-postaci" title="Funkcja zwracająca grafikę postaci">Funkcja zwracająca grafikę postaci</a></li>
+<li><a href="#Funkcja-do-zmiany-pozycji-ptaka" title="Funkcja do zmiany pozycji ptaka">Funkcja do zmiany pozycji ptaka</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Plik-scenepy" title="Plik scene.py">Plik scene.py</a><ul class="nav">
+<li><a href="#Klasa-tła" title="Klasa tła">Klasa tła</a><ul class="nav">
+<li><a href="#Klasa-odpowiada-za-grafikę-tła-jej-współrzędne-oraz-zwracanie-podstawowych-parametrów-jak-szerokość-czy-wysokość" title="Klasa odpowiada za grafikę tła, jej współrzędne oraz zwracanie podstawowych parametrów jak szerokość czy wysokość.">Klasa odpowiada za grafikę tła, jej współrzędne oraz zwracanie podstawowych parametrów jak szerokość czy wysokość.</a></li>
+<li><a href="#Konstruktor-klasy" title="Konstruktor klasy">Konstruktor klasy</a></li>
+<li><a href="#Zwraca-grafikę-tła" title="Zwraca grafikę tła">Zwraca grafikę tła</a></li>
+<li><a href="#Zwracam-szerokość-grafiki-tła" title="Zwracam szerokość grafiki tła">Zwracam szerokość grafiki tła</a></li>
+<li><a href="#Zwraca-wysokość-tła" title="Zwraca wysokość tła">Zwraca wysokość tła</a></li>
+</ul>
+</li>
+<li><a href="#Klasa-podłoża" title="Klasa podłoża">Klasa podłoża</a><ul class="nav">
+<li><a href="#Klasa-z-analogicznymi-funkcjami-jak-klasa-tła" title="Klasa z analogicznymi funkcjami jak klasa tła.">Klasa z analogicznymi funkcjami jak klasa tła.</a></li>
+<li><a href="#Konstruktor-klasy1" title="Konstruktor klasy">Konstruktor klasy</a></li>
+<li><a href="#Funkcja-do-zwracania-grafiki-podłoża" title="Funkcja do zwracania grafiki podłoża">Funkcja do zwracania grafiki podłoża</a></li>
+<li><a href="#Funkcja-zwracająca-szerokość-grafiki" title="Funkcja zwracająca szerokość grafiki">Funkcja zwracająca szerokość grafiki</a></li>
+<li><a href="#Funkcja-zwracająca-wysokość-grafiki" title="Funkcja zwracająca wysokość grafiki">Funkcja zwracająca wysokość grafiki</a></li>
+<li><a href="#Funkcja-zwracająca-wymiary-i-współrzędne-podłoża" title="Funkcja zwracająca wymiary i współrzędne podłoża">Funkcja zwracająca wymiary i współrzędne podłoża</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Plik-CONSTpy" title="Plik CONST.py">Plik CONST.py</a><ul class="nav">
+<li class="invisable-node"><ul class="nav">
+<li><a href="#Wysokość-grafiki-tła" title="Wysokość grafiki tła">Wysokość grafiki tła</a></li>
+<li><a href="#Wartość-skoku-ptaka-przy-wciśnięciu-spacji" title="Wartość skoku ptaka przy wciśnięciu spacji">Wartość skoku ptaka przy wciśnięciu spacji</a></li>
+<li><a href="#Wartość-spadku-ptaka" title="Wartość spadku ptaka">Wartość spadku ptaka</a></li>
+<li><a href="#Wartość-“ticku”-zegara" title="Wartość “ticku” zegara">Wartość “ticku” zegara</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#O-projekcie" title="O projekcie">O projekcie</a></li>
+<li><a href="#Źródła" title="Źródła">Źródła</a></li>
+<li><a href="#Diagram" title="Diagram">Diagram</a></li>
+<li><a href="#Plik-Mainpy" title="Plik Main.py">Plik Main.py</a><ul class="nav">
+<li><a href="#Import-klas-z-innych-plików-oraz-potrzebnych-bibliotek" title="Import klas z innych plików oraz potrzebnych bibliotek">Import klas z innych plików oraz potrzebnych bibliotek</a></li>
+<li><a href="#Główna-klasa-gry" title="Główna klasa gry">Główna klasa gry</a><ul class="nav">
+<li><a href="#W-tej-klasie-zachodzą-wszystkie-obliczenia-wywołania-i-drukowanie-oiektów-innych-klas-na-ekranie-Zawiera-główną-pętlę-gry-i-odpowiada-za-odświeżanie-ekranu-i-wszystkich-funkcji" title="W tej klasie zachodzą wszystkie obliczenia, wywołania i drukowanie oiektów innych klas na ekranie. Zawiera główną pętlę gry i odpowiada za odświeżanie ekranu i wszystkich funkcji.">W tej klasie zachodzą wszystkie obliczenia, wywołania i drukowanie oiektów innych klas na ekranie. Zawiera główną pętlę gry i odpowiada za odświeżanie ekranu i wszystkich funkcji.</a></li>
+<li><a href="#Konstruktor-klasy-Game" title="Konstruktor klasy Game">Konstruktor klasy Game</a></li>
+<li><a href="#Funkcja-do-wyświetlania-naszego-bohatera-na-ekranie" title="Funkcja do wyświetlania naszego bohatera na ekranie">Funkcja do wyświetlania naszego bohatera na ekranie</a></li>
+<li><a href="#Funkcja-do-wyświetlania-tła-zanim-gra-się-rozpocznie" title="Funkcja do wyświetlania tła, zanim gra się rozpocznie">Funkcja do wyświetlania tła, zanim gra się rozpocznie</a></li>
+<li><a href="#Funkcja-do-wyświetlania-podłoża-zanim-gra-się-rozpocznie" title="Funkcja do wyświetlania podłoża, zanim gra się rozpocznie">Funkcja do wyświetlania podłoża, zanim gra się rozpocznie</a></li>
+<li><a href="#W-tej-funkcji-będziemy-wyświetlać-tło-w-czasie-działania-gry" title="W tej funkcji będziemy wyświetlać tło w czasie działania gry">W tej funkcji będziemy wyświetlać tło w czasie działania gry</a></li>
+<li><a href="#Analogiczna-funkcja-jak-powyższa-która-wyświetla-podłoże" title="Analogiczna funkcja jak powyższa, która wyświetla podłoże">Analogiczna funkcja jak powyższa, która wyświetla podłoże</a></li>
+<li><a href="#Funkcja-do-wyświetlania-kolumn-na-ekranie" title="Funkcja do wyświetlania kolumn na ekranie">Funkcja do wyświetlania kolumn na ekranie</a></li>
+<li><a href="#Funkcja-wyświetlająca-aktualną-liczbę-punków-na-ekranie" title="Funkcja wyświetlająca aktualną liczbę punków na ekranie">Funkcja wyświetlająca aktualną liczbę punków na ekranie</a></li>
+<li><a href="#Funkcja-zapisująca-wynik-do-pliku" title="Funkcja zapisująca wynik do pliku">Funkcja zapisująca wynik do pliku</a></li>
+<li><a href="#Funkcja-zapisująca-wynik-do-pliku1" title="Funkcja zapisująca wynik do pliku">Funkcja zapisująca wynik do pliku</a></li>
+<li><a href="#Funkcja-sprawdzająca-czy-zachodzi-kolizja-między-obiektami" title="Funkcja sprawdzająca, czy zachodzi kolizja między obiektami">Funkcja sprawdzająca, czy zachodzi kolizja między obiektami</a></li>
+<li><a href="#Funkcja-restartu-gry-w-przypadku-przegrania-poprzedniej-sesji" title="Funkcja restartu gry w przypadku przegrania poprzedniej sesji">Funkcja restartu gry w przypadku przegrania poprzedniej sesji</a></li>
+<li><a href="#Funkcja-sprawdzająca-zachodzące-wydarzenia-w-czasie-gry" title="Funkcja sprawdzająca zachodzące wydarzenia w czasie gry">Funkcja sprawdzająca zachodzące wydarzenia w czasie gry</a></li>
+<li><a href="#Jeżeli-przegramy-sesję-wyświetlany-jest-napis-“game_over”-za-pomocą-poniższej-funkcji" title="Jeżeli przegramy sesję, wyświetlany jest napis “game_over” za pomocą poniższej funkcji">Jeżeli przegramy sesję, wyświetlany jest napis “game_over” za pomocą poniższej funkcji</a></li>
+<li><a href="#Funkcja-wyświetlająca-grafikę-ze-strzałką-której-kliknięcie-uruchamia-rozgrywkę" title="Funkcja wyświetlająca grafikę ze strzałką, której kliknięcie uruchamia rozgrywkę">Funkcja wyświetlająca grafikę ze strzałką, której kliknięcie uruchamia rozgrywkę</a></li>
+<li><a href="#Funkcja-do-rysowania-na-ekranie-tablicy-z-najwyższymi-wynikami" title="Funkcja do rysowania na ekranie tablicy z najwyższymi wynikami">Funkcja do rysowania na ekranie tablicy z najwyższymi wynikami</a></li>
+<li><a href="#Funkcja-update-odpowiadająca-za-wszystkie-aktualizacje-obrazu-gry" title="Funkcja update odpowiadająca za wszystkie aktualizacje obrazu gry">Funkcja update odpowiadająca za wszystkie aktualizacje obrazu gry</a></li>
+</ul>
+</li>
+<li><a href="#Gdy-uruchamiamy-program-wywołujemy-obiekt-klasy-głównej-Game" title="Gdy uruchamiamy program, wywołujemy obiekt klasy głównej Game">Gdy uruchamiamy program, wywołujemy obiekt klasy głównej Game</a></li>
+</ul>
+</li>
+<li><a href="#Plik-tubespy" title="Plik tubes.py">Plik tubes.py</a><ul class="nav">
+<li><a href="#Klasa-kolumny" title="Klasa kolumny">Klasa kolumny</a><ul class="nav">
+<li><a href="#Ta-klasa-odpowiada-za-obiekty-kolumn-wyświetlanych-na-ekranie-Przechowuje-ich-współrzędne-i-rozmiary-Może-je-również-zwracać-tak-samo-jak-grafikę-kolumny" title="Ta klasa odpowiada za obiekty kolumn wyświetlanych na ekranie. Przechowuje ich współrzędne i rozmiary. Może je również zwracać tak samo jak grafikę kolumny.">Ta klasa odpowiada za obiekty kolumn wyświetlanych na ekranie. Przechowuje ich współrzędne i rozmiary. Może je również zwracać tak samo jak grafikę kolumny.</a></li>
+<li><a href="#Konstruktor-klasy-jako-argumenty-podajemy-skalę-współrzędne-x-i-y-odpowiednią-grafikę-oraz-określenie-czy-kolumna-jest-dolna-czy-górna" title="Konstruktor klasy, jako argumenty podajemy skalę, współrzędne x i y, odpowiednią grafikę oraz określenie czy kolumna jest dolna, czy górna">Konstruktor klasy, jako argumenty podajemy skalę, współrzędne x i y, odpowiednią grafikę oraz określenie czy kolumna jest dolna, czy górna</a></li>
+<li><a href="#Funkcja-zwracająca-grafikę-kolumny" title="Funkcja zwracająca grafikę kolumny">Funkcja zwracająca grafikę kolumny</a></li>
+<li><a href="#Funkcja-zwracająca-szerokość-kolumny" title="Funkcja zwracająca szerokość kolumny">Funkcja zwracająca szerokość kolumny</a></li>
+<li><a href="#Funkcja-zwracająca-wysokość-kolumny" title="Funkcja zwracająca wysokość kolumny">Funkcja zwracająca wysokość kolumny</a></li>
+<li><a href="#Funkcja-zwracająca-wszystkie-wymiary-i-współrzędne-kolumny" title="Funkcja zwracająca wszystkie wymiary i współrzędne kolumny">Funkcja zwracająca wszystkie wymiary i współrzędne kolumny</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Plik-characterpy" title="Plik character.py">Plik character.py</a><ul class="nav">
+<li><a href="#Klasa-postaci" title="Klasa postaci">Klasa postaci</a><ul class="nav">
+<li><a href="#Klasa-postaci-głównej-ładuje-grafikę-ptaka-i-nadaje-jej-odpowiednie-wymiary-i-współrzędne-Za-pomocą-odpowiednich-funkcji-ptak-może-wzlatywać-w-górę-oraz-opadać-w-dół" title="Klasa postaci głównej ładuje grafikę ptaka i nadaje jej odpowiednie wymiary i współrzędne. Za pomocą odpowiednich funkcji ptak może wzlatywać w górę oraz opadać w dół.">Klasa postaci głównej ładuje grafikę ptaka i nadaje jej odpowiednie wymiary i współrzędne. Za pomocą odpowiednich funkcji ptak może wzlatywać w górę oraz opadać w dół.</a></li>
+<li><a href="#Do-konstruktora-podajemy-skalę-i-pozycję-w-której-będzie-wyświetlany-ptak" title="Do konstruktora podajemy skalę i pozycję, w której będzie wyświetlany ptak">Do konstruktora podajemy skalę i pozycję, w której będzie wyświetlany ptak</a></li>
+<li><a href="#Funkcja-zwiększająca-wysokość-ptaka" title="Funkcja zwiększająca wysokość ptaka">Funkcja zwiększająca wysokość ptaka</a></li>
+<li><a href="#Analogiczna-funkcja-zmniejszająca-jego-wysokość" title="Analogiczna funkcja zmniejszająca jego wysokość">Analogiczna funkcja zmniejszająca jego wysokość</a></li>
+<li><a href="#Funkcja-zwracająca-grafikę-postaci" title="Funkcja zwracająca grafikę postaci">Funkcja zwracająca grafikę postaci</a></li>
+<li><a href="#Funkcja-do-zmiany-pozycji-ptaka" title="Funkcja do zmiany pozycji ptaka">Funkcja do zmiany pozycji ptaka</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Plik-scenepy" title="Plik scene.py">Plik scene.py</a><ul class="nav">
+<li><a href="#Klasa-tła" title="Klasa tła">Klasa tła</a><ul class="nav">
+<li><a href="#Klasa-odpowiada-za-grafikę-tła-jej-współrzędne-oraz-zwracanie-podstawowych-parametrów-jak-szerokość-czy-wysokość" title="Klasa odpowiada za grafikę tła, jej współrzędne oraz zwracanie podstawowych parametrów jak szerokość czy wysokość.">Klasa odpowiada za grafikę tła, jej współrzędne oraz zwracanie podstawowych parametrów jak szerokość czy wysokość.</a></li>
+<li><a href="#Konstruktor-klasy" title="Konstruktor klasy">Konstruktor klasy</a></li>
+<li><a href="#Zwraca-grafikę-tła" title="Zwraca grafikę tła">Zwraca grafikę tła</a></li>
+<li><a href="#Zwracam-szerokość-grafiki-tła" title="Zwracam szerokość grafiki tła">Zwracam szerokość grafiki tła</a></li>
+<li><a href="#Zwraca-wysokość-tła" title="Zwraca wysokość tła">Zwraca wysokość tła</a></li>
+</ul>
+</li>
+<li><a href="#Klasa-podłoża" title="Klasa podłoża">Klasa podłoża</a><ul class="nav">
+<li><a href="#Klasa-z-analogicznymi-funkcjami-jak-klasa-tła" title="Klasa z analogicznymi funkcjami jak klasa tła.">Klasa z analogicznymi funkcjami jak klasa tła.</a></li>
+<li><a href="#Konstruktor-klasy1" title="Konstruktor klasy">Konstruktor klasy</a></li>
+<li><a href="#Funkcja-do-zwracania-grafiki-podłoża" title="Funkcja do zwracania grafiki podłoża">Funkcja do zwracania grafiki podłoża</a></li>
+<li><a href="#Funkcja-zwracająca-szerokość-grafiki" title="Funkcja zwracająca szerokość grafiki">Funkcja zwracająca szerokość grafiki</a></li>
+<li><a href="#Funkcja-zwracająca-wysokość-grafiki" title="Funkcja zwracająca wysokość grafiki">Funkcja zwracająca wysokość grafiki</a></li>
+<li><a href="#Funkcja-zwracająca-wymiary-i-współrzędne-podłoża" title="Funkcja zwracająca wymiary i współrzędne podłoża">Funkcja zwracająca wymiary i współrzędne podłoża</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Plik-CONSTpy" title="Plik CONST.py">Plik CONST.py</a><ul class="nav">
+<li class="invisable-node"><ul class="nav">
+<li><a href="#Wysokość-grafiki-tła" title="Wysokość grafiki tła">Wysokość grafiki tła</a></li>
+<li><a href="#Wartość-skoku-ptaka-przy-wciśnięciu-spacji" title="Wartość skoku ptaka przy wciśnięciu spacji">Wartość skoku ptaka przy wciśnięciu spacji</a></li>
+<li><a href="#Wartość-spadku-ptaka" title="Wartość spadku ptaka">Wartość spadku ptaka</a></li>
+<li><a href="#Wartość-“ticku”-zegara" title="Wartość “ticku” zegara">Wartość “ticku” zegara</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

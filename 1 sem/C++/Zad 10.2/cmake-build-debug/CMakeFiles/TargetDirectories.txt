@@ -1,0 +1,3 @@
+C:/Users/burcz/Desktop/STUDIA/C++/Zad 10.2/cmake-build-debug/CMakeFiles/Zad_10_2.dir
+C:/Users/burcz/Desktop/STUDIA/C++/Zad 10.2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/burcz/Desktop/STUDIA/C++/Zad 10.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,11 @@
+#lang racket
+
+(define (pom lst)
+  (cond [(equal? (car lst) #\space)])
+  )
+
+(define (morse-decode kod)
+  (pom string->list kod)
+  )
+
+( morse-decode "__ .__. .. ___ _____ .. ___ .. ___")

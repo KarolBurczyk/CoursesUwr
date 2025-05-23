@@ -1,0 +1,17 @@
+#lang racket
+
+(define (appendd xs ys)
+  (if (null? (mcdr xs))
+      (set-mcdr! xs ys)
+      (appendd (mcdr xs) ys))
+  )
+
+
+(define (cycle! tab)
+  (if (null? tab)
+      '()
+      (appendd tab tab))
+  )
+
+(define p (mcons 9 (mcons 8 (mcons 6 '()))))
+(cycle! p)

@@ -1,0 +1,6 @@
++ Jaś 20
++ Basia 10
+Jaś Małgosia 10
+Małgosia Basia 7
+Basia Jaś 3
+# liczba na dzisiaj: 1729

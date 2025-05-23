@@ -1,0 +1,17 @@
+import numpy as np
+from turtle import *
+y = np.array(['read', 'blue', 'green'])
+j = np.gradient(y)
+colormode(255)
+fillcolor(j)
+begin_fill()
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+fd(100)
+rt(90)
+end_fill()
+input()

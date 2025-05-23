@@ -1,0 +1,60 @@
+from turtle import *
+import time
+
+speed('fastest')
+
+def tarcza():
+    home()
+    pencolor('blue')
+    pu()
+    lt(90)
+    for i in range(12):
+        pensize(2)
+        fd(290)
+        pd()
+        fd(40)
+        fd(-40)
+        pu()
+        fd(-290)
+        rt(6)
+        for j in range(4):
+            pensize(1)
+            fd(300)
+            pd()
+            fd(30)
+            fd(-30)
+            pu()
+            fd(-300)
+            rt(6)
+
+def godzina(h, m, s):
+    pu()
+    goto(0,0)
+    pd()
+    pensize(3)
+    rt(m*6+s/60*6)
+    fd(260)
+    fd(-260)
+    lt(m*6)
+    rt(h*30 + (m/60)*30)
+    pensize(5)
+    fd(220)
+    fd(-220)
+    lt(h*30 + (m/60)*30)
+    pensize(2)
+    rt(s*6)
+    pencolor('green')
+    fd(270)
+    fd(-270)
+    lt(s*6)
+
+while 1==1:
+    a = time.time()
+    res = time.localtime(a)
+    tracer(0,0)
+    tarcza()
+    godzina(res.tm_hour, res.tm_min, res.tm_sec)
+    hideturtle()
+    update()
+    clear()
+    time.sleep(0.1)

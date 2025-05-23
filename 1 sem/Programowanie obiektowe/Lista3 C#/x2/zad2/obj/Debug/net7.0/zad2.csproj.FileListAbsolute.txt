@@ -1,0 +1,15 @@
+C:\Users\burcz\RiderProjects\zad2\zad2\bin\Debug\net7.0\zad2.exe
+C:\Users\burcz\RiderProjects\zad2\zad2\bin\Debug\net7.0\zad2.deps.json
+C:\Users\burcz\RiderProjects\zad2\zad2\bin\Debug\net7.0\zad2.runtimeconfig.json
+C:\Users\burcz\RiderProjects\zad2\zad2\bin\Debug\net7.0\zad2.dll
+C:\Users\burcz\RiderProjects\zad2\zad2\bin\Debug\net7.0\zad2.pdb
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.csproj.AssemblyReference.cache
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.AssemblyInfoInputs.cache
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.AssemblyInfo.cs
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.csproj.CoreCompileInputs.cache
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.dll
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\refint\zad2.dll
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.pdb
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\zad2.genruntimeconfig.cache
+C:\Users\burcz\RiderProjects\zad2\zad2\obj\Debug\net7.0\ref\zad2.dll

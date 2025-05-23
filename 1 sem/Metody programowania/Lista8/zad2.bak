@@ -1,0 +1,12 @@
+#lang racket
+
+(define (mreverse-pom tab1 tab2)
+  (if (null? tab1)
+        tab2
+        (let ([x (mcdr tab2)])
+          (set-mcdr! tab1 tab2)
+          (mreverse-pom x tab1)))
+  )
+
+(define (mreverse! tab)
+  (mreverse-pom tab '()))

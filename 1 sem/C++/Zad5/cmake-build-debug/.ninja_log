@@ -1,0 +1,10 @@
+# ninja log v5
+5	153	7022448794071713	CMakeFiles/Lista5.dir/kolor.cpp.obj	7cdf19d81acf8748
+11	111	7020614384688181	CMakeFiles/Lista5.dir/kolortransparentny.cpp.obj	831598503ce1c667
+154	316	7022448795623976	Lista5.exe	cdffbe418f631de5
+1	178	7033438373135013	build.ninja	f661c83255e58ce
+12	399	7020622033841257	CMakeFiles/Lista5.dir/kolornt.cpp.obj	eed438be1f63d5fa
+5	525	7022427286855809	CMakeFiles/Lista5.dir/main.cpp.obj	72a8f763f3009fda
+4	369	7020627452613568	CMakeFiles/Lista5.dir/kolornazwany.cpp.obj	e75f883238b2283f
+4	466	7022423158179181	CMakeFiles/Lista5.dir/piksel.cpp.obj	4f25b2a07f2c6c48
+6	803	7022422374923738	CMakeFiles/Lista5.dir/pikselkolorowy.cpp.obj	d34df6cbcdc350d0

@@ -1,0 +1,10 @@
+# ninja log v5
+8	1216	7004319458157674	CMakeFiles/C__.dir/main.cpp.obj	4214084b16f7cd0b
+24	1261	7004316528421186	CMakeFiles/C__.dir/metody.cpp.obj	fd6f2d6e8934fd38
+1217	1464	7004319460531318	C__.exe	4c613948d0417e71
+10	491	7003483928427152	CMakeFiles/C__.dir/zrodlowy1.cpp.obj	fd31bf6b068d4fa0
+9	486	7003476684435964	CMakeFiles/C__.dir/naglowkowy.cpp.obj	dc16e17110ae276b
+1	174	7004354499936335	build.ninja	33f2789d3225a039
+13	1072	7004355866929299	CMakeFiles/C__.dir/global_functions.cpp.obj	b1c2e9baae6bef93
+5	1162	7004355867828628	CMakeFiles/C__.dir/main.cpp.obj	4214084b16f7cd0b
+1162	1587	7004355872016649	C__.exe	7c0dfcdc0ca3e94d
