@@ -1,0 +1,3 @@
+C:/Users/burcz/Desktop/STUDIA/3 sem/Analne Numerki/cmake-build-debug/CMakeFiles/Analne_Numerki.dir
+C:/Users/burcz/Desktop/STUDIA/3 sem/Analne Numerki/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/burcz/Desktop/STUDIA/3 sem/Analne Numerki/cmake-build-debug/CMakeFiles/rebuild_cache.dir
