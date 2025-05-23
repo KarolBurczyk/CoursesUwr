@@ -1,0 +1,49 @@
+-- Przygotowanie tabel
+DROP TABLE IF EXISTS liczby1;
+DROP TABLE IF EXISTS liczby2;
+CREATE TABLE liczby1 (liczba INT);
+CREATE TABLE liczby2 (liczba INT);
+
+-- READ UNCOMMITTED
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+BEGIN TRAN;
+INSERT INTO liczby1 VALUES (1);
+
+-- W drugim połączeniu: INSERT INTO liczby2 VALUES (1);
+-- W tym połączeniu:
+UPDATE liczby2 SET liczba = 10;
+
+COMMIT;
+
+-- READ COMMITTED
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+BEGIN TRAN;
+INSERT INTO liczby1 VALUES (1);
+
+-- W drugim połączeniu: INSERT INTO liczby2 VALUES (1);
+-- W tym połączeniu:
+UPDATE liczby2 SET liczba = 10;
+
+COMMIT;
+
+-- REPEATABLE READ
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+BEGIN TRAN;
+INSERT INTO liczby1 VALUES (1);
+
+-- W drugim połączeniu: INSERT INTO liczby2 VALUES (1);
+-- W tym połączeniu:
+UPDATE liczby2 SET liczba = 10;
+
+COMMIT;
+
+-- SERIALIZABLE
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+BEGIN TRAN;
+INSERT INTO liczby1 VALUES (1);
+
+-- W drugim połączeniu: INSERT INTO liczby2 VALUES (1);
+-- W tym połączeniu:
+UPDATE liczby2 SET liczba = 10;
+
+COMMIT;

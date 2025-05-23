@@ -1,0 +1,93 @@
+1:
+CREATE (m1:Movie {title: 'The Matrix', released: 1999, tagline: 'Welcome to the Real World'})
+CREATE (m2:Movie {title: 'The Dark Knight', released: 2008, tagline: 'Why So Serious?'})
+CREATE (m3:Movie {title: 'Inception', released: 2010, tagline: 'Your mind is the scene of the crime'})
+
+CREATE (a1:Person {name: 'Keanu Reeves', born: 1964})
+CREATE (a2:Person {name: 'Christian Bale', born: 1974})
+CREATE (a3:Person {name: 'Leonardo DiCaprio', born: 1974})
+
+CREATE (a1)-[:ACTED_IN {role: 'Neo'}]->(m1)
+CREATE (a2)-[:ACTED_IN {role: 'Bruce Wayne'}]->(m2)
+CREATE (a3)-[:ACTED_IN {role: 'Dom Cobb'}]->(m3)
+
+CREATE (d1:Person {name: 'Lana Wachowski'})
+CREATE (d2:Person {name: 'Christopher Nolan'})
+
+CREATE (d1)-[:DIRECTED]->(m1)
+CREATE (d2)-[:DIRECTED]->(m2)
+CREATE (d2)-[:DIRECTED]->(m3)
+
+2:
+A)
+CREATE (m4:Movie {title: 'Interstellar', released: 2014, tagline: 'Mankind was born on Earth. It was never meant to die here.'})
+CREATE (m5:Movie {title: 'John Wick', released: 2014, tagline: 'Don’t set him off'})
+
+CREATE (a4:Person {name: 'Matthew McConaughey', born: 1969})
+CREATE (a5:Person {name: 'Halle Berry', born: 1966})
+B)
+MATCH (m:Movie {title: 'The Matrix'})
+SET m.genre = 'Science Fiction', m.rating = 8.7
+RETURN m
+C)
+MATCH (a:Person {name: 'Matthew McConaughey'}), (m:Movie {title: 'Interstellar'})
+CREATE (a)-[:ACTED_IN {role: 'Cooper'}]->(m)
+
+WITH a, m // Pass variables to the next part of the query
+MATCH (a:Person {name: 'Halle Berry'}), (m:Movie {title: 'John Wick'})
+CREATE (a)-[:ACTED_IN {role: 'Sofia'}]->(m)
+D)
+MATCH (m:Movie {title: 'Inception'})
+SET m.released = 2012
+RETURN m
+E)
+MATCH (a:Person {name: 'Keanu Reeves'})-[r:ACTED_IN]->(m:Movie {title: 'The Matrix'})
+DELETE r
+
+3:
+A)
+MATCH (p:Person {name: 'Keanu Reeves'})-[:ACTED_IN]->(m:Movie)
+RETURN m.title AS Movie
+B)
+MATCH (p:Person {name: 'Keanu Reeves'})-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(p)
+RETURN m.title AS Movie
+C)
+MATCH (p:Person)
+WHERE NOT (p)-[:ACTED_IN]->(:Movie) AND NOT (p)-[:DIRECTED]->(:Movie)
+RETURN p.name AS Actor
+D)
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WITH p, count(m) as movieCount
+WHERE movieCount > 1
+RETURN p;
+E)
+MATCH (m:Movie)<-[:ACTED_IN]-(p:Person)
+WITH m, COUNT(p) AS actorCount
+ORDER BY actorCount DESC
+LIMIT 1
+RETURN m.title AS Movie, actorCount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

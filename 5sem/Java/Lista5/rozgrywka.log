@@ -1,0 +1,94 @@
+lis 13, 2024 12:08:45 AM GuessingGame main
+INFO: Rozpoczęto nową grę z poziomem trudności N=3
+lis 13, 2024 12:09:26 AM GuessingGame main
+INFO: Gracz odgadł poprawną permutację.
+lis 13, 2024 12:09:26 AM GuessingGame main
+INFO: Gra zakończona.
+lis 13, 2024 12:09:26 AM java.util.ArrayList forEach
+INFO: Próba: [1, 2, 3], wynik: nietrafiona
+lis 13, 2024 12:09:26 AM java.util.ArrayList forEach
+INFO: Próba: [2, 3, 1], wynik: nietrafiona
+lis 13, 2024 12:09:26 AM java.util.ArrayList forEach
+INFO: Próba: [3, 2, 1], wynik: nietrafiona
+lis 13, 2024 12:09:26 AM java.util.ArrayList forEach
+INFO: Próba: [3, 1, 2], wynik: trafiona
+lis 13, 2024 12:11:56 AM GuessingGame main
+INFO: Rozpoczęto nową grę z poziomem trudności N=5
+lis 13, 2024 12:13:13 AM GuessingGame main
+INFO: Gracz odgadł poprawną permutację.
+lis 13, 2024 12:13:13 AM GuessingGame main
+INFO: Gra zakończona.
+lis 13, 2024 12:13:13 AM java.util.ArrayList forEach
+INFO: Próba: [1, 2, 3, 4, 5], wynik: nietrafiona
+lis 13, 2024 12:13:13 AM java.util.ArrayList forEach
+INFO: Próba: [2, 1, 3, 4, 5], wynik: nietrafiona
+lis 13, 2024 12:13:13 AM java.util.ArrayList forEach
+INFO: Próba: [4, 5, 2, 3, 1], wynik: nietrafiona
+lis 13, 2024 12:13:13 AM java.util.ArrayList forEach
+INFO: Próba: [5, 4, 3, 1, 2], wynik: nietrafiona
+lis 13, 2024 12:13:13 AM java.util.ArrayList forEach
+INFO: Próba: [3, 4, 5, 2, 1], wynik: trafiona
+lis 13, 2024 12:14:55 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=4
+lis 13, 2024 12:16:26 AM GuessingGame main
+WARNING: Niepoprawne dane wejsciowe: Nie mozna powtarzac liczb w ciagu.
+lis 13, 2024 12:52:14 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=5
+lis 13, 2024 12:53:00 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=5
+lis 13, 2024 12:53:22 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=5
+lis 13, 2024 12:56:25 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=5
+lis 13, 2024 12:57:06 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=5
+lis 13, 2024 12:57:37 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=5
+lis 13, 2024 12:58:15 AM GuessingGame main
+INFO: Gracz odgadl poprawna permutacje.
+lis 13, 2024 12:58:15 AM GuessingGame main
+INFO: Gra zakończona.
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [1, 2, 3, 4, 5], wynik: nietrafiona
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [5, 4, 3, 2, 1], wynik: nietrafiona
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [4, 3, 2, 1, 5], wynik: nietrafiona
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [3, 2, 1, 4, 5], wynik: nietrafiona
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [3, 1, 4, 5, 2], wynik: nietrafiona
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [3, 1, 5, 2, 4], wynik: nietrafiona
+lis 13, 2024 12:58:15 AM java.util.ArrayList forEach
+INFO: Proba: [3, 1, 5, 4, 2], wynik: trafiona
+lis 13, 2024 12:59:53 AM GuessingGame main
+INFO: Rozpoczeto nowa gre z poziomem trudnosci N=6
+lis 13, 2024 12:59:55 AM GuessingGame main
+WARNING: Niepoprawne dane wejsciowe: Niepoprawna liczba elementow. Oczekiwano 6 liczb.
+lis 27, 2024 2:57:10 PM GuessingGame main
+INFO: Wybrany poziom trudnosci N=4
+lis 27, 2024 2:59:20 PM GuessingGame main
+INFO: Poprawna permutacja.
+lis 27, 2024 2:59:20 PM GuessingGame main
+INFO: Koniec gry
+lis 27, 2024 2:59:20 PM java.util.ArrayList forEach
+INFO: Proba: [1, 2, 3, 4], wynik: nietrafiona
+lis 27, 2024 2:59:20 PM java.util.ArrayList forEach
+INFO: Proba: [1, 3, 2, 4], wynik: nietrafiona
+lis 27, 2024 2:59:20 PM java.util.ArrayList forEach
+INFO: Proba: [1, 4, 2, 3], wynik: nietrafiona
+lis 27, 2024 2:59:20 PM java.util.ArrayList forEach
+INFO: Proba: [4, 1, 2, 3], wynik: nietrafiona
+lis 27, 2024 2:59:20 PM java.util.ArrayList forEach
+INFO: Proba: [4, 3, 2, 1], wynik: trafiona
+lis 27, 2024 3:55:59 PM GuessingGame main
+INFO: Wybrany poziom trudnosci N=3
+lis 27, 2024 3:56:05 PM GuessingGame main
+INFO: Poprawna permutacja.
+lis 27, 2024 3:56:05 PM GuessingGame main
+INFO: Koniec gry
+lis 27, 2024 3:56:05 PM java.util.ArrayList forEach
+INFO: Proba: [1, 2, 3], wynik: nietrafiona
+lis 27, 2024 3:56:05 PM java.util.ArrayList forEach
+INFO: Proba: [2, 1, 3], wynik: trafiona

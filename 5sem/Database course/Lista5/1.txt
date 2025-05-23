@@ -1,0 +1,8 @@
+1NF (Pierwsza Forma Normalna)
+W 1NF tabela nie może zawierać powtarzających się grup danych ani zagnieżdżonych pól. Wszystkie kolumny muszą przechowywać pojedyncze wartości.
+
+2NF (Druga Forma Normalna)
+W 2NF wszystkie kolumny niekluczowe muszą być w pełni zależne od klucza głównego. Usuwamy zależności częściowe, dzieląc tabelę na mniejsze.
+
+3NF (Trzecia Forma Normalna)
+W 3NF eliminujemy zależności przechodnie. Żadne kolumny niekluczowe nie mogą zależeć od innych kolumn niekluczowych.
