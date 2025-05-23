@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z3", "z3.csproj", "{8F073A97-E28B-4647-B70E-F3AA934D234C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "z3.1", "..\z3.1\z3.1.csproj", "{15EC8763-7C97-4104-82BD-48847DCDD8FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F073A97-E28B-4647-B70E-F3AA934D234C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F073A97-E28B-4647-B70E-F3AA934D234C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F073A97-E28B-4647-B70E-F3AA934D234C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F073A97-E28B-4647-B70E-F3AA934D234C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EC8763-7C97-4104-82BD-48847DCDD8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EC8763-7C97-4104-82BD-48847DCDD8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EC8763-7C97-4104-82BD-48847DCDD8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EC8763-7C97-4104-82BD-48847DCDD8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {337AFE9C-8F7B-42C9-A7C7-E5B509A13819}
+	EndGlobalSection
+EndGlobal

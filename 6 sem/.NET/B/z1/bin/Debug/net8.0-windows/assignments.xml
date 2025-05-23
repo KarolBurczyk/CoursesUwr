@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assignments>
+  <Assignment StudentId="1" CourseId="2" YearId="1" />
+  <Assignment StudentId="1" CourseId="e3407421-6636-42ee-91b9-b55f8df0cd63" YearId="1bc4157a-cb48-414e-adb4-f8d646fe9bd9" />
+  <Assignment StudentId="1032c26a-c6a5-4a67-9062-6330a42e0acd" CourseId="e3407421-6636-42ee-91b9-b55f8df0cd63" YearId="1" />
+  <Assignment StudentId="d2bad255-e304-4d87-a2f3-05905792c479" CourseId="e3407421-6636-42ee-91b9-b55f8df0cd63" YearId="1" />
+  <Assignment StudentId="d2bad255-e304-4d87-a2f3-05905792c479" CourseId="e3407421-6636-42ee-91b9-b55f8df0cd63" YearId="1bc4157a-cb48-414e-adb4-f8d646fe9bd9" />
+  <Assignment StudentId="d2bad255-e304-4d87-a2f3-05905792c479" CourseId="e3407421-6636-42ee-91b9-b55f8df0cd63" YearId="8e553bc0-9a0e-4cbd-bac4-76f095fb15e5" />
+  <Assignment StudentId="d2bad255-e304-4d87-a2f3-05905792c479" CourseId="1" YearId="1" />
+  <Assignment StudentId="42a7daac-911a-47b0-bcfb-cfddb23066d9" CourseId="1" YearId="1" />
+  <Assignment StudentId="d12f3771-aa54-49f9-a124-297c536daf47" CourseId="1" YearId="1" />
+  <Assignment StudentId="d12f3771-aa54-49f9-a124-297c536daf47" CourseId="e3407421-6636-42ee-91b9-b55f8df0cd63" YearId="8e553bc0-9a0e-4cbd-bac4-76f095fb15e5" />
+  <Assignment StudentId="d5015c95-7863-43dc-9088-fdac20d3e265" CourseId="a000b4e3-cedd-4720-a111-5c06de639a70" YearId="1" />
+  <Assignment StudentId="d5015c95-7863-43dc-9088-fdac20d3e265" CourseId="2" YearId="8e2baa39-c67f-4c5b-a289-e537783bc253" />
+  <Assignment StudentId="e5a72a21-c8c2-4502-8aa7-e73b2307ada8" CourseId="a000b4e3-cedd-4720-a111-5c06de639a70" YearId="8ae8043d-d370-4366-9e11-964fa5074e0c" />
+</Assignments>

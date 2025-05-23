@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista3\\Z2\\z2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08588759-95E4-4A75-8E4D-66F021845F67}|z2.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista3\\z2\\z2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08588759-95E4-4A75-8E4D-66F021845F67}|z2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista3\\Z2\\z2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista3\\Z2\\z2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:59:02.836Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

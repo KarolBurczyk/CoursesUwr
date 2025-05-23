@@ -1,0 +1,38 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Xml.Linq" #>
+
+<#
+    string xmlPath = Path.Combine(Path.GetDirectoryName(Host.TemplateFile), "classes.xml");
+    XDocument doc = XDocument.Load(xmlPath);
+
+    string outputDir = Path.GetDirectoryName(Host.TemplateFile);
+
+    foreach (var cls in doc.Descendants("class"))
+    {
+        string className = cls.Attribute("name").Value;
+        string fileName = Path.Combine(outputDir, className + ".cs");
+
+        var classCode = new System.Text.StringBuilder();
+        classCode.AppendLine("namespace GeneratedClasses");
+        classCode.AppendLine("{");
+        classCode.AppendLine($"    public class {className}");
+        classCode.AppendLine("    {");
+
+        foreach (var field in cls.Descendants("field"))
+        {
+            string type = field.Attribute("type").Value;
+            string name = field.Attribute("name").Value;
+            classCode.AppendLine($"        public {type} {name} {{ get; set; }}");
+        }
+
+        classCode.AppendLine("    }");
+        classCode.AppendLine("}");
+
+        File.WriteAllText(fileName, classCode.ToString());
+    }
+#>

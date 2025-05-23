@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "zadanie-Program",
+      "appliesTo": "ConsoleApp2-2/Program.cs",
+      "type": "launch"
+    }
+  ]
+}

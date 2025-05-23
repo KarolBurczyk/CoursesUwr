@@ -1,0 +1,11 @@
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\bin\Debug\net9.0\Lib2-1.deps.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\bin\Debug\net9.0\Lib2-1.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\bin\Debug\net9.0\Lib2-1.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\Lib2-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\Lib2-1.AssemblyInfoInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\Lib2-1.AssemblyInfo.cs
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\Lib2-1.csproj.CoreCompileInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\Lib2-1.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\refint\Lib2-1.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\Lib2-1.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista1\Z2\Lib2-1\obj\Debug\net9.0\ref\Lib2-1.dll

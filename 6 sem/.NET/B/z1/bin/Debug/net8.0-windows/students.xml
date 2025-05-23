@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Students>
+  <Student Id="1">
+    <FirstName>Anna</FirstName>
+    <LastName>Pięta</LastName>
+    <BirthDate>2001-05-23</BirthDate>
+  </Student>
+  <Student Id="d2bad255-e304-4d87-a2f3-05905792c479">
+    <FirstName>Karol</FirstName>
+    <LastName>Burczyk</LastName>
+    <BirthDate>1981-01-01</BirthDate>
+  </Student>
+  <Student Id="1032c26a-c6a5-4a67-9062-6330a42e0acd">
+    <FirstName>Jan</FirstName>
+    <LastName>Mały</LastName>
+    <BirthDate>1990-02-21</BirthDate>
+  </Student>
+  <Student Id="40e2dd8d-4a30-4b8c-b9a5-df5b011c13fb">
+    <FirstName>Patryk</FirstName>
+    <LastName>Maź</LastName>
+    <BirthDate>2025-05-19</BirthDate>
+  </Student>
+  <Student Id="42a7daac-911a-47b0-bcfb-cfddb23066d9">
+    <FirstName>Przemek</FirstName>
+    <LastName>Frankowski</LastName>
+    <BirthDate>2025-05-19</BirthDate>
+  </Student>
+  <Student Id="d12f3771-aa54-49f9-a124-297c536daf47">
+    <FirstName>Marcin</FirstName>
+    <LastName>Wiosło</LastName>
+    <BirthDate>2003-06-12</BirthDate>
+  </Student>
+  <Student Id="d5015c95-7863-43dc-9088-fdac20d3e265">
+    <FirstName>Maksymilian</FirstName>
+    <LastName>Brzoza</LastName>
+    <BirthDate>2001-03-30</BirthDate>
+  </Student>
+  <Student Id="e5a72a21-c8c2-4502-8aa7-e73b2307ada8">
+    <FirstName>Michał</FirstName>
+    <LastName>Trzos</LastName>
+    <BirthDate>2025-05-20</BirthDate>
+  </Student>
+</Students>

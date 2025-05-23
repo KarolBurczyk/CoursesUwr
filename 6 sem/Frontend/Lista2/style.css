@@ -1,0 +1,84 @@
+body {
+    background-color: lightblue;
+    color: darkblue;
+    font-family: "Emblema One", system-ui;
+    font-size: 1rem !important;
+}
+
+h1 {
+    font-weight: 800 !important; 
+    text-align: center;
+}
+
+p {
+    margin: 2rem auto !important;
+    max-width: 80% !important;
+}
+
+#challenge2 .box:first-child {
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+#challenge2 .box:nth-child(2) {
+    background-color: lightslategray;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+#challenge2 .box:nth-child(3) {
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+#challenge2 .box:first-child:hover {
+    background-color: lightpink;
+}
+
+#challenge2 .box:nth-child(2):hover {
+    background-color: black;
+    border-color: lightslategray;
+}
+
+#challenge2 .box:nth-child(3):hover {
+    background: linear-gradient(to bottom, red 50%, white 50%);
+}
+
+#challenge3 a {
+    color: darkblue !important;
+    text-decoration: underline;
+    display: inline;
+}
+
+#challenge3 a:visited {
+    color: lightslategray !important;
+}
+
+#challenge3 a:hover {
+    color: red !important;
+    font-weight: bold;
+}
+
+#challenge3 li {
+    list-style: none;
+}
+
+#challenge3 li::before {
+    content: "🍔";
+}
+
+p:empty,
+input:disabled,
+a[href*="recipe"] {
+    display: none;
+}
+
+#challenge5 img {
+    /* width: 70%;
+    min-width: 100px;
+    max-width: 500px; */
+    width: clamp(100px, 70%, 500px);
+}
+
+#challenge5 figcaption {
+    font-size: 0.7rem !important;
+}

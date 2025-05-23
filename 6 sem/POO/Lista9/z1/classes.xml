@@ -1,0 +1,12 @@
+﻿<classes>
+	<class name="Person">
+		<field name="FirstName" type="string" />
+		<field name="LastName" type="string" />
+		<field name="Age" type="int" />
+	</class>
+	<class name="Product">
+		<field name="Id" type="int" />
+		<field name="Name" type="string" />
+		<field name="Price" type="decimal" />
+	</class>
+</classes>

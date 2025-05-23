@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(to bottom, #d62828, #f77f00);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 3px solid #000;
+            flex-shrink: 0;
+        }
+
+        .sidebar h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .pokemon-list {
+            list-style: none;
+        }
+
+        .pokemon-list li {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .pokemon-list li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .main {
+            flex: 1;
+            padding: 30px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow-y: auto;
+        }
+
+        .loading-text,
+        .error-text {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .pokemon-content {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .pokemon-image {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+
+        .types {
+            margin-bottom: 20px;
+        }
+
+        .type {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #ddd;
+            border-radius: 20px;
+            margin: 3px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        .stats {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            margin: 6px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .flavor-text {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 400px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-text {
+            font-size: 1.2em;
+            color: red;
+            text-align: center;
+        }
+
+        .loading {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #ccc;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 3px solid #000;
+                max-height: 300px;
+            }
+
+            .main {
+                padding: 20px 10px;
+            }
+
+            .pokemon-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .sidebar h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Pokédex</h1>
+        <ul id="pokemonList" class="pokemon-list">
+            <li>Bulbasaur</li>
+            <li>Ivysaur</li>
+            <li>Venusaur</li>
+            <li>Charmander</li>
+            <li>Charmeleon</li>
+            <li>Charizard</li>
+            <li>Squirtle</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div id="loading" class="loading" style="display: none"></div>
+        <div id="errorText" class="error-text" style="display: none">
+            Failed to load Pokémon data.
+        </div>
+        <div id="pokemonDetails" class="pokemon-content" style="display: flex">
+            <h2 id="pokemonName">Pidgeotto</h2>
+            <img id="pokemonImg" class="pokemon-image"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="pidgeotto" />
+            <div id="pokemonTypes" class="types">
+                <span class="type">Normal</span><span class="type">Flying</span>
+            </div>
+            <div id="pokemonFlavorText" class="flavor-text">
+                Very protective of its sprawling territorial area, this POKéMON will
+                fiercely peck at any intruder.
+            </div>
+            <div id="pokemonStats" class="stats">
+                <div class="stat">
+                    <span>Hp</span>
+                    <span>63</span>
+                </div>
+                <div class="stat">
+                    <span>Attack</span>
+                    <span>60</span>
+                </div>
+                <div class="stat">
+                    <span>Defense</span>
+                    <span>55</span>
+                </div>
+                <div class="stat">
+                    <span>Special-attack</span>
+                    <span>50</span>
+                </div>
+                <div class="stat">
+                    <span>Special-defense</span>
+                    <span>50</span>
+                </div>
+                <div class="stat">
+                    <span>Speed</span>
+                    <span>71</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const pokemonList = document.getElementById('pokemonList');
+        const pokemonDetails = document.getElementById('pokemonDetails');
+        const pokemonName = document.getElementById('pokemonName');
+        const pokemonImg = document.getElementById('pokemonImg');
+        const pokemonTypes = document.getElementById('pokemonTypes');
+        const pokemonStats = document.getElementById('pokemonStats');
+        const pokemonFlavorText = document.getElementById('pokemonFlavorText');
+        const loading = document.getElementById('loading');
+        const errorText = document.getElementById('errorText');
+
+        async function preloadImage(src) {
+            const img = new Image();
+            img.src = src;
+            await img.decode();
+            return img;
+        }
+
+        async function loadPokemonList() {
+            try {
+                showLoading(true);
+                const response = await fetch('https://pokeapi.co/api/v2/pokemon-species?limit=151');
+                const data = await response.json();
+                const pokemons = data.results;
+
+                pokemonList.innerHTML = '';
+
+                pokemons.forEach(pokemon => {
+                    const li = document.createElement('li');
+                    li.textContent = pokemon.name;
+                    li.addEventListener('click', () => loadPokemonData(pokemon.name));
+                    pokemonList.appendChild(li);
+                });
+            } catch (error) {
+                showError();
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function loadPokemonData(name) {
+            try {
+                showLoading(true);
+                
+                pokemonDetails.style.display = 'none'
+
+                const speciesResponse = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${name}`);
+                const speciesData = await speciesResponse.json();
+
+                const defaultPokemonUrl = speciesData.varieties.find(v => v.is_default).pokemon.url;
+
+                const pokemonResponse = await fetch(defaultPokemonUrl);
+                const pokemonData = await pokemonResponse.json();
+
+                pokemonName.textContent = pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
+
+                const imgSrc = pokemonData.sprites.front_default;
+                const img = await preloadImage(imgSrc);
+                pokemonImg.src = img.src;
+
+                pokemonDetails.style.display = 'flex'
+
+                pokemonTypes.innerHTML = '';
+                pokemonData.types.forEach(type => {
+                    const span = document.createElement('span');
+                    span.classList.add('type');
+                    span.textContent = type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1);
+                    pokemonTypes.appendChild(span);
+                });
+
+                pokemonStats.innerHTML = '';
+                pokemonData.stats.forEach(stat => {
+                    const statDiv = document.createElement('div');
+                    statDiv.classList.add('stat');
+                    statDiv.innerHTML = `<span>${stat.stat.name.charAt(0).toUpperCase() + stat.stat.name.slice(1)}</span><span>${stat.base_stat}</span>`;
+                    pokemonStats.appendChild(statDiv);
+                });
+
+                const flavorText = speciesData.flavor_text_entries.find(entry => entry.language.name === 'en');
+                const rawFlavor = flavorText ? flavorText.flavor_text : 'No description available.';
+                const cleanedFlavor = rawFlavor.replace(/[\f\n\r]/g, ' ');
+                pokemonFlavorText.textContent = cleanedFlavor;
+                
+                pokemonDetails.style.display = 'flex';
+                errorText.style.display = 'none';
+            } catch (error) {
+                showError();
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function showError() {
+            pokemonDetails.style.display = 'none';
+            errorText.style.display = 'block';
+        }
+
+        function showLoading(isLoading) {
+            if (isLoading) {
+                loading.style.display = 'block';
+            } else {
+                loading.style.display = 'none';
+            }
+        }
+
+        loadPokemonList();
+    </script>
+</body>
+
+</html>

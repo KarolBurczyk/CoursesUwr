@@ -1,0 +1,14 @@
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\bin\Debug\net8.0\z3.exe
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\bin\Debug\net8.0\z3.deps.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\bin\Debug\net8.0\z3.runtimeconfig.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\bin\Debug\net8.0\z3.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\bin\Debug\net8.0\z3.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.AssemblyInfoInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.AssemblyInfo.cs
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.csproj.CoreCompileInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\refint\z3.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\z3.genruntimeconfig.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista8\z3\obj\Debug\net8.0\ref\z3.dll

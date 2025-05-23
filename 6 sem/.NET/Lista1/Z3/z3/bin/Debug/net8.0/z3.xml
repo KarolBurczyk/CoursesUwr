@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>z3</name>
+    </assembly>
+    <members>
+        <member name="T:TestProgram.TestDelegate">
+            <summary>
+            Delegat do obsługi zdarzeń, przekazuje komunikat tekstowy.
+            </summary>
+            <param name="message">Komunikat do wyświetlenia.</param>
+        </member>
+        <member name="T:TestProgram.TestClass">
+            <summary>
+            Klasa demonstracyjna zawierająca przykłady zdarzeń, pętli, instrukcji warunkowych i switch.
+            </summary>
+        </member>
+        <member name="E:TestProgram.TestClass.TestEvent">
+            <summary>
+            Zdarzenie wywoływane, gdy coś się dzieje.
+            </summary>
+        </member>
+        <member name="P:TestProgram.TestClass.Number">
+            <summary>
+            Właściwość przechowująca liczbę.
+            </summary>
+        </member>
+        <member name="P:TestProgram.TestClass.Item(System.Int32)">
+            <summary>
+            Indeksator zwracający wartość w postaci tekstowej na podstawie indeksu.
+            </summary>
+            <param name="index">Indeks w tablicy.</param>
+            <returns>Łańcuch tekstowy zawierający numer indeksu.</returns>
+        </member>
+        <member name="M:TestProgram.TestClass.TriggerEvent">
+            <summary>
+            Wywołuje zdarzenie <see cref="E:TestProgram.TestClass.TestEvent"/>.
+            </summary>
+        </member>
+        <member name="M:TestProgram.TestClass.Loop">
+            <summary>
+            Metoda demonstrująca działanie pętli for.
+            </summary>
+        </member>
+        <member name="M:TestProgram.TestClass.Condition(System.Int32)">
+            <summary>
+            Sprawdza wartość liczby i wyświetla odpowiedni komunikat.
+            </summary>
+            <param name="x">Liczba do sprawdzenia.</param>
+        </member>
+        <member name="M:TestProgram.TestClass.Switch(System.Int32)">
+            <summary>
+            Wyświetla nazwę dnia tygodnia na podstawie przekazanej wartości.
+            </summary>
+            <param name="day">Numer dnia tygodnia.</param>
+        </member>
+        <member name="T:TestProgram.Program">
+            <summary>
+            Klasa zawierająca metodę główną programu.
+            </summary>
+        </member>
+        <member name="M:TestProgram.Program.Main">
+            <summary>
+            Metoda główna programu.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,44 @@
+<html lang="pl">
+    <head>
+        <title>Formularz Kontaktowy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card">
+            <h2 class="form-title" >Formularz kontaktowy</h2>
+            <form class="form">
+                <label class="form-label">Imię *</label>
+                <input class="form-action" type="text" name="name" required>
+                
+                <label class="form-label">Nazwisko</label>
+                <input class="form-action" type="text" name="surname">
+                
+                <label class="form-label">E-mail *</label>
+                <input class="form-action" type="email" name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                
+                <label class="form-label">Telefon</label>
+                <input class="form-action" type="tel" name="phone" pattern="\d{9}">
+                
+                <div class="checkbox-container">
+                    <label class="form-label">Zapisz do newslettera</label>
+                    <input type="checkbox">
+                </div>
+                
+                <label class="form-label">Powód kontaktu *</label>
+                <select class="form-action" required>
+                    <option value="" disabled selected>Wybierz...</option>
+                    <option value="">Reklamacja</option>
+                    <option value="">Przesyłka nie dotarła</option>
+                    <option value="">Przesyłka dotarła uszkodzona</option>
+                    <option value="">Niekompletne zamówienie</option>
+                    <option value="">Inne</option>
+                </select>
+                
+                <label class="form-label">Wiadomość *</label>
+                <textarea class="form-action" required></textarea>
+                
+                <button class="submit-button">Wyślij</button>
+            </form>
+        </div>
+    </body>
+</html>

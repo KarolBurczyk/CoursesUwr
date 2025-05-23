@@ -1,0 +1,4 @@
+2025-05-19 23:32:43.2635 | INFO | z7.Program | Aplikacja uruchomiona
+2025-05-19 23:32:43.2835 | WARN | z7.Program | To jest ostrzeżenie
+2025-05-19 23:32:43.2835 | ERROR | z7.Program | To jest błąd
+2025-05-19 23:32:43.2835 | INFO | z7.Program | Koniec działania aplikacji

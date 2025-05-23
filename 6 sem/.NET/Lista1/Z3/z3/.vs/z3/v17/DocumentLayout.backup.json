@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z3\\z3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8DDB7254-1112-4BE8-8E49-3F6DE673755F}|z3.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z3\\z3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DDB7254-1112-4BE8-8E49-3F6DE673755F}|z3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DDB7254-1112-4BE8-8E49-3F6DE673755F}|z3.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z3\\z3\\z3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8DDB7254-1112-4BE8-8E49-3F6DE673755F}|z3.csproj|solutionrelative:z3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "z3",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z3\\z3\\z3.csproj",
+              "RelativeDocumentMoniker": "z3.csproj",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z3\\z3\\z3.csproj",
+              "RelativeToolTip": "z3.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T14:05:44.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z3\\z3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z3\\z3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T21:38:00.671Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

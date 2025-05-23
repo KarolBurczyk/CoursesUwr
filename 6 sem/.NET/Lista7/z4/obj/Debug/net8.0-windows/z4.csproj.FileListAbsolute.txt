@@ -1,0 +1,16 @@
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\bin\Debug\net8.0-windows\z4.exe
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\bin\Debug\net8.0-windows\z4.deps.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\bin\Debug\net8.0-windows\z4.runtimeconfig.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\bin\Debug\net8.0-windows\z4.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\bin\Debug\net8.0-windows\z4.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.Form1.resources
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.csproj.GenerateResource.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.AssemblyInfoInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.AssemblyInfo.cs
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.csproj.CoreCompileInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\refint\z4.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\z4.genruntimeconfig.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\.NET\Lista7\z4\obj\Debug\net8.0-windows\ref\z4.dll

@@ -1,0 +1,35 @@
+﻿<Window x:Class="KółkoKrzyżyk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kółko-Krzyżyk" Height="350" Width="350">
+    <Grid x:Name="GameGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <!-- Dodatkowy wiersz na informacje -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Przyciski do gry -->
+        <Button Name="btn00" Grid.Row="0" Grid.Column="0" Click="Button_Click" FontSize="36" />
+        <Button Name="btn01" Grid.Row="0" Grid.Column="1" Click="Button_Click" FontSize="36" />
+        <Button Name="btn02" Grid.Row="0" Grid.Column="2" Click="Button_Click" FontSize="36" />
+
+        <Button Name="btn10" Grid.Row="1" Grid.Column="0" Click="Button_Click" FontSize="36" />
+        <Button Name="btn11" Grid.Row="1" Grid.Column="1" Click="Button_Click" FontSize="36" />
+        <Button Name="btn12" Grid.Row="1" Grid.Column="2" Click="Button_Click" FontSize="36" />
+
+        <Button Name="btn20" Grid.Row="2" Grid.Column="0" Click="Button_Click" FontSize="36" />
+        <Button Name="btn21" Grid.Row="2" Grid.Column="1" Click="Button_Click" FontSize="36" />
+        <Button Name="btn22" Grid.Row="2" Grid.Column="2" Click="Button_Click" FontSize="36" />
+
+        <!-- Komponent do wyświetlania informacji o grze -->
+        <TextBlock Name="txtInfo" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" />
+    </Grid>
+</Window>

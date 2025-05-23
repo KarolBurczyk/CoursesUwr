@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE64E0C-1CB6-4038-B96F-7FDB3450950E}|z1.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\b\\z1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE64E0C-1CB6-4038-B96F-7FDB3450950E}|z1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE64E0C-1CB6-4038-B96F-7FDB3450950E}|z1.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\b\\z1\\editstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE64E0C-1CB6-4038-B96F-7FDB3450950E}|z1.csproj|solutionrelative:editstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\assignments.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\assignments.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\years.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\years.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\students.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\students.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\courses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\courses.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:09:49.164Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "assignments.xml",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\assignments.xml",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\assignments.xml",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\assignments.xml",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\assignments.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-19T20:22:41.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "years.xml",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\years.xml",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\years.xml",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\years.xml",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\years.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-19T19:09:27.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditStudentForm.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\EditStudentForm.cs",
+              "RelativeDocumentMoniker": "EditStudentForm.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\EditStudentForm.cs",
+              "RelativeToolTip": "EditStudentForm.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:07:11.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "students.xml",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\students.xml",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\students.xml",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\students.xml",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\students.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-19T19:09:48.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "courses.xml",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\courses.xml",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\courses.xml",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\B\\z1\\bin\\Debug\\net8.0-windows\\courses.xml",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\courses.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-19T19:15:18.894Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

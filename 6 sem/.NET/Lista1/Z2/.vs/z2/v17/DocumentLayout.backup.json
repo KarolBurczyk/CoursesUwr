@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C450D-7C87-4075-95B2-01E933323FB2}|ConsoleApp2-2\\ConsoleApp2-2.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z2\\consoleapp2-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C08C450D-7C87-4075-95B2-01E933323FB2}|ConsoleApp2-2\\ConsoleApp2-2.csproj|solutionrelative:consoleapp2-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C450D-7C87-4075-95B2-01E933323FB2}|ConsoleApp2-2\\ConsoleApp2-2.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z2\\consoleapp2-2\\consoleapp2-2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C08C450D-7C87-4075-95B2-01E933323FB2}|ConsoleApp2-2\\ConsoleApp2-2.csproj|solutionrelative:consoleapp2-2\\consoleapp2-2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5E4035-22D3-49A5-91FB-248F615533F2}|Lib2-2\\Lib2-2.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z2\\lib2-2\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5E4035-22D3-49A5-91FB-248F615533F2}|Lib2-2\\Lib2-2.csproj|solutionrelative:lib2-2\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24044129-81FF-4C3F-9CA1-F88258E18249}|Lib2-1\\Lib2-1.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z2\\lib2-1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24044129-81FF-4C3F-9CA1-F88258E18249}|Lib2-1\\Lib2-1.csproj|solutionrelative:lib2-1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC967E73-C881-41B4-B6F3-DE3AC3B07A81}|ConsoleApp2-1\\ConsoleApp2-1.csproj|c:\\users\\burcz\\desktop\\studia\\6 sem\\.net\\lista1\\z2\\consoleapp2-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC967E73-C881-41B4-B6F3-DE3AC3B07A81}|ConsoleApp2-1\\ConsoleApp2-1.csproj|solutionrelative:consoleapp2-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\Lib2-2\\Class1.cs",
+              "RelativeDocumentMoniker": "Lib2-2\\Class1.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\Lib2-2\\Class1.cs",
+              "RelativeToolTip": "Lib2-2\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:26:38.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\Lib2-1\\Class1.cs",
+              "RelativeDocumentMoniker": "Lib2-1\\Class1.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\Lib2-1\\Class1.cs",
+              "RelativeToolTip": "Lib2-1\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:26:34.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\ConsoleApp2-2\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2-2\\Program.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\ConsoleApp2-2\\Program.cs",
+              "RelativeToolTip": "ConsoleApp2-2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T12:26:26.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleApp2-2.csproj",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\ConsoleApp2-2\\ConsoleApp2-2.csproj",
+              "RelativeDocumentMoniker": "ConsoleApp2-2\\ConsoleApp2-2.csproj",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\ConsoleApp2-2\\ConsoleApp2-2.csproj",
+              "RelativeToolTip": "ConsoleApp2-2\\ConsoleApp2-2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-11T12:26:21.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\ConsoleApp2-1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2-1\\Program.cs",
+              "ToolTip": "C:\\Users\\burcz\\Desktop\\STUDIA\\6 sem\\.NET\\Lista1\\Z2\\ConsoleApp2-1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp2-1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T21:27:13.253Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

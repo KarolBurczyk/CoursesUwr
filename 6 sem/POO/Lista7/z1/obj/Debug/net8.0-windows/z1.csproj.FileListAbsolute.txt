@@ -1,0 +1,16 @@
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.Form1.resources
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.csproj.GenerateResource.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.AssemblyInfoInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.AssemblyInfo.cs
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.csproj.CoreCompileInputs.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\bin\Debug\net8.0-windows\z1.exe
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\bin\Debug\net8.0-windows\z1.deps.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\bin\Debug\net8.0-windows\z1.runtimeconfig.json
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\bin\Debug\net8.0-windows\z1.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\bin\Debug\net8.0-windows\z1.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\refint\z1.dll
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.pdb
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\z1.genruntimeconfig.cache
+C:\Users\burcz\Desktop\STUDIA\6 sem\POO\Lista7\z1\obj\Debug\net8.0-windows\ref\z1.dll

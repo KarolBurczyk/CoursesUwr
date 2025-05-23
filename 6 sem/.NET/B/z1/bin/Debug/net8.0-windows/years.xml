@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AcademicYears>
+  <Year Id="1" Name="2024/2025" />
+  <Year Id="1bc4157a-cb48-414e-adb4-f8d646fe9bd9" Name="2022/2023" />
+  <Year Id="8e553bc0-9a0e-4cbd-bac4-76f095fb15e5" Name="2021/2022" />
+  <Year Id="8ae8043d-d370-4366-9e11-964fa5074e0c" Name="2001/2002" />
+  <Year Id="8fb713bf-ef1a-402c-baab-17c5458b89b7" Name="2005/2006" />
+  <Year Id="8e2baa39-c67f-4c5b-a289-e537783bc253" Name="1999/2000" />
+</AcademicYears>

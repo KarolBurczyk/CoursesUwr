@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Courses>
+  <Course Id="1" Name="Matematyka" />
+  <Course Id="2" Name="Python" />
+  <Course Id="9ff7052b-9c29-4307-b19f-7909d010dd10" Name="Logika" />
+  <Course Id="e3407421-6636-42ee-91b9-b55f8df0cd63" Name="AiSD" />
+  <Course Id="a000b4e3-cedd-4720-a111-5c06de639a70" Name="C#" />
+  <Course Id="3c3105c6-3522-4706-ab0f-a4f134e928d0" Name=".NET" />
+  <Course Id="5cb6b37f-4e24-4ccc-89ac-6f3f70665e32" Name="Algebra" />
+</Courses>
