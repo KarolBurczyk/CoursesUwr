@@ -1,0 +1,3 @@
+C:/Users/burcz/Desktop/STUDIA/4sem/AiSD/Pracownia2/cmake-build-debug/CMakeFiles/Pracownia2.dir
+C:/Users/burcz/Desktop/STUDIA/4sem/AiSD/Pracownia2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/burcz/Desktop/STUDIA/4sem/AiSD/Pracownia2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
