@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 # -*- coding: UTF-8 -*-
 '''
 Losowy agent do Dżungli
@@ -7,6 +7,9 @@ Losowy agent do Dżungli
 
 import random
 import sys
+
+class WrongMove(Exception):
+    pass
 
 class Jungle:
     PIECE_VALUES = {
@@ -19,6 +22,7 @@ class Jungle:
         6: 8,
         7: 10
     }
+    
     MAXIMAL_PASSIVE = 30
     DENS_DIST = 0.1
     MX = 7
