@@ -1,4 +1,5 @@
 import random
+import copy
 
 M = 8
 
@@ -6,38 +7,44 @@ position_weights = [
     [100, -20, 10, 5, 5, 10, -20, 100],
     [-20, -50, -2, -2, -2, -2, -50, -20],
     [10, -2, -1, -1, -1, -1, -2, 10],
-    [5, -2, -1, -1, -1, -1, -2, 5],
-    [5, -2, -1, -1, -1, -1, -2, 5],
+    [5, -2, -1, 0, 0, -1, -2, 5],
+    [5, -2, -1, 0, 0, -1, -2, 5],
     [10, -2, -1, -1, -1, -1, -2, 10],
     [-20, -50, -2, -2, -2, -2, -50, -20],
     [100, -20, 10, 5, 5, 10, -20, 100],
 ]
 
-def initial_board():
-    B = [[None] * M for i in range(M)]
-    B[3][3] = 1
-    B[4][4] = 1
-    B[3][4] = 0
-    B[4][3] = 0
-    return B
+dirs = [(0, 1), (1, 0), (-1, 0), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
+
+start_board = [[None] * M for i in range(M)]
+start_board[3][3] = 1
+start_board[4][4] = 1
+start_board[3][4] = 0
+start_board[4][3] = 0
+
+start_fields = set()
+for i in range(M):
+    for j in range(M):
+        if (i,j) != (3,4) and (i,j) != (4,4) and (i,j) != (4,3) and (i,j) != (3,3):
+            start_fields.add((j, i))
+
 
 
 class Board:
-    dirs = [(0, 1), (1, 0), (-1, 0), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
-
     def __init__(self):
-        self.board = initial_board()
-        self.fields = set()
+        self.board = copy.deepcopy(start_board)
+        self.fields = start_fields.copy()
         self.move_list = []
-        for i in range(M):
-            for j in range(M):
-                if self.board[i][j] == None:
-                    self.fields.add((j, i))
+
+    def clear(self):
+        self.board = copy.deepcopy(start_board)
+        self.fields = start_fields.copy()
+        self.move_list = []
 
     def moves(self, player):
         res = []
         for x, y in self.fields:
-            if any(self.can_beat(x, y, direction, player) for direction in Board.dirs):
+            if any(self.can_beat(x, y, direction, player) for direction in dirs):
                 res.append((x, y))
         if not res:
             return [None]
@@ -61,18 +68,15 @@ class Board:
 
     def do_move(self, move, player):
         self.move_list.append(move)
-
-        if move == None:
-            return
-        x, y = move
+        flipped = []
+        if move is None:
+            return flipped
         x0, y0 = move
-        self.board[y][x] = player
-        self.fields -= set([move])
-        for dx, dy in self.dirs:
-            x, y = x0, y0
+        self.board[y0][x0] = player
+        self.fields.discard(move)
+        for dx, dy in dirs:
+            x, y = x0 + dx, y0 + dy
             to_beat = []
-            x += dx
-            y += dy
             while self.get(x, y) == 1 - player:
                 to_beat.append((x, y))
                 x += dx
@@ -80,6 +84,35 @@ class Board:
             if self.get(x, y) == player:
                 for nx, ny in to_beat:
                     self.board[ny][nx] = player
+                    flipped.append((nx, ny))
+        return flipped
+
+
+    def undo_move(self, move, player, flipped):
+        if move is not None:
+            x, y = move
+            self.board[y][x] = None
+            self.fields.add(move)
+        for fx, fy in flipped:
+            self.board[fy][fx] = 1 - player
+
+    def result(self):
+        res = 0
+        for y in range(M):
+            for x in range(M):
+                b = self.board[y][x]
+                if b == 0:
+                    res -= 1
+                elif b == 1:
+                    res += 1
+        return res
+
+    def terminal(self):
+        if not self.fields:
+            return True
+        if len(self.move_list) < 2:
+            return False
+        return self.move_list[-1] == self.move_list[-2] == None
 
     def evaluate(self, player):
         score = 0
@@ -89,25 +122,20 @@ class Board:
                 if cell is not None:
                     multiplier = 1 if cell == player else -1
                     score += position_weights[y][x] * multiplier
-
-        score += 5 * (len(self.moves(player)) - len(self.moves(1 - player)))
+        
         return score
-
 
     def minimax(self, depth, player, alpha, beta):
         if self.terminal() or depth == 0:
             return self.evaluate(player), None
 
         best_move = None
-        if player == 1:  # maximizing player
+        if player == 1:
             max_eval = -float('inf')
             for move in self.moves(player):
-                saved = [row[:] for row in self.board]
-                saved_fields = self.fields.copy()
-                self.do_move(move, player)
+                flipped = self.do_move(move, player)
                 eval, _ = self.minimax(depth - 1, 1 - player, alpha, beta)
-                self.board = saved
-                self.fields = saved_fields
+                self.undo_move(move, player, flipped)
                 if move is not None:
                     self.fields.add(move)
                 if eval > max_eval:
@@ -117,15 +145,12 @@ class Board:
                 if beta <= alpha:
                     break
             return max_eval, best_move
-        else:  # minimizing player
+        else:
             min_eval = float('inf')
             for move in self.moves(player):
-                saved = [row[:] for row in self.board]
-                saved_fields = self.fields.copy()
-                self.do_move(move, player)
+                flipped = self.do_move(move, player)
                 eval, _ = self.minimax(depth - 1, 1 - player, alpha, beta)
-                self.board = saved
-                self.fields = saved_fields
+                self.undo_move(move, player, flipped)
                 if move is not None:
                     self.fields.add(move)
                 if eval < min_eval:
@@ -145,30 +170,12 @@ class Board:
         if ms:
             return random.choice(ms)
         return None
-    
-    def result(self):
-        res = 0
-        for y in range(M):
-            for x in range(M):
-                b = self.board[y][x]
-                if b == 0:
-                    res -= 1
-                elif b == 1:
-                    res += 1
-        return res
-
-    def terminal(self):
-        if not self.fields:
-            return True
-        if len(self.move_list) < 2:
-            return False
-        return self.move_list[-1] == self.move_list[-2] == None
 
 counter = 0
+B = Board()
 
 for i in range(1000):
     player = 1
-    B = Board()
     while True:
         if player == 1:
             m = B.ai_move(player)  
@@ -181,5 +188,6 @@ for i in range(1000):
         player = 1 - player
     if B.result() > 0:
         counter += 1
+    B.clear()
 
 print(counter)

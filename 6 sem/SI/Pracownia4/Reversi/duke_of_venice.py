@@ -1,8 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 ""#line:5
 import sys #line:6
 M =8 #line:8
-MAX_DEPTH =int (sys .argv [1 ])#line:9
+# MAX_DEPTH =int (sys .argv [1 ])#line:9
+if len(sys.argv) > 1:
+    MAX_DEPTH = int(sys.argv[1])
+else:
+    MAX_DEPTH = 2  # domyślna wartość głębokości
 CORNER =8 #line:11
 BAD_CORNER =-3 #line:12
 MOVES =0.8 #line:13

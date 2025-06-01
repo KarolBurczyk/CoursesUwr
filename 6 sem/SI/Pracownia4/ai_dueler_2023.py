@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 '''
 Prosta sprawdzarka turniejowa.
@@ -14,7 +14,7 @@ import signal
 import subprocess
 import threading
 import time
-import chess
+# import chess
 
 VERBOSE = 0
 
@@ -180,33 +180,33 @@ class Reversi:
         else:
             return None
 
-class Chess:
-    def __init__(self):
-        self.board = chess.Board()
+# class Chess:
+#     def __init__(self):
+#         self.board = chess.Board()
         
-    def update(self, unused_player, uci_move):
-        try:
-            move = chess.Move.from_uci(uci_move)
-        except ValueError:
-            raise WrongMove
+#     def update(self, unused_player, uci_move):
+#         try:
+#             move = chess.Move.from_uci(uci_move)
+#         except ValueError:
+#             raise WrongMove
 
-        if move not in self.board.legal_moves:
-            raise WrongMove
+#         if move not in self.board.legal_moves:
+#             raise WrongMove
             
-        self.board.push(move)
-        out = self.board.outcome()
-        if out is None:
-            return None
-        if out.winner is None:
-            return 0
-        if out.winner:
-            return -1
-        else:
-            return +1    
+#         self.board.push(move)
+#         out = self.board.outcome()
+#         if out is None:
+#             return None
+#         if out.winner is None:
+#             return 0
+#         if out.winner:
+#             return -1
+#         else:
+#             return +1    
     
-    def draw(self):
-        print (self.board)  
-        print ()  
+#     def draw(self):
+#         print (self.board)  
+#         print ()  
 
     
 class Jungle:
@@ -445,6 +445,8 @@ def kill_proc(process):
 class Player(object):
     def __init__(self, command, name=""):
         self.name = name
+        self.total_time = 0
+        self.start_time = None
         self.in_queue = queue.Queue()
         self.out_queue = queue.Queue()
         self.process = subprocess.Popen(
@@ -455,11 +457,8 @@ class Player(object):
             threading.Thread(target=self._reader),
             threading.Thread(target=self._writer), ]
         for t in self.threads:
-            t.setDaemon(True)
+            t.daemon = True
             t.start()
-
-        self.total_time = 0
-        self.start_time = None
 
     def _reader(self):
         proc = self.process
@@ -621,8 +620,8 @@ if __name__ == '__main__':
 
     game = {
         'reversi': Reversi,
-        'jungle' : Jungle,
-        'chess' : Chess
+        'jungle' : Jungle
+        # 'chess' : Chess
     }[args.game]
 
     common_args = []

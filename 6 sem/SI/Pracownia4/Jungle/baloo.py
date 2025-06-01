@@ -1,7 +1,13 @@
-#!/usr/bin/env python
-""#line:5
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
 import random #line:8
+
 import sys #line:9
+
+class WrongMove(Exception):
+    pass
+
 class Jungle :#line:11
     PIECE_VALUES ={0 :4 ,1 :1 ,2 :2 ,3 :3 ,4 :5 ,5 :7 ,6 :8 ,7 :10 }#line:21
     MAXIMAL_PASSIVE =30 #line:22

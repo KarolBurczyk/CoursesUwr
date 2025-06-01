@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 ""#line:5
 import sys #line:6
 M =8 #line:8
