@@ -1,0 +1,5 @@
+usbipd list
+
+usbipd bind --busid <BUSID> 
+
+usbipd attach --wsl --busid <BUSID>
