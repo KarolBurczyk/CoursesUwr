@@ -10,3 +10,5 @@ obj/
 /dist
 *.rtbz
 *.rtbw
+local*
+*.DS_Store

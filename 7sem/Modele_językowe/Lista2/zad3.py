@@ -25,7 +25,7 @@ def sequence_log_prob(input_ids):
 
 
 def beam_search_disambiguation(variants_list, beam_size=3):
-    beam = [([], 0.0)]  # lista krotek (ścieżka słów, log-prawdopodobieństwo)
+    beam = [([], 0.0)]
 
     for variants in variants_list:
         candidates = []
@@ -36,7 +36,6 @@ def beam_search_disambiguation(variants_list, beam_size=3):
                 input_ids = tokenizer.encode(new_text, return_tensors="pt")
                 logprob = sequence_log_prob(input_ids)
                 candidates.append((prefix_words + [word], logprob))
-        # Sortujemy kandydatów po log-prawdopodobieństwie malejąco i wybieramy top beam_size
         candidates = sorted(candidates, key=lambda x: x[1], reverse=True)[:beam_size]
         beam = candidates
 
@@ -46,12 +45,17 @@ def beam_search_disambiguation(variants_list, beam_size=3):
 
 texts = [
     (
-        "wprost|wyprosty|wyprostu|wyprost uwielbiała|wielbił|wielbiła|uwielbił|wielbiło|uwielbiał|uwielbiało|uwielbiały "
-        "słuchać|osłuchać|słychać|usłuchać o|i|e|a|ó|ę|y|ą|u "
-        "wartościach własnych|owłosionych macierzy|mocarz|macierzą|macierze|mocarza|mocarze|mocarzy|macierz"
+        "wprost|wyprosty|wyprostu|wyprost "
+        "uwielbiała|wielbił|wielbiła|uwielbił|wielbiło|uwielbiał|uwielbiało|uwielbiały "
+        "słuchać|osłuchać|słychać|usłuchać "
+        "o|i|e|a|ó|ę|y|ą|u "
+        "wartościach|wartość|warto|niewarto "
+        "własnych|owłosionych|włos|właśnie "
+        "macierzy|mocarz|macierzą|macierze|mocarza|mocarze|mocarzy|macierz"
+        
     ),
     (
-        "bardzo|dawno|długo|dalej|dalejże|dłoń|dłonią|dłonię|dłońmi|dłońmi "
+        "długo|bardzo|dawno|dalej|dalejże|dłoń|dłonią|dłonię|dłońmi|dłońmi "
         "pamiętał|pamiętała|pamiętali|pamiętały|pamiętałby|pamiętałbym "
         "człowieka|człowiekiem|człowieka|człowieka|człowieka|człowiekiem "
         "który|która|które|którego|któremu|której|którymi|któryż|któryś "
@@ -61,8 +65,8 @@ texts = [
         "piękny|piękna|piękne|pięknego|pięknej|piękniejszy|piękniejsza|piękniejsze "
         "dom|domu|domem|domach|domy|domów|domami "
         "z|za|obok|przy|zza|nad|pod|stąd "
-        "zielony|zielona|zielone|zieloni|zielonym|zielonych "
-        "ogród|ogrodzie|ogrodu|ogrodem|ogrody|ogrodów|ogrodami"
+        "zielonym|zielona|zielone|zieloni|zielony|zielonych "
+        "ogrodem|ogród|ogrodzie|ogrodu|ogrody|ogrodów|ogrodami"
     ),
 ]
 splitted_texts = [[elem.split('|') for elem in text.split(' ')] for text in texts]
@@ -70,4 +74,4 @@ splitted_texts = [[elem.split('|') for elem in text.split(' ')] for text in text
 for text in splitted_texts:
     best_sequence, best_score = beam_search_disambiguation(text, beam_size=5)
     print("Najlepsza sekwencja wariantów:", best_sequence)
-    print("Z log-prawdopodobieństwem:", best_score)
+    print("Z log-probability:", best_score)
