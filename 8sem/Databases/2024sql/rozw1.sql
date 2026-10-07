@@ -1,0 +1,28 @@
+--zad1
+-- select distinct city
+-- from offer join company on offer.company_id = company.id
+-- where company.name = 'Siepomaga.pl' order by 1;
+--zad2
+-- select c.name, o.title from
+-- skill s join offer o on s.offer_id = o.id join company c on o.company_id = c.id
+-- where s.name ilike '%kotlin%' and s.value < 5 and o.city = 'Warszawa'
+-- order by 1,2;
+--zad3
+-- select count(*) from
+-- company c
+-- where not exists (
+--     select * from offer o where o.company_id = c.id and o.remote = true
+-- )
+--zad4
+-- select distinct c.name, o.title, o.experience_level, e.salary_from, e.salary_to, round(e.salary_to - e.salary_from) as widelki, round((e.salary_to - e.salary_from) / e.salary_from * 100) as procent
+-- from company c join offer o on c.id = o.company_id join employment_details e on o.id = e.offer_id
+-- where e.type = 'b2b' and date(o.published_at) = make_date(2023, 9, 1) and e.currency = 'pln' and e.salary_from > 0
+-- order by procent asc, 1 asc;
+--zad5
+-- drop table if exists salaries_abroad;
+-- create table salaries_abroad as
+-- select e.offer_id, e.currency, e.salary, e.salary_from, e.salary_to, e.type, o.country_code
+-- from employment_details e join offer o on e.offer_id = o.id
+-- where country_code != 'PL';
+-- ALTER TABLE salaries_abroad ADD PRIMARY KEY (offer_id, type);
+-- ALTER TABLE salaries_abroad ADD FOREIGN KEY (offer_id) REFERENCES offer(id);

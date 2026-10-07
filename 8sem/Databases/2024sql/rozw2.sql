@@ -1,0 +1,54 @@
+--zad1
+-- select count(*) from (
+--     select c.id, c.name, count(distinct o.id) as liczba_ofert
+--     from company c join offer o on c.id = o.company_id join employment_details e on o.id = e.offer_id
+--     where e.currency = 'pln' and o.remote = true and c.id not in (
+--         select o2.company_id
+--         from offer o2 join employment_details e2 on o2.id = e2.offer_id
+--         where e2.type = 'permanent' and e2.currency = 'pln' and o2.remote = true
+--     ) group by c.id, c.name order by liczba_ofert desc, c.name asc
+-- );
+--zad2
+
+    -- select s.name, min(e.salary_from) as min_salary
+    -- from company c
+    -- join offer o on c.id = o.company_id
+    -- join employment_details e on o.id = e.offer_id
+    -- join skill s on o.id = s.offer_id
+    -- where o.city = 'Wrocław'
+    --     and e.type = 'permanent'
+    --     and e.salary_from > 0
+    --     and e.currency = 'pln'
+    --     group by s.name 
+    --     having min(e.salary_from) > (
+    --         select avg(e2.salary_from) from offer o2
+    --         join employment_details e2 on o2.id = e2.offer_id
+    --         where o2.city = 'Wrocław'
+    --             and e2.type = 'permanent'
+    --             and e2.salary_from > 0
+    --             and e2.currency = 'pln'
+    --     )
+    -- order by min_salary desc, s.name asc
+--zad3
+-- begin;
+--     ALTER TABLE offer DROP CONSTRAINT offer_company_id_fkey;
+--     ALTER TABLE offer ADD CONSTRAINT offer_company_id_fkey
+--         FOREIGN KEY (company_id) REFERENCES company(id) ON DELETE CASCADE;
+
+--     ALTER TABLE employment_details DROP CONSTRAINT employment_details_offer_id_fkey;
+--     ALTER TABLE employment_details ADD CONSTRAINT employment_details_offer_id_fkey
+--         FOREIGN KEY (offer_id) REFERENCES offer(id) ON DELETE CASCADE;
+
+--     ALTER TABLE skill DROP CONSTRAINT skill_offer_id_fkey;
+--     ALTER TABLE skill ADD CONSTRAINT skill_offer_id_fkey
+--     FOREIGN KEY (offer_id) REFERENCES offer(id) ON DELETE CASCADE;
+
+--     delete from company c
+--     where c.id in (
+--         select c2.id
+--         from company c2
+--         left join offer o on c2.id = o.company_id
+--         group by c2.id
+--         having count(o.id) > 200
+--     );
+-- rollback;
